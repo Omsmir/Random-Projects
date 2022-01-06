@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container{
+    width: 350px;
+    height: 582px;
+    background-color: black;
+    box-shadow: inset 3px 3px 10px #747474;
+    margin: 25px auto;
+    border: 15px solid #f1ae40;
+    border-radius: 53px;
+    border-top: 50px solid #f1ae40 ;
+    border-bottom: 50px solid #f1ae40 ;
+
+}
+.container::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 52px;
+    background-color: #f1ae40;
+    top: 130px;
+    left: 589px;
+    border: 1px solid;
+    border-right: transparent;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.container::after{
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 52px;
+    background-color: #f1ae40;
+    top: 193px;
+    left: 589px;
+    border: 1px solid;
+    border-right: transparent;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+
+p { 
+    color: #ecd9d9;
+    font-size: 19px;
+    position: relative;
+    font-weight: bold;
+    top: -27px;
+    left: 120px;
+    width: 80px;
+    text-align: center;
+}
+p::before{
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 52px;
+    background-color: #f1ae40;
+    top: 115px;
+    left: 215px;
+    border: 1px solid black;
+    border-left: transparent;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.Camera {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: inset 3px 3px 10px #747474;
+    top: 33px;
+    left: 660px;
+}
+.Speaker {
+    position: absolute;
+    width: 70px;
+    height: 10px;
+    background-color: #9f7b7b;
+    text-align: center;
+    top: 35px;
+    left: 732px;
+    border-radius: 15px;
+}
+.Speaker span {
+    text-align: center;
+    position: relative;
+    top: -9px;
+}
+.Sensor {
+    position: absolute;
+    width: 25px;
+    height: 10px;
+    background-color: black;
+    border-radius: 5px;
+    top: 35px;
+    box-shadow: inset 3px 3px 10px #747474;
+    left: 820px;
+}
+.Out {
+    width: 20px;
+    height: 12px;
+    color: #d6c7c7;
+    position: relative;
+    display: block;
+    bottom: -448px;
+    border: 2px solid #b2a4a4;
+    left: 36px;
+}
+.out.two{
+    width: 20px;
+    height: 12px;
+    color: #d6c7c7;
+    position: relative;
+    display: block;
+    border: 2px solid #b2a4a4;
+    left: 2px;
+    border-bottom: transparent;
+    border-left: transparent;
+    top: -5px;
+}
+.Button {
+    position: relative;
+    width: 67px;
+    height: 24px;
+    background-color: #f1ae40;
+    border-radius: 15px;
+    display: block;
+    bottom: -429px;
+    left: 127px;
+    border: 1px solid #b2a4a4;
+    box-shadow:     inset 0px 1px 13px #747474;
+}
+.back {
+    position: relative;
+    width: 26px;
+    height: 14px;
+    display: block;
+    bottom: -411px;
+    left: 255px;
+    border: 2px solid #b2a4a4;
+    border-left: none;
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+.back::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent #b2a4a4 transparent transparent;
+    left: -11px;
+    top: -6px;
+}
+.bottom {
+    position: relative;
+    bottom: -30px;
+
+}
