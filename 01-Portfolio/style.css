@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('imgs/1.des.png');
+    background-size: 100%;
+}
+.container {
+    width: fit-content;
+    height: fit-content;
+    margin: 25px auto;
+    position: relative;
+    bottom: -90px;
+    
+
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 50%;
+    left: 8px;
+}
+.container h2 {
+    margin: 0px;
+    color: rgb(8, 49, 112);
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.container h3 {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 14px;
+    color: rgb(8, 49, 112);
+}
+
+.co {
+    width: 700px;
+    height: 450px;
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ul li {
+    list-style: none;
+    width: 650px;
+    height: 60px;
+    display: flex;
+    margin-bottom: 15px;
+    background-color: #D1F6FF;
+    border-radius: 50px;
+    transition:  box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;;
+box-shadow: inset 1px 1px 21px black;
+}
+
+a {
+    transition:  box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;;
+
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    
+    color:rgb(8, 49, 112) ;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+ul li:hover{
+    transform: scale(1.019);
+    background-color: #7fbfcf;
+
+
+}
+a:hover {
+    color:rgb(8, 49, 112);
+    transform: scale(1.005);
+}
+
+.co1 {
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 25px auto;
+    align-items: center;
+}
+.co1 p {
+    font-size: 16px;
+    color: #042932;
+    font-weight: 600;
+}
+@media (max-width: 1189px){
+    .container {
+        width: fit-content;
+        height: fit-content;
+        margin: 25px auto;
+        position: relative;
+        bottom: -90px;
+        
+    
+    }
+    
+    img{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        border-radius: 50%;
+        left: 8px;
+    }
+
+}
+@media (max-width: 991px){
+    .container {
+        width: fit-content;
+        height: fit-content;
+        margin: 25px auto;
+        position: relative;
+        bottom: -90px;
+        
+    
+    }
+    
+    img{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        border-radius: 50%;
+        left: 8px;
+    }
+
+}
+
+@media  (max-width: 767px){
+    .container {
+        width: fit-content;
+        height: fit-content;
+        margin: 25px auto;
+        position: relative;
+        bottom: -90px;
+        
+    
+    }
+    
+    img{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        border-radius: 50%;
+        left: 8px;
+    }
+    .co {
+        width: 500px;
+        height: 450px;
+        margin: 25px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    ul li {
+        list-style: none;
+        width: 450px;
+        height: 60px;
+        display: flex;
+        margin-bottom: 15px;
+        background-color: #D1F6FF;
+        border-radius: 50px;
+        transition:  box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;;
+    box-shadow: inset 1px 1px 21px black;
+    }
+    
+    a {
+        transition:  box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;;
+    
+        cursor: pointer;
+        text-decoration: none;
+        display: flex;
+        
+        color:rgb(8, 49, 112) ;
+        font-size: 16px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+    }
+
+}
+@media (max-width: 576px) {
+    body{
+        background-size: 120%;
+    }
+    .container {
+        bottom: -36px;
+    }
+    .co {
+        width: 300px;
+        height: 300px;
+        margin: 25px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        bottom:-39px;
+    }
+    .co1 {
+        position: relative;
+        bottom: -28px;
+    }    
+    ul li {
+        list-style: none;
+        width: 300px;
+        height: 60px;
+        display: flex;
+        margin-bottom: 15px;
+        background-color: #D1F6FF;
+        border-radius: 50px;
+        transition:  box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;;
+    box-shadow: inset 1px 1px 21px black;
+    }
+    
+    a {
+        transition:  box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;;
+    
+        cursor: pointer;
+        text-decoration: none;
+        display: flex;
+        
+        color:rgb(8, 49, 112) ;
+        font-size: 16px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+    }
+
+}
