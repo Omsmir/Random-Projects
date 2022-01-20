@@ -11,9 +11,16 @@ Random Projects While Boring Days 😶
 
 <br>
 
-## ❤ Languages , Tools And Os I've Worked With
+## ❤ Languages I've Used
 
  <a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a>  <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a>
+<br>
+## Photos Of Some Projects
+
+<img src="https://github.com/Omsamiir/Random-Projects/blob/main/10-Card/imgs/Screenshot_18.jpg" alt="Card" width="250" height="250" />
+
+
+
 
 ## ❤ Connect With Me
 
