@@ -18,7 +18,7 @@ Random Projects While Boring Days 😶
 ## Photos Of Some Projects
 <a href="https://github.com/Omsamiir/Random-Projects/blob/main/10-Card/imgs/Screenshot_18.jpg">
 <img src="https://github.com/Omsamiir/Random-Projects/blob/main/10-Card/imgs/Screenshot_18.jpg" alt="Card" width="250" height="150"/>
- <h2 align="left" >Card</h2>
+ <h4 align="left" >Card</h4>
 
 </a>
 
