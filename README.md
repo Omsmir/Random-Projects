@@ -17,7 +17,7 @@ Random Projects While Boring Days 😶
 <br>
 ## Photos Of Some Projects
 
-<img src="https://github.com/Omsamiir/Random-Projects/blob/main/10-Card/imgs/Screenshot_18.jpg" alt="Card" width="350" height="250" border="1px solid black"/>
+<img src="https://github.com/Omsamiir/Random-Projects/blob/main/10-Card/imgs/Screenshot_18.jpg" alt="Card" width="250" height="150"/>
 
 
 
