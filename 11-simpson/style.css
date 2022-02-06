@@ -1,0 +1,299 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #de433e;
+
+}
+
+.container{
+    width: 400px;
+    height: 400px;
+    transform: translate(-50%,50%);
+    left: 50%;
+    position: relative;
+    margin-left: -50px;
+
+}
+.container .tbody {
+    width: 160px;
+    height: 125px;
+    background-color: #fed811;
+    margin: 25px auto;
+    border: 1px solid black;
+    border-radius: 50% 53% 5px 5px / 52% 52% 16px 15px;
+    border-bottom: transparent;
+    position: relative;
+    transform: rotate(-17deg);
+}
+.container .tbody::before {
+    content: "";
+    position: absolute;
+    background-color: #fed811;
+    width: 125px;
+    height: 45px;
+    top: 116px;
+    left: 9px;
+    border-radius: 70px 0px 0px 72px / 36% 34%;
+    transform: rotate(10deg);
+}
+
+.container .tbody .hair {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    top: -3px;
+    transform: rotate(15deg);
+    left: 13px;
+}
+.container .tbody .hair .hair1{
+    width: 68px;
+    height: 68px;
+    border: transparent;
+    border-radius: 50%;
+    border-top: 2px solid;
+    transform: rotate(-43deg);
+    position: relative;
+    top: 7px;
+}
+.container .tbody .hair .hair2{
+    width: 68px;
+    height: 68px;
+    border: transparent;
+    border-radius: 50%;
+    border-top: 2px solid;
+    transform: rotate(-36deg);
+    position: relative;
+    top: -71px;
+    left: 6px;
+}
+.container .bbody {
+    width: 148px;
+    height: 116px;
+    background-color: #fed811;
+    margin: 25px auto;
+    border: 1px solid;
+    border-top: transparent;
+    border-bottom: transparent;
+    position: relative;
+    top: -7px;
+    left: 19px;
+}
+.container .bbody .eye-co {
+    width: 200px;
+    height: 50px;
+}
+.container .bbody .eye-co .first-eye {
+    width: 64px;
+    height: 61px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: relative;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -41px;
+    left: 35px;
+    z-index: 2;
+
+}
+.container .bbody .eye-co .first-eye::before {
+    content: "";
+    position: absolute;
+    display: flex;
+    background-color: black;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    top: 30px;
+    left: 20px;
+}
+.container .bbody .eye-co .second-eye {
+    width: 68px;
+    height: 61px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: relative;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -112px;
+    left: 91px;
+    
+}
+.container .bbody .eye-co .second-eye::before {
+    content: "";
+    position: absolute;
+    display: flex;
+    background-color: black;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    top: 33px;
+    left: 24px;
+}
+.container .bbody .nose {
+    width: 64px;
+    height: 22px;
+    background-color: #fed811;
+    position: relative;
+    border: 1px solid;
+    border-left: transparent;
+    border-radius: 0 25px 25px 0 / 19px 19px 19px 0;
+    top: -51px;
+    left: 99px;
+}
+.container .bbody .ear {
+    width: 28px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: #fed811;
+    display: block;
+    position: relative;
+    top: -48px;
+    left: -15px;
+    border: 1px solid black;
+    z-index: 9;
+    transform: rotate(-3deg);
+}
+.container .bbody .ear span {
+    width: 7px;
+    height: 9px;
+    border-radius: 50px;
+    border: 1px solid;
+    border-right: transparent;
+    position: relative;
+    display: block;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    top: 5px;
+    left: 6px;
+    opacity: 0.9;
+}
+.container .bbody .ear span::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    border: transparent;
+    border-top: 2px solid black;
+    opacity: 0.6;
+    left: 0px;
+    top: 1px;
+    transform: rotate(11deg);
+    z-index: 99;
+}
+.container .bbody .mouse-left {
+    width: 120px;
+    height: 79px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: relative;
+    display: block;
+    background-color: #d0b171;
+    top: -75px;
+    left: 38px;
+}
+.container .bbody .mouse-left::before {
+    content: "";
+    position: absolute;
+    width: 54px;
+    height: 18px;
+    background-color: #d0b171;
+    border: 1px solid black;
+    border-radius: 0 50% 3px 0 / 0 50% 64% 0;
+    border-left: transparent;
+    border-bottom: transparent;
+    left: 70px;
+    z-index: 999;
+    top: -1px;
+}
+.container .bbody .mouse-left::after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 12px;
+    background-color: #d0b171;
+    top: 43px;
+    left: 113px;
+    border: 1px solid;
+    border-top: transparent;
+    border-left: transparent;
+    border-top-right-radius: 50% 0;
+    border-bottom-right-radius: 111%;
+  }
+
+.container .bbody .mouse-right{
+    width: 44px;
+    height: 22px;
+    border: 1px solid black;
+    position: relative;
+    border-left: transparent;
+    border-top: transparent;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    transform: rotate(-53deg);
+    top: -124px;
+    left: 135px;
+    border-bottom: transparent;
+}
+
+
+
+.container .bbody .mouse-right::before{
+    content: "";
+    position: absolute;
+    width: 99px;
+    height: 17px;
+    border: 1px solid black;
+    border-top: transparent;
+    border-left: transparent;
+    background-color: #d0b171;
+    border-top-right-radius: 20px;
+    transform: rotate(47deg);
+    top: -15px;
+    left: -42px;
+    border-bottom-right-radius: 50% 65%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50% 79%;
+}
+
+.container .bbody .mouse-right::after {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 27px;
+    background-color: #d0b171;
+    top: -9px;
+    left: 17px;
+    border-bottom-left-radius: 50%;
+}
+.container .bbody .four {
+    width: 132px;
+    height: 41px;
+    border: 1px solid black;
+    position: relative;
+    background-color: #ffffff;
+    display: block;
+    border-radius: 10px 10px 10px 10px / 5px 5px 5px 5px;
+    top: -96px;
+    left: -11px;
+    transform: rotate(15deg)
+
+}
+.container .bbody .four-two {
+    width: 17px;
+    height: 40px;
+    border: 1px solid black;
+    position: relative;
+    background-color: #ffffff;
+    display: block;
+    top: -127px;
+    left: 148px;
+    transform: rotate(-26deg);
+    border-radius: 25% 25% 25% 25% / 1px 1px 1px 1px;
+}
