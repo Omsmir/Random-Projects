@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100px;
+    margin: 25px auto;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 6px;
+ 
+}
+.loading {
+    animation-name: up-down;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+
+}
+.loading:nth-child(1){
+    animation-delay: 0.3s;
+    color: aqua;
+}
+.loading:nth-child(2){
+    animation-delay: 0.7s;
+    color: red;
+}
+.loading:nth-child(3){
+    animation-delay: 1s;
+    color: green;
+}
+.loading:nth-child(4){
+    animation-delay: 1.3s;
+    color: rgb(255, 0, 221);
+}
+
+.loading:nth-child(5){
+    animation-delay: 1.6s;
+    color: purple;
+}
+.loading:nth-child(6){
+    animation-delay: 1.9s;
+    color: orange;
+}
+.loading:nth-child(7){
+    animation-delay: 2.1s;
+    color: orangered;
+}
+@keyframes up-down {
+    0%{
+        transform: translateX(15px) translateY(-5px);
+        color: blue;
+        letter-spacing: 5px;
+
+    }
+    50%{
+        transform: translatex(-10px) translateY(-15px);
+        letter-spacing: 7px;
+
+    }
+    100%{
+        letter-spacing: 10px;
+        transform: translateY(-40px);
+        /* transform: scale(1.2) ; */
+    }
+}
