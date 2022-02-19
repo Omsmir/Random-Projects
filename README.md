@@ -33,7 +33,7 @@ Random Projects While Boring Days 😶
 <br>
 
 <a href="https://github.com/omsamiir">
-  <img height="200em" src="https://github-readme-stats.vercel.app/api?username=omsamiir&theme=light&show_icons=true" />
+  <img height="200em" src="https://github-readme-stats.vercel.app/api?username=Omsamiir/Random-Project&theme=light&show_icons=true" />
   <hr />
   <img height="200em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=omsamiir&theme=light&layout=compact" />
 </a>
