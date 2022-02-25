@@ -58,6 +58,7 @@ opacity: 1;
     color: white;
     border-radius: 4px;
 }
+/**BackColor Edit**/
 .slider-controls .prev.disabled,
 .slider-controls .next.disabled {
   background-color: #5c1717;
