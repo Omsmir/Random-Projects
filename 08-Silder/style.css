@@ -46,10 +46,13 @@ opacity: 1;
 
 .slider-controls .prev,
 .slider-controls .next {
-    background-color: #009688;   
+    background-color: #df0909;   
     width: 20%;
     font-size: 16px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     user-select: none;
     color: white;
@@ -57,7 +60,7 @@ opacity: 1;
 }
 .slider-controls .prev.disabled,
 .slider-controls .next.disabled {
-  background-color: rgba(0, 150, 136, 0.5);
+  background-color: #5c1717;
   cursor: no-drop;
 }
 
@@ -84,6 +87,6 @@ opacity: 1;
   cursor: pointer;
 }
 .slider-controls .indicators ul li.active {
-  background-color: #009688;
+  background-color: #df0909;
   color: #FFF;
 }
