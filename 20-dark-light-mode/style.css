@@ -42,25 +42,18 @@ p {
 }
 img {
     width: 450px;
-    height: 450px;
+    height: 350px;
     border-radius: 25px;
+    margin-bottom: 25px;
 }
-.dark-mode {
-    background-color: black;
-    color: white;
-  }
-  .light-mode {
-    background-color: white;
-    color: black;
-  }
 
-  h3 {
+h3 {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-bottom: 10px;
-  }
-  .buttn {
+      margin-bottom: 25px;
+}
+.buttn {
       display: flex;
       justify-content: flex-start;
       align-items: center;
