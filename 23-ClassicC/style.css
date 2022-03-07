@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   width: 50%;
+   margin-top: 85px;
+}
+
+.container .card {
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 35rem;
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+
+.sneaker {
+    min-height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sneaker img {
+    width: 25rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+}
+
+.sneaker .circle {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    background: linear-gradient(
+        to right,
+        rgba(245, 70, 66, 0.75),
+        rgba(8, 83, 156, 0.75) ) 
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 45vh;
+}
+
+h1 {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.info h3 {
+    color: rgba(87, 81, 81, 0.884);
+    font-weight: normal;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+
+.sizes {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 25%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.sizes button {
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 35px;
+    /* box-shadow: 0 0px 15px rgba(0, 0, 0, 0.2); */
+    border-radius: 15px;
+    margin-left: 5px;
+    position: relative;
+    cursor: pointer;
+    border: none;
+}
+.sizes button.active {
+    background-color: gray;
+    color: #fff;
+
+}
+
+.purchase {
+    transition: all 0.75s ease-out;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .purchase button {
+    width: 80%;
+    padding: 15px;
+    background: #f54642;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: bolder;
+    outline: none;
+    z-index: 9;
+  }
