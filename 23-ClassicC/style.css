@@ -39,9 +39,9 @@ body{
 }
 
 .sneaker img {
-    width: 25rem;
+    width: 20rem;
     z-index: 2;
-    transition: all 0.75s ease-out;
+    transition: 0.5s ease-in-out;
 }
 
 .sneaker .circle {
@@ -51,9 +51,7 @@ body{
     z-index: 1;
     position: absolute;
     background: linear-gradient(
-        to right,
-        rgba(245, 70, 66, 0.75),
-        rgba(8, 83, 156, 0.75) ) 
+        to right, rgba(197, 180, 179, 0.75), rgba(4, 8, 12, 0.75) ) 
 }
 
 .info {
@@ -72,6 +70,7 @@ h1 {
     align-items: flex-start;
     font-size: 45px;
     margin-bottom: 25px;
+    transition: 0.3s ease-in-out;
 }
 
 .info h3 {
@@ -79,6 +78,8 @@ h1 {
     font-weight: normal;
     margin-bottom: 25px;
     font-size: 18px;
+    transition: 0.3s ease-in-out;
+
 }
 
 
@@ -90,6 +91,8 @@ h1 {
     justify-content: center;
     align-items: center;
     margin-bottom: 25px;
+    transition: 0.3s ease-in-out;
+
 }
 
 .sizes button {
@@ -128,10 +131,8 @@ h1 {
   .purchase button {
     width: 80%;
     padding: 15px;
-    background:    linear-gradient(
-        to right,
-        rgba(245, 70, 66, 0.75),
-        rgba(8, 83, 156, 0.75) ) ;
+    background: linear-gradient(
+        to right, rgba(160, 160, 160, 0.75), rgba(4, 8, 12, 0.75) ) ;
     border: none;
     color: white;
     cursor: pointer;

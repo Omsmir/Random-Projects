@@ -22,29 +22,29 @@ container.addEventListener("mousemove", (e) => {
 
 //Animate In
 container.addEventListener("mouseenter" , (e) => {
-    card.style.transition = "none"
+    card.style.transition = "0.05s ease-in-out"
 
     
-title.style.transform = "translateZ(50px)";
-sneaker.style.transform = "translateZ(200px) rotateZ(-15deg)";
-description.style.transform = "translateZ(50px)";
-// sizes.style.cssText = "transform : translateZ(50px);";
-// purchase.style.transform = "translateZ(50px)"
+title.style.transform = "translateZ(50px) scale(1.1)";
+sneaker.style.transform = "translateZ(150px) rotateZ(-15deg) ";
+description.style.transform = "translateZ(50px) scale(1.1)";
+sizes.style.cssText = "transform : scale(1.1);";
+purchase.style.transform = "scale(1.1)"
 
 })
 
 
 //Animate Out
 container.addEventListener("mouseleave", (e) => {
-    card.style.transition = "all 0.5s ease-in-out";
+    card.style.transition = "0.9s ease-in-out";
     card.style.transform = `rotateY(0deg) rotateX(0deg)`;
   
 
     title.style.transform = "translateZ(0px)";
     sneaker.style.transform = "translateZ(0px) rotateZ(0deg)";
     description.style.transform = "translateZ(0px)";
-    sizes.style.transform = "translateZ(0px)";
-    // purchase.style.transform = "translateZ(0px)";
+    sizes.style.transform = "scale(1)";
+    purchase.style.transform = "scale(1)";
   });
 
 
