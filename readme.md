@@ -3,11 +3,11 @@ Random Projects While Boring Days 😶
 
 | Index | Project | Tech Used |
 |:------:|:-----------------:|:------:|
-|   1  |[To-do-list](https://github.com/Omsamiir/Random-Projects/tree/main/18-To-Do-List-Clone)| CSS ,HTML,JS |
-|   2  |[Purchase-Card](https://github.com/Omsamiir/Random-Projects/tree/main/23-ClassicC)|HTML,CSS.JS |
-|   3  |[Twiiter](https://github.com/Omsamiir/Random-Projects/tree/main/21-Twitter-Clone)| HTML, CSS ,JS |
+|   1  |[To-do-list](https://github.com/Omsamiir/Random-Projects/tree/main/18-To-Do-List-Clone)| CSS ,HTML, JS |
+|   2  |[Purchase-Card](https://github.com/Omsamiir/Random-Projects/tree/main/23-ClassicC)|HTML,CSS, JS |
+|   3  |[Twiiter](https://github.com/Omsamiir/Random-Projects/tree/main/21-Twitter-Clone)| HTML ,CSS ,JS |
 |   4  |[Slider](https://github.com/Omsamiir/Random-Projects/tree/main/08-Silder)|HTML ,CSS,JS|
-|   5  |[Landing](https://github.com/Omsamiir/Random-Projects/tree/main/22-Classic-Landing)| HTML,CSS,JS|
+|   5  |[Landing](https://github.com/Omsamiir/Random-Projects/tree/main/22-Classic-Landing)| HTML ,CSS ,JS|
 
 <br>
 
