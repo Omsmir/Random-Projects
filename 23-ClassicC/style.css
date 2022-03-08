@@ -27,6 +27,7 @@ body{
     border-radius: 30px;
     padding: 0rem 5rem;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to bottom right ,rgb(255, 255, 255), rgb(146, 108, 146)  );
 }
 
 
@@ -98,12 +99,17 @@ h1 {
     align-items: center;
     width: 75px;
     height: 35px;
-    /* box-shadow: 0 0px 15px rgba(0, 0, 0, 0.2); */
+    box-shadow: 0 0px 25px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     margin-left: 5px;
     position: relative;
     cursor: pointer;
     border: none;
+    transition: 0.3s cubic-bezier(.63,1.22,0,.48);
+
+}
+.sizes button:hover {
+    transform: scale(1.040);
 }
 .sizes button.active {
     background-color: gray;
@@ -122,12 +128,20 @@ h1 {
   .purchase button {
     width: 80%;
     padding: 15px;
-    background: #f54642;
+    background:    linear-gradient(
+        to right,
+        rgba(245, 70, 66, 0.75),
+        rgba(8, 83, 156, 0.75) ) ;
     border: none;
     color: white;
     cursor: pointer;
     border-radius: 25px;
     font-weight: bolder;
     outline: none;
-    z-index: 9;
+    transition: 0.3s cubic-bezier(.63,1.22,0,.48);
+  }
+
+  .purchase button:hover {
+      transform: scale(1.040);
+
   }

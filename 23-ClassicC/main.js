@@ -10,6 +10,7 @@ const description = document.querySelector(".info h3");
 const sizes = document.querySelector(".sizes");
 const button = document.querySelector(".sizes").querySelectorAll("button")
 
+
 //Moving Animation Event
 container.addEventListener("mousemove", (e) => {
    let xAxis = (window.innerWidth / 2 - e.pageX) / 25 ;
@@ -49,4 +50,34 @@ container.addEventListener("mouseleave", (e) => {
 
 
 
-  
+button[0].onclick = function (){
+  button[0].classList.toggle("active")
+  button[1].classList.remove("active")
+  button[2].classList.remove("active")
+  button[3].classList.remove("active")
+
+}
+
+button[1].onclick = function (){
+  button[1].classList.toggle("active")
+  button[0].classList.remove("active")
+  button[2].classList.remove("active")
+  button[3].classList.remove("active")
+
+}
+
+button[2].onclick = function (){
+  button[2].classList.toggle("active")
+  button[1].classList.remove("active")
+  button[0].classList.remove("active")
+  button[3].classList.remove("active")
+
+}
+
+button[3].onclick = function (){
+  button[3].classList.toggle("active")
+  button[1].classList.remove("active")
+  button[2].classList.remove("active")
+  button[0].classList.remove("active")
+
+}
