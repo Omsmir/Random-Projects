@@ -145,3 +145,41 @@ h1 {
       transform: scale(1.040);
 
   }
+
+  @media (max-width: 576px){
+    .container .card {
+        width: 25rem;
+        padding: 0rem 3rem;
+
+    }
+    .sneaker img {
+        width: 15rem;
+    }
+    .sneaker .circle {
+        width: 10rem;
+        height: 10rem;
+    }
+   
+
+  }
+
+  @media (max-width: 358px){
+    .container .card {
+        width: 18rem;
+        padding: 0rem 2rem;
+    }
+    .sneaker img {
+        width: 13rem;
+    }
+    .sneaker .circle {
+        width: 10rem;
+        height: 10rem;
+    }
+    .info h1 {
+        font-size: 26px;
+    }
+    .info h3 {
+        font-size: 13px;
+    }
+
+  }
