@@ -29,7 +29,7 @@ tasksDiv.addEventListener("click" , (e) => {
     if(e.target.classList.contains("del")){
 
         function delLocal(taskid){
-            ArrayOfTasks = ArrayOfTasks.filter((tasks) => tasks.id !== taskid)
+            ArrayOfTasks = ArrayOfTasks.filter((tasks) => tasks.id != taskid)
             addToLocal(ArrayOfTasks)
     
         }
