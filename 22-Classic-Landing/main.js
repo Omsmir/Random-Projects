@@ -73,7 +73,7 @@ p.classList.remove("para")
 
 
 input.addEventListener("keyup" , function(){
-    if(input.value == "l " || input.value == "o" || input.value == "c" || input.value == "t" || input.value == "i" || input.value == "n"){
+    if(input.value == "l" || input.value == "o" || input.value == "c" || input.value == "t" || input.value == "i" || input.value == "n"){
             h3[0].classList.add("first")
             if(input.value == "t" ){
                 p.classList.add("para")

@@ -8,6 +8,10 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     width: 350px;
     height: 582px;
     background-color: black;
@@ -17,35 +21,37 @@ body {
     border-radius: 53px;
     border-top: 50px solid #f1ae40 ;
     border-bottom: 50px solid #f1ae40 ;
+    position: relative;
 
 }
-.container::before {
-    content: "";
+
+.container .middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 5px;
+    height: 100px;
     position: absolute;
-    width: 3px;
-    height: 52px;
+    left: -20px;
+    top: 50px;
+}
+.container .middle span {
+    width: 100%;
+    height: 100%;
     background-color: #f1ae40;
-    top: 130px;
-    left: 589px;
     border: 1px solid;
     border-right: transparent;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-}
-
-.container::after{
-    content: "";
-    position: absolute;
-    width: 3px;
-    height: 52px;
-    background-color: #f1ae40;
-    top: 193px;
-    left: 589px;
     border: 1px solid;
     border-right: transparent;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+
+
 }
+
 
 
 p { 
@@ -53,10 +59,9 @@ p {
     font-size: 19px;
     position: relative;
     font-weight: bold;
-    top: -27px;
-    left: 120px;
     width: 80px;
     text-align: center;
+    top: -27px;
 }
 p::before{
     content: "";
@@ -72,24 +77,37 @@ p::before{
     border-bottom-right-radius: 25px;
 }
 
-.Camera {
+
+.container .co {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 20px;
+    align-items: center;
+    flex-direction: row;
     position: absolute;
+    top: -42px;
+}
+.container .co .srv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 33%;
+    height: 100%;
+}
+.Camera {
     width: 15px;
     height: 15px;
     background-color: black;
     border-radius: 50%;
     box-shadow: inset 3px 3px 10px #747474;
-    top: 33px;
-    left: 660px;
 }
 .Speaker {
-    position: absolute;
     width: 70px;
     height: 10px;
     background-color: #9f7b7b;
     text-align: center;
-    top: 35px;
-    left: 732px;
     border-radius: 15px;
 }
 .Speaker span {
@@ -98,14 +116,11 @@ p::before{
     top: -9px;
 }
 .Sensor {
-    position: absolute;
     width: 25px;
     height: 10px;
     background-color: black;
     border-radius: 5px;
-    top: 35px;
     box-shadow: inset 3px 3px 10px #747474;
-    left: 820px;
 }
 .Out {
     width: 20px;
@@ -113,9 +128,8 @@ p::before{
     color: #d6c7c7;
     position: relative;
     display: block;
-    bottom: -448px;
     border: 2px solid #b2a4a4;
-    left: 36px;
+    cursor: pointer;
 }
 .out.two{
     width: 20px;
@@ -136,23 +150,21 @@ p::before{
     background-color: #f1ae40;
     border-radius: 15px;
     display: block;
-    bottom: -429px;
-    left: 127px;
     border: 1px solid #b2a4a4;
-    box-shadow:     inset 0px 1px 13px #747474;
+    box-shadow: inset 0px 1px 13px #747474;
+    cursor: pointer;
 }
 .back {
     position: relative;
     width: 26px;
     height: 14px;
     display: block;
-    bottom: -411px;
-    left: 255px;
     border: 2px solid #b2a4a4;
     border-left: none;
     border-radius: 15px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
+    cursor: pointer;
 }
 .back::before{
     content: "";
@@ -166,7 +178,22 @@ p::before{
     top: -6px;
 }
 .bottom {
-    position: relative;
-    bottom: -30px;
+    position: absolute;
+    bottom: -48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
 
+}
+
+.bottom .srv1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 33%;
+    height: 100%;
 }
