@@ -103,6 +103,18 @@ ro.classList.add("ro")
 
 }
 
+function pauseTrack(){
+    curr_track.pause();
+    isPlaying = false;
+    playPause.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
+    for(let i = 0 ; i < stroke.length ; i ++){
+        new1[i].classList.remove("stroke")
+    }
+ro.classList.remove("ro")
+
+
+}
+
 
 function nextTrack(){
    if(track_index < music_list.length - 1){
@@ -120,8 +132,8 @@ function nextTrack(){
 
 function prevTrack(){
     if( track_index > 0){
-        track_index = track_index - 1
-    } else {
+        track_index = track_index  - 1 
+    } else { 
         track_index = music_list.length  - 1
     }
     
@@ -131,17 +143,7 @@ function prevTrack(){
 
 }
 
-function pauseTrack(){
-    curr_track.pause();
-    isPlaying = false;
-    playPause.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
-    for(let i = 0 ; i < stroke.length ; i ++){
-        new1[i].classList.remove("stroke")
-    }
-ro.classList.remove("ro")
 
-
-}
 
 
 function seekTo (){
@@ -158,9 +160,9 @@ function setUpdate(){
         seek.value = seekPosition;
        
        let currentMinutes = Math.floor(curr_track.currentTime / 60)
-       let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60 )
+       let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60)
        let durationMinutes = Math.floor(curr_track.currentTime / 60)
-       let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60 )
+       let durationSeconds = Math.floor(curr_track.duration - durationMinutes  * 60)
 
        if (currentMinutes < 10 ){currentMinutes = "0" + currentMinutes}
        if(currentSeconds < 10){currentSeconds = "0" + currentSeconds}
@@ -181,12 +183,12 @@ function repeatTrack (){
 }
 
 
-function reset (){
+// function reset (){
     
-    for(let i = 0 ; i < stroke.length ; i ++){
-        new1[i].classList.toggle("stroke")
-    }
-}
+//     for(let i = 0 ; i < stroke.length ; i++){
+//         new1[i].classList.toggle("stroke")
+//     }
+// }
 
 let new1 = Array.from(stroke)
 for(let i = 0 ; i < stroke.length ; i ++){
@@ -202,20 +204,25 @@ function random_bg_color(){
 
    function populate(a){
     for(let i = 0; i < 6 ; i++) {
-        let x = Math.round(Math.random() * 14)
+        let x = Math.floor(Math.random() * 14)
+        // console.log(x)
         let y = hex[x]
         // console.log(y)
+        // console.log(Math.random() * 14)
 
         a = a + y
     }
+
+
     return a ;
    }
    let Color1 = populate('#');
    let Color2 = populate('#');
-   var angle = 'to right';
 
-   let gradient = 'linear-gradient(' + angle + ',' + Color1 + ', ' + Color2 + ")";
+
+   let gradient = 'linear-gradient(' + " to top left " + ',' + Color1 + ', ' + Color2 +  ")";
    document.body.style.background = gradient;
-//    console.log(gradient)
+   console.log(gradient)
 
 }
+

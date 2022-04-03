@@ -16,6 +16,9 @@ body{
     height: 100vh;
 
 }
+.playpause-track,.prev-track,.next-track,.repeat-track {
+    cursor: pointer;
+}
 
 .player {
     display: flex;
