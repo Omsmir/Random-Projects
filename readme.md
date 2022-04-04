@@ -1,4 +1,7 @@
-# Random-Projects
+
+![Banner](https://github.com/Omsamiir/Omsamiir/blob/main/banner/RANDOM%20PROJECTS.gif)
+
+<br>
 ![Random](https://img.shields.io/badge/Random%20Projects%20While-%20Boring%20Days%20-%23AB71E2?style=for-the-badge)
 
 | Index | Project | Tech Used |
@@ -8,6 +11,7 @@
 |   3  |[Twiiter](https://github.com/Omsamiir/Random-Projects/tree/main/21-Twitter-Clone)| ![css](https://img.icons8.com/color/48/000000/css.png) ![Html](https://github.com/Omsamiir/Omsamiir/blob/main/imgs/index.png) ![javascript](https://github.com/Omsamiir/Omsamiir/blob/main/imgs/icons8-js-48.png) |
 |   4  |[Slider](https://github.com/Omsamiir/Random-Projects/tree/main/08-Silder)|![css](https://img.icons8.com/color/48/000000/css.png) ![Html](https://github.com/Omsamiir/Omsamiir/blob/main/imgs/index.png) ![javascript](https://github.com/Omsamiir/Omsamiir/blob/main/imgs/icons8-js-48.png)|
 |   5  |[Landing](https://github.com/Omsamiir/Random-Projects/tree/main/22-Classic-Landing)| ![css](https://img.icons8.com/color/48/000000/css.png) ![Html](https://github.com/Omsamiir/Omsamiir/blob/main/imgs/index.png) ![javascript](https://github.com/Omsamiir/Omsamiir/blob/main/imgs/icons8-js-48.png)|
+
 
 <br>
 
