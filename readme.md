@@ -2,6 +2,7 @@
 ![Banner](https://github.com/Omsamiir/Omsamiir/blob/main/banner/RANDOM%20PROJECTS.gif)
 
 <br>
+
 ![Random](https://img.shields.io/badge/Random%20Projects%20While-%20Boring%20Days%20-%23AB71E2?style=for-the-badge)
 
 | Index | Project | Tech Used |
