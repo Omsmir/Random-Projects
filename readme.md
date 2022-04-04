@@ -5,7 +5,7 @@
 
 <h1 align="center">
 
-![Random](https://img.shields.io/badge/Best%20Projects%Now%20While-%20Boring%20Days%20-%23AB71E2?style=for-the-badge)
+![Random](https://img.shields.io/badge/Random%20Projects%20While-%20Boring%20Days%20-%23AB71E2?style=for-the-badge)
 
 </h1>
 
