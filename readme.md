@@ -36,7 +36,7 @@
 
 </h1>
 
-<h1 align="left">
+<h1 align="center">
 
 ![css-Art](https://img.shields.io/badge/Css-Art-%23F46C?style=for-the-badge)
 
@@ -49,6 +49,15 @@
 <a href="https://github.com/Omsamiir/Random-Projects/blob/main/11-simpson">
 
 <img src="https://github.com/Omsamiir/Random-Projects/blob/main/11-simpson/imgs/Simpson.png" width="400" >
+</a>
+
+<a href="https://github.com/Omsamiir/Random-Projects/blob/main/03-Samsung/">
+
+<img src="https://github.com/Omsamiir/Random-Projects/blob/main/03-Samsung/img/Samsung.jpg" width="400" height="500px">
+</a>
+<a href="https://github.com/Omsamiir/Random-Projects/tree/main/05-AmongUs">
+
+<img src="https://github.com/Omsamiir/Random-Projects/tree/main/05-AmongUs/img/Amongus.jpg" width="400" height="500px">
 </a>
 
 
