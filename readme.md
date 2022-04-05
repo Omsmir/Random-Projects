@@ -1,5 +1,5 @@
 
-![Banner](https://github.com/Omsamiir/Omsamiir/blob/main/banner/RANDOM%20PROJECTS.gif)
+![Random-Project-Banner](https://github.com/Omsamiir/Omsamiir/blob/main/banner/RANDOM%20PROJECTS.gif)
 
 <br>
 
