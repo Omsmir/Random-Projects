@@ -92,11 +92,11 @@
 
 </h1>
 
-<h3 align='center'>To Do List With a Todo and Done Sections</h3>
+<h4 align='left'>To Do List With a Todo and Done Sections</h4>
 
-<a href="https://github.com/Omsamiir/Random-Projects/blob/main/17-To-Do-List/" align="center">
+<a href="https://github.com/Omsamiir/Random-Projects/blob/main/17-To-Do-List/" >
 
-<img src="https://github.com/Omsamiir/Random-Projects/blob/main/17-To-Do-List/imgs/todo.gif" align="center" width="400">
+<img src="https://github.com/Omsamiir/Random-Projects/blob/main/17-To-Do-List/imgs/todo.gif" width="400">
 
 
 </a>
