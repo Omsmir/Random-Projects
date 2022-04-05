@@ -36,18 +36,19 @@
 
 </h1>
 
-<a href="https://github.com/Omsamiir/Random-Projects/"><h1 align="left">
+<h1 align="left">
 
-![Among-us](https://img.shields.io/badge/Among-Us-%23F46C?style=for-the-badge)
+![css-Art](https://img.shields.io/badge/Css-Art-%23F46C?style=for-the-badge)
 
 </h1>
+<a href="https://github.com/Omsamiir/Random-Projects/blob/main/06-AmongUs-orange">
 
-<img src="https://github.com/Omsamiir/Random-Projects/blob/main/06-AmongUs-orange/img/Among-us.jpg" width="300" >
+<img src="https://github.com/Omsamiir/Random-Projects/blob/main/06-AmongUs-orange/img/Among-us.jpg" width="400" >
 </a>
 
-<a href="https://github.com/Omsamiir/Random-Projects/">
+<a href="https://github.com/Omsamiir/Random-Projects/blob/main/11-simpson">
 
-<img src="https://github.com/Omsamiir/Random-Projects/blob/main/06-AmongUs-orange/img/Among-us.jpg" width="300" >
+<img src="https://github.com/Omsamiir/Random-Projects/blob/main/11-simpson/imgs/Simpson.png" width="400" >
 </a>
 
 
