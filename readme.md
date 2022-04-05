@@ -43,7 +43,7 @@
 </h1>
 <a href="https://github.com/Omsamiir/Random-Projects/blob/main/06-AmongUs-orange">
 
-<img src="https://github.com/Omsamiir/Random-Projects/blob/main/06-AmongUs-orange/img/Among-us.jpg" width="400" >
+<img src="https://github.com/Omsamiir/Random-Projects/blob/main/06-AmongUs-orange/img/Among-us.jpg" width="400" height="500px">
 </a>
 
 <a href="https://github.com/Omsamiir/Random-Projects/blob/main/11-simpson">
