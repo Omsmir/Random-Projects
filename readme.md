@@ -57,7 +57,7 @@
 </a>
 <a href="https://github.com/Omsamiir/Random-Projects/tree/main/05-AmongUs">
 
-<img src="https://github.com/Omsamiir/Random-Projects/tree/main/05-AmongUs/img/Among.jpg" width="400" height="500px">
+<img src="https://github.com/Omsamiir/Random-Projects/blob/main/05-AmongUs/img/Among.jpg" width="400" height="500px">
 </a>
 
 
