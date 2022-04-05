@@ -36,7 +36,7 @@
 
 </h1>
 
-<a href="https://github.com/Omsamiir/Random-Projects/"><h1 align="left">
+<a href="https://github.com/Omsamiir/Random-Projects/"><h1 align="center">
 
 ![Among-us](https://img.shields.io/badge/Among-Us-%23F46C?style=for-the-badge)
 
