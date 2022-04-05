@@ -91,8 +91,7 @@
 ![Javascript-Tutorials](https://img.shields.io/badge/Javascript-Tutorials-%23e1e?style=for-the-badge)
 
 </h1>
-
-<h4 align='right'>Music Player With Colorful Styles</h4><h4 align="left">To Do List With a Todo and Done Sections </h4>
+<h4 align="left">To Do List With a Todo and Done Sections      &&      Music Player With Colorful Styles</h4>
 
 <a href="https://github.com/Omsamiir/Random-Projects/blob/main/17-To-Do-List/" >
 
