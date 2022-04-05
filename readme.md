@@ -35,14 +35,21 @@
 ![Photos](https://img.shields.io/badge/Projects-Shortcuts-%23F46DB0?style=for-the-badge)
 
 </h1>
-<p align="center">
+<h1 align="left">
 
 ![Among-us](https://img.shields.io/badge/Among-Us-%23F46C?style=for-the-badge)
 
-</p>
+</h1>
 
 <img src="https://github.com/Omsamiir/Random-Projects/blob/main/06-AmongUs-orange/img/Among-us.jpg" width="440" height="340">
 
+<h1 align="right">
+
+![Among-us](https://img.shields.io/badge/Among-Us-%23F46C?style=for-the-badge)
+
+</h1>
+
+<img src="https://github.com/Omsamiir/Random-Projects/blob/main/06-AmongUs-orange/img/Among-us.jpg" width="440" height="340">
 
 
 <h1 align="center"> 
