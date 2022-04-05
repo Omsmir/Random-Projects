@@ -2,7 +2,21 @@ let circle = document.querySelector(".container .circle")
 let span = document.querySelector(".circle span")
 let icon = document.querySelectorAll(".icon")
 let p = document.querySelectorAll("p")
+// var before = window.getComputedStyle(document.querySelector('.container .circle'), ':before').getPropertyValue('Box-shadow') 
 
+
+
+const color = document.styleSheets[0].cssRules[1].style.backgroundColor ;
+
+// console.log(color)
+
+if(color){
+
+    circle.style.backgroundColor = color;
+    document.styleSheets[0].cssRules[9].style.boxShadow = `5px -11px 0 ${color}`
+    document.styleSheets[0].cssRules[10].style.boxShadow = `-4px -11px 0 ${color}`
+
+}
 icon[0].onclick = function (){
     circle.style.transform = "translateX(0px)"
     icon.forEach((ele) => {
@@ -16,7 +30,6 @@ icon[0].onclick = function (){
     p[0].style.display = "flex"
     
 
-    
 
 }
 
@@ -69,8 +82,5 @@ icon[4].onclick = function (){
         ele.style.display = "none"
     })
     p[4].style.display = "flex"
-
 }
-
-
 
