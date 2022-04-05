@@ -44,12 +44,12 @@
 
 <img src="https://github.com/Omsamiir/Random-Projects/blob/main/06-AmongUs-orange/img/Among-us.jpg" width="300" >
 </a>
-
-<a href="https://github.com/Omsamiir/Random-Projects/"><h1 align="right">
+<h1 align="right">
 
 ![Among-us](https://img.shields.io/badge/Among-Us-%23F46C?style=for-the-badge)
 
 </h1>
+<a href="https://github.com/Omsamiir/Random-Projects/">
 
 <img src="https://github.com/Omsamiir/Random-Projects/blob/main/06-AmongUs-orange/img/Among-us.jpg" width="300" >
 </a>
