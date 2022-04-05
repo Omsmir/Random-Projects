@@ -101,6 +101,14 @@
 
 </a>
 
+<h4 align='right'>Music Player With Colorful Styles</h4>
+
+<a href="https://github.com/Omsamiir/Random-Projects/blob/main/24-Music/" >
+
+<img src="https://github.com/Omsamiir/Random-Projects/blob/main/24-Music/imgs/music.gif" width="400">
+
+
+</a>
 
 <h1 align="center"> 
 
