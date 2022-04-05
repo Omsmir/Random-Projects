@@ -59,7 +59,17 @@
 
 <img src="https://github.com/Omsamiir/Random-Projects/blob/main/05-AmongUs/img/Among.jpg" width="400" height="500px">
 </a>
+<h1 align="center">
 
+![Classic-Designs](https://img.shields.io/badge/Classic-Designs-%23e16e?style=for-the-badge)
+
+</h1>
+
+<a href="https://github.com/Omsamiir/Random-Projects/blob/main/22-Classic-Landing/">
+
+![Classic-menu](https://github.com/Omsamiir/Random-Projects/blob/main/22-Classic-Landing/imgs/Classic.gif)
+
+</a>
 
 
 <h1 align="center"> 
