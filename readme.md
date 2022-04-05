@@ -41,7 +41,7 @@
 
 </p>
 
-<img src="https://github.com/Omsamiir/Random-Projects/blob/main/06-AmongUs-orange/img/Among-us.jpg" width="340" height="340">
+<img src="https://github.com/Omsamiir/Random-Projects/blob/main/06-AmongUs-orange/img/Among-us.jpg" width="440" height="340">
 
 
 
