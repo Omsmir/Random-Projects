@@ -84,7 +84,9 @@ body {
     border-top: 5px solid green;
 }
 
-.todo .text {
+
+
+.todo .text,.tasks .done .text {
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -94,10 +96,13 @@ body {
     height: 45px;
     padding-bottom: 0;
 }
+.tasks .done .text:last-of-type {
+    margin-bottom: 10px;
+}
 .todo .text:last-of-type {
     margin-bottom: 10px;
 }
-.todo .text  p {
+.todo .text  p,.tasks .done p {
     display: flex;
     align-items: center;
     background-color: white;
@@ -108,6 +113,23 @@ body {
     border: 1px solid rgb(224, 208, 208);
 }
 
+.done .button {
+    width: 20%;
+    height: 35px;
+    margin-left: 15px;
+    background-color: green;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right:5px ;
+    transition: .15s cubic-bezier(.17,.67,.29,2.71) 0s;
+}
 .todo .text .button {
     width: 20%;
     height: 35px;
@@ -123,4 +145,17 @@ body {
     cursor: pointer;
     padding-left: 5px;
     padding-right:5px ;
+    transition: .15s cubic-bezier(.17,.67,.29,2.71) 0s;
+}
+ .done .text .button:hover {
+    transform: scale(1.020);
+    background-color: rgb(12, 110, 12);
+
+
+}
+.todo .text .button:hover {
+    transform: scale(1.020);
+    background-color: #a01414;
+
+
 }
