@@ -65,18 +65,21 @@
 
 </h1>
 
+<h3 align="center">Twitter UI With Interactive Functions </h3>
+
 <a href="https://github.com/Omsamiir/Random-Projects/blob/main/21-Twitter-Clone/">
 
 ![Classic-menu](https://github.com/Omsamiir/Random-Projects/blob/main/21-Twitter-Clone/imgs/Classic.gif)
 
 </a>
+<h3 align="center">A Classic Landing UI  With a Special Backgrounds And Gradients That Give The UI  a Great Style  </h3>
 
 <a href="https://github.com/Omsamiir/Random-Projects/blob/main/22-Classic-Landing/">
 
 ![Classic-menu](https://github.com/Omsamiir/Random-Projects/blob/main/22-Classic-Landing/imgs/Classic.gif)
 
 </a>
-
+<h3 align="center">A Classic Adidas Shoes Animated Purchase Card With a Gradient Colors Give It A Special Look</h3>
 <a href="https://github.com/Omsamiir/Random-Projects/blob/main/23-ClassicC/">
 
 ![Classic-menu](https://github.com/Omsamiir/Random-Projects/blob/main/23-ClassicC/imgs/Classic.gif)
