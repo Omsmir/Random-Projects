@@ -43,11 +43,6 @@
 
 <img src="https://github.com/Omsamiir/Random-Projects/blob/main/06-AmongUs-orange/img/Among-us.jpg" width="440" height="340">
 
-<h1 align="right">
-
-![Among-us](https://img.shields.io/badge/Among-Us-%23F46C?style=for-the-badge)
-
-</h1>
 
 <img src="https://github.com/Omsamiir/Random-Projects/blob/main/06-AmongUs-orange/img/Among-us.jpg" width="440" height="340">
 
