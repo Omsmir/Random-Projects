@@ -86,6 +86,20 @@
 
 </a>
 
+<h1 align="center">
+
+![Javascript-Tutorials](https://img.shields.io/badge/Javascript-Tutorials-%23e1e?style=for-the-badge)
+
+</h1>
+
+<h3 align='center'>To Do List With a Todo and Done Sections</h3>
+
+<a href="https://github.com/Omsamiir/Random-Projects/blob/main/17-To-Do-List/">
+
+<img src="https://github.com/Omsamiir/Random-Projects/blob/main/17-To-Do-List/imgs/todo.gif" width="400">
+
+
+</a>
 
 
 <h1 align="center"> 
