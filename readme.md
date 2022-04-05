@@ -28,11 +28,15 @@
 
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 <br>
-## Photos Of Some Projects
-<img src="https://github.com/Omsamiir/Random-Projects/blob/main/10-Card/imgs/Screenshot_18.jpg" width="340" height="340" alt="Card" style="border-radius: 25%"/>
 
 
+<h1 align="center"> 
 
+![Photos](https://img.shields.io/badge/Projects-Shortcuts-%23F46DB0?style=for-the-badge)
+
+</h1>
+
+![Among-Us](https://github.com/Omsamiir/Random-Projects/blob/main/06-AmongUs-orange/img/Among-us.jpg)
 
 
 <h1 align="center"> 
