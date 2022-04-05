@@ -109,6 +109,14 @@
 
 </a>
 
+<h4 align="center">Interactive Classic Nav Menu</h4>
+
+<a href="https://github.com/Omsamiir/Random-Projects/blob/main/26-Classic-Menu/" >
+
+<img src="https://github.com/Omsamiir/Random-Projects/blob/main/26-Classic-Menu/img/Classic-Menu.jpg" width="400">
+
+
+</a>
 <h1 align="center"> 
 
 ![Social-Links](https://img.shields.io/badge/Social-Links-%23F46DB0?style=for-the-badge)
