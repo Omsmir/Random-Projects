@@ -65,11 +65,24 @@
 
 </h1>
 
+<a href="https://github.com/Omsamiir/Random-Projects/blob/main/21-Twitter-Clone/">
+
+![Classic-menu](https://github.com/Omsamiir/Random-Projects/blob/main/21-Twitter-Clone//imgs/Classic.gif)
+
+</a>
+
 <a href="https://github.com/Omsamiir/Random-Projects/blob/main/22-Classic-Landing/">
 
 ![Classic-menu](https://github.com/Omsamiir/Random-Projects/blob/main/22-Classic-Landing/imgs/Classic.gif)
 
 </a>
+
+<a href="https://github.com/Omsamiir/Random-Projects/blob/main/23-ClassicC/">
+
+![Classic-menu](https://github.com/Omsamiir/Random-Projects/blob/main/23-ClassicC/imgs/Classic.gif)
+
+</a>
+
 
 
 <h1 align="center"> 
