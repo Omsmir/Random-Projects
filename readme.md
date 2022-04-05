@@ -67,7 +67,7 @@
 
 <a href="https://github.com/Omsamiir/Random-Projects/blob/main/21-Twitter-Clone/">
 
-![Classic-menu](https://github.com/Omsamiir/Random-Projects/blob/main/21-Twitter-Clone//imgs/Classi.gif)
+![Classic-menu](https://github.com/Omsamiir/Random-Projects/blob/main/21-Twitter-Clone//imgs/Classic.gif)
 
 </a>
 
