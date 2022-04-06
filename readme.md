@@ -122,7 +122,7 @@
 
 <a href="https://github.com/Omsamiir/Random-Projects/blob/main/08-Slider/" >
 
-![Slider](https://github.com/Omsamiir/Random-Projects/blob/main/08-Slider/imgs/Slider.gof)
+![Slider](https://github.com/Omsamiir/Random-Projects/blob/main/08-Slider/imgs/Slider.gif)
 
 
 </a>
