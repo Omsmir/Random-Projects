@@ -120,7 +120,7 @@
 
 <h4 align="center">Simple Slider For Begginers To Learn Array Method In Practice</h4>
 
-<a href="https://github.com/Omsamiir/Random-Projects/blob/main/08-Slider/" >
+<a href="https://github.com/Omsamiir/Random-Projects/blob/main/0-Slider/" >
 
 ![Slider](https://github.com/Omsamiir/Random-Projects/blob/main/08-Slider/imgs/Slider.gif)
 
