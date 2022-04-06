@@ -109,7 +109,7 @@
 
 </a>
 
-<h4 align="center">Interactive Classic Nav Menu</h4>
+<h4 align="center">Interactive Classic Nav Menu &&  Simple Slider For Beginners To Learn Array Method In Practice mode</h4>
 
 <a href="https://github.com/Omsamiir/Random-Projects/blob/main/26-Classic-Menu/" >
 
@@ -118,11 +118,10 @@
 
 </a>
 
-<h4 align="center">Simple Slider For Begginers To Learn Array Method In Practice</h4>
 
-<a href="https://github.com/Omsamiir/Random-Projects/blob/main/0-Slider/" >
+<a href="https://github.com/Omsamiir/Random-Projects/blob/main/08-Slider/" >
 
-![Slider](https://github.com/Omsamiir/Random-Projects/blob/main/08-Slider/imgs/Slider.gif)
+<img src="https://github.com/Omsamiir/Random-Projects/blob/main/08-Slider/imgs/Slider.jpg" width="400">
 
 
 </a>
