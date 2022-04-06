@@ -117,6 +117,16 @@
 
 
 </a>
+
+<h4 align="center">Simple Slider For Begginers To Learn Array Method In Practice</h4>
+
+<a href="https://github.com/Omsamiir/Random-Projects/blob/main/08-Slider/" >
+
+![Slider](https://github.com/Omsamiir/Random-Projects/blob/main/08-Slider/imgs/Slider.gof)
+
+
+</a>
+
 <h1 align="center"> 
 
 ![Social-Links](https://img.shields.io/badge/Social-Links-%23F46DB0?style=for-the-badge)
