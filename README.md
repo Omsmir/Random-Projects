@@ -1,0 +1,1 @@
+-[Random-Projects-Has-GNU-License]
