@@ -121,7 +121,7 @@
 
 <a href="https://github.com/Omsamiir/Random-Projects/blob/main/08-Slider/" >
 
-<img src="https://github.com/Omsamiir/Random-Projects/blob/main/08-Slider/imgs/Slider.gif" width="400">
+<img src="https://github.com/Omsamiir/Random-Projects/blob/main/08-Slider/imgs/Slider.gif" width="400px">
 
 
 </a>
