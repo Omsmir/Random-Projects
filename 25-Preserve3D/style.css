@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container {
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transform: rotate3d(1,1,1,30deg);
+    margin: 50px auto;
+    transition: transform 1.9s;
+    /* animation: rotate 2.5s ease-in-out infinite alternate; */
+
+}
+
+.container:hover , .container:focus {  
+          /**X*Y*Z*S***/
+          transform:  rotate3d(0,1,0,250deg) rotate3d(1,1,1,-15deg) matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,50,50,0,1);
+
+}
+
+@keyframes rotate{
+    from {
+        transform: rotate3d(1,1,1,15deg);
+
+     }
+    to{
+        transform:  rotate3d(0,1,0,270deg) rotate3d(1,1,1,-15deg) matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,50,50,0,1);
+
+    }
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: inherit;
+    font-size: 60px;
+    color: #fff;
+}
+
+.front {
+    background: rgba(90,90,90,.7);
+    transform: translateZ(100px) ;
+
+}
+
+
+.back {
+    background: rgba(0,210,0,.7);
+    transform: rotateY(90deg) translateZ(100px);
+
+}
+
+.right {
+    background: rgba(210, 207, 0, 0.7);
+    transform: rotateY(180deg) translateZ(100px);
+
+}
+
+
+.left {
+    background: rgba(128, 2, 71, 0.7);
+    transform: rotateY(-90deg) translateZ(100px) ;
+
+}
+.top {
+    background: rgba(194, 59, 35, 0.7);
+    transform: rotatex(90deg) translatez(100px);
+}
+
+.bottom {
+    background: rgba(13, 9, 212, 0.7);
+    transform: rotatex(90deg) translatez(-100px);
+}
