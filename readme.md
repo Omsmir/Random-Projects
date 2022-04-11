@@ -41,17 +41,17 @@
 ![css-Art](https://img.shields.io/badge/Css-Art-%23F46C?style=for-the-badge)
 
 </h1>
-<a href="https://github.com/Omsamiir/Random-Projects/blob/main/06-AmongUs-orange">
+<a href="https://github.com/Omsamiir/Random-Projects/tree/main/06-AmongUs-orange">
 
 <img src="https://github.com/Omsamiir/Random-Projects/blob/main/06-AmongUs-orange/img/Among-us.jpg" width="400" height="500px">
 </a>
 
-<a href="https://github.com/Omsamiir/Random-Projects/blob/main/11-simpson">
+<a href="https://github.com/Omsamiir/Random-Projects/tree/main/11-simpson">
 
 <img src="https://github.com/Omsamiir/Random-Projects/blob/main/11-simpson/imgs/Simpson.png" width="400" >
 </a>
 
-<a href="https://github.com/Omsamiir/Random-Projects/blob/main/03-Samsung/">
+<a href="https://github.com/Omsamiir/Random-Projects/tree/main/03-Samsung/">
 
 <img src="https://github.com/Omsamiir/Random-Projects/blob/main/03-Samsung/img/Samsung1.jpg" width="400" height="500px">
 </a>
@@ -67,20 +67,20 @@
 
 <h3 align="center">Twitter UI With Interactive Functions </h3>
 
-<a href="https://github.com/Omsamiir/Random-Projects/blob/main/21-Twitter-Clone/">
+<a href="https://github.com/Omsamiir/Random-Projects/tree/main/21-Twitter-Clone/">
 
 ![Classic-menu](https://github.com/Omsamiir/Random-Projects/blob/main/21-Twitter-Clone/imgs/Classic.gif)
 
 </a>
 <h3 align="center">A Classic Landing UI  With a Special Backgrounds And Gradients That Give The UI  a Great Style  </h3>
 
-<a href="https://github.com/Omsamiir/Random-Projects/blob/main/22-Classic-Landing/">
+<a href="https://github.com/Omsamiir/Random-Projects/tree/main/22-Classic-Landing/">
 
 ![Classic-menu](https://github.com/Omsamiir/Random-Projects/blob/main/22-Classic-Landing/imgs/Classic.gif)
 
 </a>
 <h3 align="center">A Classic Adidas Shoes Animated Purchase Card With a Gradient Colors Give It A Special Look</h3>
-<a href="https://github.com/Omsamiir/Random-Projects/blob/main/23-ClassicC/">
+<a href="https://github.com/Omsamiir/Random-Projects/tree/main/23-ClassicC/">
 
 ![Classic-menu](https://github.com/Omsamiir/Random-Projects/blob/main/23-ClassicC/imgs/Classic.gif)
 
@@ -93,7 +93,7 @@
 </h1>
 <h4 align="center">To Do List With a Todo and Done Sections      &&      Music Player With Colorful Styles</h4>
 
-<a href="https://github.com/Omsamiir/Random-Projects/blob/main/17-To-Do-List/" >
+<a href="https://github.com/Omsamiir/Random-Projects/tree/main/17-To-Do-List/" >
 
 <img src="https://github.com/Omsamiir/Random-Projects/blob/main/17-To-Do-List/imgs/todo.gif" width="400">
 
@@ -102,7 +102,7 @@
 
 
 
-<a href="https://github.com/Omsamiir/Random-Projects/blob/main/24-Music/" >
+<a href="https://github.com/Omsamiir/Random-Projects/tree/main/24-Music/" >
 
 <img src="https://github.com/Omsamiir/Random-Projects/blob/main/24-Music/imgs/music.gif" width="400">
 
@@ -111,7 +111,7 @@
 
 <h4 align="center">Interactive Classic Nav Menu &&  Simple Slider For Beginners To Learn Array Method In Practice mode</h4>
 
-<a href="https://github.com/Omsamiir/Random-Projects/blob/main/26-Classic-Menu/" >
+<a href="https://github.com/Omsamiir/Random-Projects/tree/main/26-Classic-Menu/" >
 
 <img src="https://github.com/Omsamiir/Random-Projects/blob/main/26-Classic-Menu/img/Classic-Menu.jpg" width="400">
 
@@ -119,7 +119,7 @@
 </a>
 
 
-<a href="https://github.com/Omsamiir/Random-Projects/blob/main/08-Slider/" >
+<a href="https://github.com/Omsamiir/Random-Projects/tree/main/08-Slider/" >
 
 <img src="https://github.com/Omsamiir/Random-Projects/blob/main/08-Slider/imgs/Slider.gif" width="400px">
 
