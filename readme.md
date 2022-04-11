@@ -130,7 +130,7 @@
 
 <a href="https://github.com/Omsamiir/Random-Projects/tree/main/25-Preserve3D" >
 
-<img src="https://github.com/Omsamiir/Random-Projects/tree/main/25-Preserve3D/imgs/Preserve3D.gif/">
+<img src="https://github.com/Omsamiir/Random-Projects/blob/main/25-Preserve3D/gif/Preserve3D.gif">
 
 
 </a>
