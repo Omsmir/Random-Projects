@@ -14,6 +14,7 @@ body {
     margin: 50px auto;
     transition: transform 1.9s;
     animation: rotate 9s ease-in-out both infinite alternate;
+    user-select: none;
 
 }
 /* 
@@ -36,8 +37,6 @@ body {
      }
     to{
         transform: rotate3d(1,1,0 ,240deg);
-
-
     }
   
 }
@@ -170,21 +169,21 @@ body {
 }
 .Triangle-4 {
     background-color:rgba(40, 173, 80, 0.7);
-    transform: rotateY(-135deg) translatez(183px) translateY(180px) rotateX(145deg);
+    transform: rotateY(-135deg) translatez(184px) translateY(180px) rotateX(145deg);
     clip-path: polygon(50% 13%, 0% 100%, 100% 100%);
 }
 .Triangle-5 {
     background-color:rgba(40, 173, 80, 0.7);
-    transform: rotateY(135deg) translatez(183px) translateY(180px) rotateX(145deg);
+    transform: rotateY(135deg) translatez(184px) translateY(180px) rotateX(145deg);
     clip-path: polygon(50% 13%, 0% 100%, 100% 100%);
 }
 .Triangle-6 {
     background-color:rgba(40, 173, 80, 0.7);
-    transform: rotateY(45deg) translatez(183px) translateY(180px) rotateX(145deg);
+    transform: rotateY(45deg) translatez(184px) translateY(180px) rotateX(145deg);
     clip-path: polygon(50% 13%, 0% 100%, 100% 100%);
 }
 .Triangle-7 {
     background-color:rgba(40, 173, 80, 0.7);
-    transform: rotateY(-45deg) translatez(183px) translateY(180px) rotateX(145deg);
+    transform: rotateY(-45deg) translatez(184px) translateY(180px) rotateX(145deg);
     clip-path: polygon(50% 13%, 0% 100%, 100% 100%);
 }
