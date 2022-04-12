@@ -1,10 +1,22 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    display: grid;
+    height: 96.5vh;
+    place-items: center;
 }
 
+.header {
+    height: 50px;
+    margin: 25px auto;
+    position: absolute;
+    font-size: 15px;
+    font-weight: bolder;
+    top: -15px;
+    background-color: #eee;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    border-radius: 15px;
+}
 
 .container {
     width: 200px;
@@ -40,7 +52,6 @@ body {
     }
   
 }
-
 .face {
     position: absolute;
     width: 100%;
@@ -51,139 +62,143 @@ body {
     backface-visibility: inherit;
     font-size: 60px;
     color: #fff;
+    transition: 0.3s ease-in-out;
+    background-color: rgba(52, 26, 84, 0.7) ;
+    border: 1px solid black;
 }
 
+
 .front {
-    background: rgba(210, 207, 0, 0.7);
-    transform: translateZ(240px) rotateY(0deg)
-    ;
+    /* background: rgba(210, 207, 0, 0.7); */
+    transform: translateZ(240px) rotateY(0deg);
 
 }
 
 
 .back {
-    background: rgba(210, 207, 0, 0.7);
+    /* background: rgba(210, 207, 0, 0.7); */
     transform:rotateY(180deg) translateZ(240px);
-
 }
 
 .right {
-    background: rgba(210, 207, 0, 0.7);
+    /* background: rgba(210, 207, 0, 0.7); */
     transform: rotateY(135deg) translateZ(240px);
 }
 .right-1 {
-    background: rgba(210, 207, 0, 0.7);
+    /* background: rgba(210, 207, 0, 0.7); */
     transform: rotateY(-135deg) translateZ(240px);
 
 }
 
 
 .left {
-    background: rgba(210, 207, 0, 0.7);
+    /* background: rgba(210, 207, 0, 0.7); */
     transform: rotateY(-135deg) translateZ(-240px);
 
 }
 .left-1 {
-    background: rgba(210, 207, 0, 0.7);
+    /* background: rgba(210, 207, 0, 0.7); */
     transform: rotateY(135deg) translateZ(-240px);
 
 }
 .top {
-    background: rgba(210, 207, 0, 0.7);
+    /* background: rgba(210, 207, 0, 0.7); */
     transform: rotateY(90deg) translatez(240px);
+    transition: 0.3s ease-in-out;
 }
 .top-1 {
-    background: rgba(210, 207, 0, 0.7);
-    transform: rotateY(-90deg) translatez(240px);
+    /* background: rgba(210, 207, 0, 0.7); */
+    transform: rotateY(-90deg)  translatez(240px);
 }
 
 .bottom {
-    background: rgba(173, 40, 149, 0.7);
-    transform: rotatex(90deg) translatez(-240px);
+    /* background: rgba(173, 40, 149, 0.7); */
+    transform: rotatex(90deg) scale(-1 , 1) translatez(-240px);
 }
 .bottom-1 {
-    background: rgba(173, 40, 149, 0.7);
-    transform: rotatex(-90deg) translatez(-240px);
+    /* background: rgba(173, 40, 149, 0.7); */
+    transform: rotatex(-90deg) scaleY(-1)  translatez(-240px);
 }
 .double-front {
-    background: rgba(173, 40, 149, 0.7);
-    transform: rotatex(45deg) translatez(-240px);
+    /* background: rgba(173, 40, 149, 0.7); */
+    transform: rotatex(45deg) scaleY(-1)  translatez(-240px);
 }
 .double-back {
-    background: rgba(173, 40, 149, 0.7);
-    transform: rotatex(-45deg) translatez(-240px);
+    /* background: rgba(173, 40, 149, 0.7); */
+    transform: rotatex(-45deg) scaleY(-1)  translatez(-240px);
 
 }
 
 .double-right {
-    background: rgba(173, 40, 149, 0.7);
-    transform: rotatex(135deg) translatez(-240px);
+    /* background: rgba(173, 40, 149, 0.7); */
+    transform: rotatex(135deg) scaleY(-1)  translatez(-240px);
 
 }
 .double-left {
-    background: rgba(173, 40, 149, 0.7);
-    transform: rotatex(-135deg) translatez(-240px);
+    /* background: rgba(173, 40, 149, 0.7); */
+    transform: rotatex(-135deg) scaleY(-1)  translatez(-240px);
 
 }
 .double-top {
-    background: rgba(173, 40, 149, 0.7);
-    transform: rotateY(90deg) rotateX(45deg) translatez(-240px);
+    /* background: rgba(173, 40, 149, 0.7); */
+    transform: rotateY(90deg) rotateX(45deg) scaleY(-1)  translatez(-240px);
 
 }
 .double-bottom {
-    background: rgba(173, 40, 149, 0.7);
-    transform: rotateY(-90deg) rotatex(45deg) translatez(-240px);
+    /* background: rgba(173, 40, 149, 0.7); */
+    transform: rotateY(-90deg) rotatex(45deg) scaleY(-1) translatez(-240px);
 
 }
 .double-right-1 {
-    background: rgba(173, 40, 149, 0.7);
+    /* background: rgba(173, 40, 149, 0.7); */
     transform: rotateY(90deg) rotateX(-45deg) translatez(-240px);
 
 }
 .double-left-1 {
-    background: rgba(173, 40, 149, 0.7);
-    transform: rotateY(-90deg) rotatex(-45deg) translatez(-240px);
+    /* background: rgba(173, 40, 149, 0.7); */
+    transform: rotateY(-90deg) rotatex(-45deg) scaleX(-1)  translatez(-240px);
+    transition: 0.3s ease-in-out;
 
 }
 
 .Triangle {
-    background-color:rgba(40, 173, 80, 0.7);
+    /* background-color:rgba(40, 173, 80, 0.7); */
     transform: rotateY(45deg) translatez(184px) translateY(-180px) rotateX(35deg);
     clip-path: polygon(50% 13%, 0% 100%, 100% 100%);
 }
 
 .Triangle-1 {
-    background-color:rgba(40, 173, 80, 0.7);
+    /* background-color:rgba(40, 173, 80, 0.7); */
     transform: rotateY(-45deg) translatez(184px) translateY(-180px) rotateX(35deg);
     clip-path: polygon(50% 13%, 0% 100%, 100% 100%);
 }
 .Triangle-2 {
-    background-color:rgba(40, 173, 80, 0.7);
+    /* background-color:rgba(40, 173, 80, 0.7); */
     transform: rotateY(135deg) translatez(184px) translateY(-180px) rotateX(35deg);
     clip-path: polygon(50% 13%, 0% 100%, 100% 100%);
 }
 .Triangle-3 {
-    background-color:rgba(40, 173, 80, 0.7);
+    /* background-color:rgba(40, 173, 80, 0.7); */
     transform: rotateY(-135deg) translatez(184px) translateY(-180px) rotateX(35deg);
     clip-path: polygon(50% 13%, 0% 100%, 100% 100%);
 }
 .Triangle-4 {
-    background-color:rgba(40, 173, 80, 0.7);
-    transform: rotateY(-135deg) translatez(184px) translateY(180px) rotateX(145deg);
+    /* background-color:rgba(40, 173, 80, 0.7); */
+    transform: rotateY(-135deg) translatez(184px) scaleX(-1) translateY(180px) rotateX(145deg);
     clip-path: polygon(50% 13%, 0% 100%, 100% 100%);
 }
 .Triangle-5 {
-    background-color:rgba(40, 173, 80, 0.7);
-    transform: rotateY(135deg) translatez(184px) translateY(180px) rotateX(145deg);
+    /* background-color:rgba(40, 173, 80, 0.7); */
+    transform: rotateY(135deg) translatez(184px) scaleX(-1) translateY(180px) rotateX(145deg);
     clip-path: polygon(50% 13%, 0% 100%, 100% 100%);
 }
 .Triangle-6 {
-    background-color:rgba(40, 173, 80, 0.7);
-    transform: rotateY(45deg) translatez(184px) translateY(180px) rotateX(145deg);
+    /* background-color:rgba(40, 173, 80, 0.7); */
+    transform: rotateY(45deg) translatez(184px) scalex(-1) translateY(180px) rotateX(145deg);
     clip-path: polygon(50% 13%, 0% 100%, 100% 100%);
 }
 .Triangle-7 {
-    background-color:rgba(40, 173, 80, 0.7);
-    transform: rotateY(-45deg) translatez(184px) translateY(180px) rotateX(145deg);
+    /* background-color:rgba(40, 173, 80, 0.7); */
+    transform: rotateY(-45deg) translatez(184px) scaleX(-1) translateY(180px) rotateX(145deg);
     clip-path: polygon(50% 13%, 0% 100%, 100% 100%);
 }
