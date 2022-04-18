@@ -69,7 +69,6 @@ body {
 
 
 .front {
-    /* background: rgba(210, 207, 0, 0.7); */
     transform: translateZ(240px) rotateY(0deg);
 
 }

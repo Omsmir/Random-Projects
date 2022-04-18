@@ -23,7 +23,8 @@ function generate(start ,end){
 generate(1,255)
     function populate(a){
         for(let i = 0; i < 1 ; i++) {
-            let x = Math.floor(Math.random() * 254)
+            let x = Math.floor(Math.random() * 188)
+            console.log(x)
             let y = num[x] 
              a = a + y 
         }
@@ -31,15 +32,15 @@ generate(1,255)
 }
 function populate1(a){
     for(let i = 0; i < 1 ; i++) {
-        let x = Math.floor(Math.random() * 33)
+        let x = Math.floor(Math.random() * 188)
         let y = num[x] 
          a = a + y 
     }
     return a
 }
 function populate2(a){
-    for(let i = 0; i < 2 ; i++) {
-        let x = Math.floor(Math.random() * 7)
+    for(let i = 0; i < 1 ; i++) {
+        let x = Math.floor(Math.random() * 23)
         let y = num[x] 
          a = a + y 
     }
