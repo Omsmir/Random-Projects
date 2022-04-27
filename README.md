@@ -10,7 +10,7 @@ Bootstrap Tutorials Is a Branch From The Origin Main Random-projects Repository
 
 </h1>
 
-<h3 align="center">Animated Bootstrap5 Teamwork Design</h3>
+<h5 align="center">Responsive Animated Teamwork Design</h3>
 
 <a href="https://github.com/Omsamiir/Random-Projects/tree/Bootstrap/01-SBootstrap">
 
