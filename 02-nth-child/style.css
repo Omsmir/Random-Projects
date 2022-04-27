@@ -17,7 +17,7 @@ body{
     align-items: center;
     margin: 25px auto;
         margin-top: 25px;
-    border: 7px solid black;
+    border: 7px solid #000;
     border-radius: 25px;
     top: 50%;
     position: absolute;
