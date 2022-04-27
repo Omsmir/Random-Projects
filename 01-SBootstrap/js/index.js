@@ -9,38 +9,34 @@ let over = document.querySelector(".overlay-1")
 let Bullets = document.querySelector(".navbar-nav").querySelectorAll("li a")
 let row = document.querySelector("section[id='projects'] .container-fluid .row")
 let btn = document.querySelector(".Main-Btn")
+let home = document.getElementById("Home")
+let form = document.querySelector("input[name='name']")
 
 
 
 li.forEach((ele) => {
     ele.onclick = function (){
         if(ele.classList.contains("active")){
-            ele.classList.remove("active")
-            li[0].classList.add("active")
-            
+            ele.classList.remove("active")            
         }else {
-            li.forEach((ele) => {
-                ele.classList.remove("active")
-            })
+           removeAllActive(li)
             ele.classList.add("active")
 
         }
     if(ele.firstChild.innerText === "DESIGN"){
+        rowSlow()
         display(ele)
         defaultAnimate(ele)
-        rowSlow()
     }else {
         div.forEach((ele)=> {
             ele.style.cssText = "opacity: 1; "
             defaultAnimate(ele)
 
         })
-        row.style.height = "450px"
-
+        row.addEventListener("animationstart",bottomHeight(row))
 
     }
     if(ele.firstChild.innerText === "PROTOTYPE" ){    
-
             rowSlow()
             display(ele)
             defaultAnimate(ele)
@@ -57,9 +53,7 @@ li.forEach((ele) => {
 })
 
 btn.onclick = function (){
-    Bullets.forEach((ele)=>{
-        ele.classList.remove("active")
-    })
+    removeAllActive(Bullets)
     Bullets[1].classList.add("active")
 
 }
@@ -69,9 +63,7 @@ Bullets.forEach((ele) => {
             ele.classList.remove("active")
             
         }else {
-            Bullets.forEach((ele) => {
-                ele.classList.remove("active")
-            })
+           removeAllActive(Bullets)
             ele.classList.add("active")
           }
         }
@@ -126,9 +118,43 @@ image[0].onclick = function (){
 }
 
 window.onscroll = function (){
-    if(window.scrollY >= 668){
+    if (window.scrollY <=  665){
+      removeAllActive(Bullets)
+        Bullets[0].classList.add("active")
+    }else if(window.scrollY <= 1358){
         document.querySelector(".navbar").style.cssText = "box-shadow: 1px 2px 15px gray;"
-    }else {
+       removeAllActive(Bullets)
+        Bullets[1].classList.add("active")
+
+
+    }else if (window.scrollY <= 2045){
+       removeAllActive(Bullets)
+        Bullets[2].classList.add("active")
+
+
+    }else if (window.scrollY <= 2745){
+        removeAllActive(Bullets)
+        Bullets[3].classList.add("active")
+
+    }
+    else if (window.scrollY <= 3150){
+        removeAllActive(Bullets)
+        Bullets[4].classList.add("active")
+
+    }
+    else if (window.scrollY <= 3675){
+        removeAllActive(Bullets)
+        Bullets[5].classList.add("active")
+
+        
+    }
+    else if (window.scrollY <= 4315){
+        removeAllActive(Bullets)
+        Bullets[6].classList.add("active")
+        form.focus()
+
+    }
+    else {
         document.querySelector(".navbar").style = "box-shadow: none;"
 
     }
@@ -172,13 +198,25 @@ function animation1 (ele){
 function TopHeight(ele){
     ele.animate([
         {height:"450px"},
-        {height: "200px"}
+        {height: "250px"}
     ],{
         iterations: 1,
         duration: 800,
         direction :"alternate",
    
     })
+}
+function bottomHeight(ele){
+    ele.animate([
+        {height:"475px"},
+        {height: "250px"}
+    ],{
+        iterations: 1,
+        duration: 800,
+        direction :"alternate-reverse",
+   
+    })
+
 }
 function animation2 (ele){
     ele.animate([
@@ -246,11 +284,16 @@ if(ele.firstChild.innerText === "ANDROID"){
 
 function rowSlow(){
     row.addEventListener("animationstart",TopHeight(row))
-    row.style.height = "200px"
 }
 
 window.onload = function(){
     window.scrollTo({
         top:0
+    })
+}
+
+function removeAllActive(ele){
+    ele.forEach((el)=>{
+        el.classList.remove("active")
     })
 }
