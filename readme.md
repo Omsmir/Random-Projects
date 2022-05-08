@@ -26,7 +26,12 @@
 
 <h1 align="center">
 
+<a href="https://github.com/Omsamiir/Random-Projects#-1">
+
 ![Langueges And Skills](https://img.shields.io/badge/Langueges-Skills-%230E7FBF?style=for-the-badge)
+
+
+</a>
 
 </h1>
 
@@ -36,13 +41,23 @@
 
 <h1 align="center"> 
 
+
+<a href="https://github.com/Omsamiir/Random-Projects#-2">
+
 ![Photos](https://img.shields.io/badge/Projects-Shortcuts-%23F46DB0?style=for-the-badge)
 
+
+</a>
 </h1>
 
 <h1 align="center">
 
+<a href="https://github.com/Omsamiir/Random-Projects#-2">
+
 ![css-Art](https://img.shields.io/badge/Css-Art-%23F46C?style=for-the-badge)
+
+
+</a>
 
 </h1>
 <a href="https://github.com/Omsamiir/Random-Projects/tree/main/06-AmongUs-orange">
@@ -65,7 +80,12 @@
 </a>
 <h1 align="center">
 
+
+<a href="https://github.com/Omsamiir/Random-Projects#-3">
+
 ![Classic-Designs](https://img.shields.io/badge/Classic-Designs-%23e16e?style=for-the-badge)
+
+</a>
 
 </h1>
 
@@ -92,8 +112,11 @@
 
 <h1 align="center">
 
+<a href="https://github.com/Omsamiir/Random-Projects#-4">
+
 ![Javascript-Tutorials](https://img.shields.io/badge/Javascript-Tutorials-%23e1e?style=for-the-badge)
 
+</a>
 </h1>
 <h4 align="center">To Do List With a Todo and Done Sections      &&      Music Player With Colorful Styles</h4>
 
@@ -131,7 +154,11 @@
 </a>
 <h1 align="center">
 
+<a href="https://github.com/Omsamiir/Random-Projects#-5">
+
 ![Preserve-3D](https://img.shields.io/badge/Preserve-3D-%23e1e90b?style=for-the-badge)
+
+</a>
 
 </h1>
 
@@ -169,8 +196,11 @@
 
 <h1 align="center"> 
 
+<a href="https://github.com/Omsamiir/Random-Projects#--1">
+
 ![Social-Links](https://img.shields.io/badge/Social-Links-%23F46DB0?style=for-the-badge)
 
+</a>
 </h1>
 <p align="left">
 
