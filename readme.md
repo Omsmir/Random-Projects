@@ -156,8 +156,10 @@
 
 </a>
 
+<a href="https://github.com/Omsamiir/Random-Projects/tree/Bootstrap" target="_blank">
 <img src="https://img.shields.io/badge/Bootstrap-Section-%23e0bb?style=for-the-badge">
 
+</a>
 <h1 align="center"> 
 
 ![Social-Links](https://img.shields.io/badge/Social-Links-%23F46DB0?style=for-the-badge)
