@@ -5,6 +5,7 @@ let done = document.querySelector(".done")
 
 
 emptyArray = [];
+NewArr = [];
 
 submit.onclick = function (){
     if(text.value !== ""){
@@ -19,12 +20,14 @@ if (window.localStorage.getItem("tasks")){
     
 }
 
+
 function addElements (textValue){
     let tasks = {
         id: Date.now(),
         content: textValue,
     }
     emptyArray.push(tasks)
+    NewArr.push(tasks)
 
     addToPage(emptyArray)
 
@@ -61,29 +64,29 @@ function addToPage(emptyArray){
       
     })
 }
+
+
 todo.addEventListener("click" , (ele) =>{
     if(ele.target.classList.contains("button")){
-        function checker(taskid){
-            emptyArray = emptyArray.filter((ele) => ele.id == taskid)
-
-            addToPage1(emptyArray)
-        }
-        checker(ele.target.parentElement.getAttribute("data-id"))
+      
         function delLocal(taskid){
             emptyArray = emptyArray.filter((tasks) => tasks.id != taskid)
             addToLocal(emptyArray)
+            addToPage1(NewArr)
         }
         delLocal(ele.target.parentElement.getAttribute("data-id"))
 
         ele.target.parentElement.remove()
 
+        
+
     }
 })
 
 
-function addToPage1(emptyArray){
+function addToPage1(NewArr){
     done.innerHTML = ""
-    emptyArray.forEach((tasks)=> {
+    NewArr.forEach((tasks)=> {
         let div = document.createElement("div")
 
         div.className = "text";
@@ -115,7 +118,10 @@ function addToLocal(emptyArray){
     window.localStorage.setItem("tasks", JSON.stringify(emptyArray))
 
 }
+function addToLocal1(NewArr){
+    window.localStorage.setItem("task1", JSON.stringify(NewArr))
 
+}
 
 function getFromLocal(){
     let data = window.localStorage.getItem("tasks")
@@ -125,6 +131,18 @@ function getFromLocal(){
     }
 }
 getFromLocal()
+
+function getFromLocal1(){
+    let data = window.localStorage.getItem("task1")
+    if(data){
+        let task = JSON.parse(data)
+        addToPage(task);
+    }
+}
+getFromLocal1()
+
+
+
 
 
 
