@@ -5,8 +5,12 @@
 
 <h1 align="center">
 
+<a href="https://github.com/Omsamiir/Random-Projects">
+
 ![Random](https://img.shields.io/badge/Random%20Projects%20While-%20Boring%20Days%20-%23AB71E2?style=for-the-badge)
 
+
+</a>
 </h1>
 
 | Index | Project | Tech Used |
