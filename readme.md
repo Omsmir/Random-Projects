@@ -188,7 +188,7 @@
 
 <a href="https://github.com/Omsamiir/Random-Projects/tree/Bootstrap" >
 
-<img src="https://github.com/Omsamiir/Random-Projects/tree/main/27-landing/landing.gif">
+<img src="https://github.com/Omsamiir/Random-Projects/blob/main/27-landing/imgs/landing.gif">
 
 
 </a>
