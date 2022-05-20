@@ -105,7 +105,7 @@
 <h3 align="center">A Classic Adidas Shoes Animated Purchase Card With a Gradient Colors Give It A Special Look</h3>
 <a href="https://github.com/Omsamiir/Random-Projects/tree/main/23-ClassicC/">
 
-<img src="https://github.com/Omsamiir/Random-Projects/blob/main/23-ClassicC/imgs/Classic.gif">
+<img src="https://github.com/Omsamiir/Random-Projects/blob/main/23-ClassicC/imgs/Classic.gif" autoplay>
 </a>
 
 <h1 align="center">
