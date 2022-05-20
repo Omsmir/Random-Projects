@@ -36,6 +36,7 @@
 </h1>
 
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![bootstrap]()
 <br>
 
 
@@ -105,7 +106,7 @@
 <h3 align="center">A Classic Adidas Shoes Animated Purchase Card With a Gradient Colors Give It A Special Look</h3>
 <a href="https://github.com/Omsamiir/Random-Projects/tree/main/23-ClassicC/">
 
-<img src="https://github.com/Omsamiir/Random-Projects/blob/main/23-ClassicC/imgs/Classic.gif" autoplay>
+<img src="https://github.com/Omsamiir/Random-Projects/blob/main/23-ClassicC/imgs/Classic.gif" >
 </a>
 
 <h1 align="center">
