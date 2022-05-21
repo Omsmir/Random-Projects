@@ -3,7 +3,7 @@
 
 <br>
 
-- [Contribution](https://github.com/Omsamiir/Random-Projects/tree/contribution)
+- [Contribution](#contributing)
 - [License](https://github.com/Omsamiir/Random-Projects/tree/License)
 
 <h1 align="center">
