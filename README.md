@@ -2,9 +2,9 @@ Skills
 ======
 You Should At Least Have The Upcoming Skills To Be To Contributing 
 
-1- HTML
-2- CSS
-3- JAVASCRIPT
+1. **HTML**
+2. **CSS**
+3. **JAVASCRIPT**
 
 Contributing
 ------------
