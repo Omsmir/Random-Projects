@@ -206,9 +206,9 @@
 
 <h4 align="center"> VR</h4>
 
-<a href="https://github.com/Omsamiir/Random-Projects/tree/Bootstrap" >
+<a href="https://github.com/Omsamiir/Random-Projects/tree/Bootstrap/03-VR" >
 
-<img src="https://github.com/Omsamiir/Random-Projects/tree/main/29-VR">
+<img src="https://github.com/Omsamiir/Random-Projects/blob/Bootstrap/03-VR/imgs/vr.jpg">
 
 
 </a>
