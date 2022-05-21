@@ -2,8 +2,10 @@
 ![RANDOM PROJECTS](https://user-images.githubusercontent.com/96446413/162667968-dd8844c9-bc32-4211-80b2-b1c716117157.gif)
 
 <br>
-# Contribution
-- []()
+
+- [Contribution](https://github.com/Omsamiir/Random-Projects/tree/contribution)
+- [License](https://github.com/Omsamiir/Random-Projects/tree/License)
+
 <h1 align="center">
 
 <a href="https://github.com/Omsamiir/Random-Projects">
