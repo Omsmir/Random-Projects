@@ -1,5 +1,7 @@
-- [Random-Projects-Follow-Apache-License](https://github.com/Omsamiir/Random-Projects/tree/License)
 
+
+
+# License
 
 ```
 Copyright 2017-2018 by Esri
