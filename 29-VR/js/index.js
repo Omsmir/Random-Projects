@@ -61,11 +61,8 @@ li.forEach((ele) => {
     }
   }
   
-  // Create a MediaQueryList object
   const mmObj = window.matchMedia("(max-width: 988px)")
   
-  // Call the match function at run time:
   myFunction(mmObj);
   
-  // Add the match function as a listener for state changes:
   mmObj.addListener(myFunction)
