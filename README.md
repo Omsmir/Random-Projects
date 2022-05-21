@@ -1,3 +1,11 @@
+Skills
+======
+You Should At Least Have The Upcoming Skills To Be To Contributing 
+
+1- HTML
+2- CSS
+3- JAVASCRIPT
+
 Contributing
 ------------
 
@@ -10,3 +18,4 @@ Please refer to each project's style and contribution guidelines for submitting 
  5. Submit a **Pull request** so that we can review your changes
 
 NOTE: Be sure to merge the latest from "upstream" before making a pull request!
+
