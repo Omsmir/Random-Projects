@@ -1,1 +1,1 @@
-- [Random-Projects-Has-GNU-License](https://github.com/Omsamiir/Random-Projects/tree/License)
+- [Random-Projects-Follow-Apache-License](https://github.com/Omsamiir/Random-Projects/tree/License)
