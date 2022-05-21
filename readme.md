@@ -99,20 +99,20 @@
 
 </h1>
 
-## Twitter UI 
+<h3 align="center">Twitter UI </h3>
 
 <a href="https://github.com/Omsamiir/Random-Projects/tree/main/21-Twitter-Clone/">
 
 <img src="https://github.com/Omsamiir/Random-Projects/blob/main/21-Twitter-Clone/imgs/Classic.gif">
 </a>
-<h3 align="center">A Classic Landing UI  With a Special Backgrounds And Gradients That Give The UI  a Great Style  </h3>
+<h3 align="center">A Classic Landing </h3>
 
 <a href="https://github.com/Omsamiir/Random-Projects/tree/main/22-Classic-Landing/">
 
 <img src="https://github.com/Omsamiir/Random-Projects/blob/main/22-Classic-Landing/imgs/Classic.gif">
 
 </a>
-<h3 align="center">A Classic Adidas Shoes Animated Purchase Card With a Gradient Colors Give It A Special Look</h3>
+<h3 align="center">A Classic Adidas Shoes </h3>
 <a href="https://github.com/Omsamiir/Random-Projects/tree/main/23-ClassicC/">
 
 <img src="https://github.com/Omsamiir/Random-Projects/blob/main/23-ClassicC/imgs/Classic.gif" >
@@ -126,7 +126,7 @@
 
 </a>
 </h1>
-<h4 align="center">To Do List With a Todo and Done Sections      &&      Music Player With Colorful Styles</h4>
+<h4 align="center">To Do List With      &&      Music Player </h4>
 
 <a href="https://github.com/Omsamiir/Random-Projects/tree/main/17-To-Do-List/" >
 
@@ -144,7 +144,7 @@
 
 </a>
 
-<h4 align="center">Interactive Classic Nav Menu &&  Simple Slider For Beginners To Learn Array Method In Practice mode</h4>
+<h4 align="center">Interactive Nav Menu &&  Simple Slider </h4>
 
 <a href="https://github.com/Omsamiir/Random-Projects/tree/main/26-Classic-Menu/" >
 
@@ -170,7 +170,7 @@
 
 </h1>
 
-<h4 align="center">Preserve 3D Feature Example</h4>
+<h4 align="center">Preserve 3D </h4>
 
 <a href="https://github.com/Omsamiir/Random-Projects/tree/main/25-Preserve3D" >
 
