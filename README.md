@@ -1,6 +1,3 @@
-- [contribution](https://github.com/Omsamiir/Random-Projects/tree/License)
-
-
 Contributing
 ------------
 
