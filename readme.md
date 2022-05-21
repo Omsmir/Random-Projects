@@ -99,7 +99,7 @@
 
 </h1>
 
-## <h3 align="center">Twitter UI With Interactive Functions </h3>
+## Twitter UI 
 
 <a href="https://github.com/Omsamiir/Random-Projects/tree/main/21-Twitter-Clone/">
 
