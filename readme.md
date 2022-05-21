@@ -4,11 +4,11 @@
 <br>
 <p align='center'>
 
-<a href="https://github.com/omsamiir/github-readme-stats/issues">
-    <img alt="Issues" src="https://img.shields.io/github/issues/anuraghazra/github-readme-stats?color=0088ff" />
+<a href="https://github.com/anuraghazra/github-readme-stats/issues">
+    <img alt="Issues" src="https://img.shields.io/github/issues/omsamiir/github-readme-stats?color=0088ff" />
 </a>
 <a href="https://github.com/omsamiir/github-readme-stats/pulls">
-    <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/anuraghazra/github-readme-stats?color=0088ff" />
+    <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/omsamiir/github-readme-stats?color=0088ff" />
 </a>
 
 </p>
