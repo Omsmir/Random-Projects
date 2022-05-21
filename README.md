@@ -16,11 +16,15 @@ Bootstrap Tutorials Is a Branch From The Origin Main Random-projects Repository
 
 <img src="https://github.com/Omsamiir/Random-Projects/blob/Bootstrap/01-SBootstrap/Banners/Bootstrap.gif" width="400">
 
-<img src="https://github.com/Omsamiir/Random-Projects/blob/Bootstrap/01-SBootstrap/Banners/Bootstrap.gif" width="400">
+
+</a>
+
+<a href="https://github.com/Omsamiir/Random-Projects/tree/Bootstrap/01-SBootstrap">
 
 <img src="https://github.com/Omsamiir/Random-Projects/blob/Bootstrap/01-SBootstrap/Banners/bootstrap%20(2).gif" width="400">
 
 </a>
+
 
 <h4 align="center">VR</h3>
 
