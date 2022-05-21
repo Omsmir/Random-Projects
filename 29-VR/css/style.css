@@ -11,7 +11,12 @@ body {
   font-family: 'Chewy', cursive;
   position: relative;
 }
-
+/* img {
+  pointer-events: none;
+} */
+img {
+  user-select: none;
+}
 .navbar-brand {
   width: 150px;
   display: flex;
@@ -40,16 +45,21 @@ ul li a {
   font-size: 17px;
   font-weight: 600;
   text-transform: capitalize;  
+  user-select: none;
 }
-ul li a.active {
+ul li a.active , ul li:hover a{
   color: #d01b59 !important;
 }
+
 ul li {
   position: relative;
   padding-left: 10px !important;
   padding-right: 10px !important;
   margin-right: 2px;
 }
+
+
+
 ul li  .under {
   position: absolute;
   width: 30px;
@@ -91,20 +101,22 @@ ul li  .under {
   align-items: center;
   flex-direction: column;
   padding: 3rem;
+  padding-bottom: 0 !important;
 }
 
 .text h1 {
   font-size: 85px;
   font-weight: 700;
   font-family: 'Berkshire Swash', cursive;
-  color: var(--black-color) !important;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  color: var(--black-color) ;
+  padding-right: 8rem;
   text-align: left;
+  max-width: 650px;
+  word-wrap: break-word;
 }
 
 .paragraph {
-  width: 100%;
+  max-width: 650px;
   height: 100%;
 }
 .text p {
@@ -112,25 +124,27 @@ ul li  .under {
   font-weight: 600;
   text-align: left;
   padding-right: 3rem;
-  padding-left: 3rem;
   width: 80%;
 
 }
 .bt {
-  display: flex !important;
+  display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 100%;
-  padding-left: 3rem;
+  flex-direction: row;
   padding-right: 3rem;
+
 }
 
+.bt .inner {
+  max-width: 650px;
+  padding-left: 3rem;
+}
 .bt button {
   position: relative;
   z-index: 9;
   width: 150px;
   border-radius: 10px !important;
-  margin-left: 3rem ;
   background-color: var(--root-color) !important;
 }
 #navbarSupportedContent {
@@ -153,6 +167,7 @@ ul li  .under {
 @media (max-width:567px){
   .text h1 {
     font-size: 45px;
+    padding-right: 0;
     
   }
   .text img {
@@ -164,7 +179,6 @@ ul li  .under {
     font-weight: 600;
     text-align: left;
     padding-right: 0rem;
-    padding-left: 2rem;
     width: 80%;
 
   }
