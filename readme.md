@@ -7,7 +7,8 @@
 
 - [Contribution](https://github.com/Omsamiir/Random-Projects/tree/contribution#contributing)
 - [License](https://github.com/Omsamiir/Random-Projects/tree/License#license)
-
+- [Bootstrap](https://github.com/Omsamiir/Random-Projects/tree/Bootstrap#bootstrap-tutorials)
+- [Standards-Requests](https://github.com/Omsamiir/Random-Projects/pull/9)
 <h1 align="center">
 
 <a href="https://github.com/Omsamiir/Random-Projects">
