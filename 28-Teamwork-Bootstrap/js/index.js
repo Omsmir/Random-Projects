@@ -11,6 +11,7 @@ let row = document.querySelector("section[id='projects'] .container-fluid .row")
 let btn = document.querySelector(".Main-Btn")
 let home = document.getElementById("Home")
 let form = document.querySelector("input[name='name']")
+let navbar = document.querySelector(".navbar")
 
 
 
@@ -119,10 +120,12 @@ image[0].onclick = function (){
 
 window.onscroll = function (){
     if (window.scrollY <=  665){
+        navbar.style.cssText = "box-shadow: none;"
+
       removeAllActive(Bullets)
         Bullets[0].classList.add("active")
     }else if(window.scrollY <= 1358){
-        document.querySelector(".navbar").style.cssText = "box-shadow: 1px 2px 15px gray;"
+        navbar.style.cssText = "box-shadow: 1px 2px 15px gray;"
        removeAllActive(Bullets)
         Bullets[1].classList.add("active")
 
@@ -152,10 +155,6 @@ window.onscroll = function (){
         removeAllActive(Bullets)
         Bullets[6].classList.add("active")
         form.focus()
-
-    }
-    else {
-        document.querySelector(".navbar").style = "box-shadow: none;"
 
     }
 }
