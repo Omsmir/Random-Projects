@@ -2,16 +2,8 @@
 ![RANDOM PROJECTS](https://user-images.githubusercontent.com/96446413/162667968-dd8844c9-bc32-4211-80b2-b1c716117157.gif)
 
 <br>
-<p align='center'>
-
-<a href="https://github.com/anuraghazra/github-readme-stats/issues">
-    <img alt="Issues" src="https://img.shields.io/github/issues/omsamiir/github-readme-stats?color=0088ff" />
-</a>
-<a href="https://github.com/omsamiir/github-readme-stats/pulls">
-    <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/omsamiir/github-readme-stats?color=0088ff" />
-</a>
-
-</p>
+# Contribution
+- []()
 <h1 align="center">
 
 <a href="https://github.com/Omsamiir/Random-Projects">
