@@ -22,7 +22,7 @@ body {
     width: 200px;
     height: 200px;
     transform-style: preserve-3d;
-    transform: rotate3d(1,0,1 ,240deg);
+    /* transform: rotate3d(1,0,1 ,240deg); */
     margin: 50px auto;
     transition: transform 1.9s;
     animation: rotate 9s ease-in-out both infinite alternate;
