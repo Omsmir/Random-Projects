@@ -1,7 +1,7 @@
-let a = document.querySelector("ul").querySelectorAll("ul li a")
+let link = document.querySelector("ul").querySelectorAll("ul li a")
 let img = document.querySelectorAll(".pizza #order .section .image img")
-let child = document.querySelector(".child.child-1")
-let child1 = document.querySelector(".child.child-2")
+let child1 = document.querySelector(".child.child-1")
+let child = document.querySelector(".child.child-2")
 
 let col = document.querySelectorAll("#col")
 
@@ -17,6 +17,47 @@ let add = Array.from(document.querySelectorAll(".core .icon .child.child-1"))
 let orders = document.querySelector(".orders")
 // console.log(supply)
 
+let toggle = document.querySelector(".toggle")
+let first = document.querySelector(".first-col")
+let second = document.querySelector(".second-col")
+let third = document.querySelector(".third-col")
+
+
+
+// Media Queries Start
+const resize = (x) =>  {
+    if (x.matches) 
+    third.classList.add("none") ,
+    second.style.width = "93%"
+    else
+    third.classList.remove("none"),
+    second.style.width = "68%"
+}
+
+  const match = window.matchMedia("(max-width: 1198px)")
+  
+  resize(match);
+  
+  match.addListener(resize);
+
+
+const resize1 = (x) => {
+    if (x.matches)
+    second.style.width = "100%",
+    third.classList.add("none") 
+    else
+    second.style.width = "93%"
+
+}
+
+const match1 = window.matchMedia("(max-width: 767px)")
+
+resize(match1);
+  
+match1.addListener(resize1);
+
+// Media Queries End
+// Pizza Array Object
 let productsNumber = [
     {
         img: "imgs/topping.png",
@@ -108,7 +149,9 @@ function addToCart(im ,nam,cost,clas ){
 
     exit.addEventListener("click",(ele)=>{
         ele.target.parentElement.remove()
-
+        productsNumber.forEach((el)=>{
+            el.index = 0
+        })
 
     })
 
@@ -160,64 +203,47 @@ function addToCart2(pri,num){
 }
 
 
-
-
-
-
-
-add[0].addEventListener("click",()=>{
-    if(productsNumber[0].index == 0){
- addToCart(productsNumber[0].img, productsNumber[0].name,productsNumber[0].price,productsNumber[0].class)
-productsNumber[0].index += 1
-
-
-    }else if (productsNumber[0].index == 1){
-        addToCart2(productsNumber[0].price * 2, productsNumber[0].index += 1 )    
-    }
-})
-
-
-add[1].addEventListener("click",()=>{
-    if(productsNumber[1].index == 0){
-        addToCart(productsNumber[1].img, productsNumber[1].name,productsNumber[1].price,productsNumber[1].class)
-        productsNumber[1].index += 1
-    }else if (productsNumber[1].index == 1){
-        addToCart2(productsNumber[1].price * 2,productsNumber[1].index += 1 )
-    }
-
-})
-
-
-add[2].addEventListener("click",()=>{
-    if(productsNumber[2].index == 0){
-        addToCart(productsNumber[2].img, productsNumber[2].name,productsNumber[2].price,productsNumber[2].class)
-        productsNumber[2].index++
-    }else if (productsNumber[2].index == 1){
-        return false
-    }
-
-})
-
-
-
-
-let droped = false
-
-dropDown.onclick = function (){
-   if(droped == false){
-    nav.classList.add("flex")
-    droped = true
-   }else {
-    nav.classList.remove("flex")
-    droped = false
+function rewrite(element){
+    add.forEach((ele)=> { 
+        if(ele.parentElement.classList.contains("top"))
+        element = 0
+        else if(ele.parentElement.classList.contains("veg")) 
+        element = 1
+        else if (ele.parentElement.classList.contains("pep"))
+        element = 2
     
-   }
-
-}
-
+      }) 
+} 
 
 
+let int = 0
 
+ add.forEach((ele)=>{
+    ele.addEventListener("click",()=>{
+        addToCart(productsNumber[int].img)
+    })
+ })
+
+
+
+
+// add.forEach((ele)=>{
+//    ele.addEventListener("click",()=>{
+//     if(ele.parentElement.classList.contains("top") && productsNumber[0].index == 0)
+//         addToCart(productsNumber[0].img, productsNumber[0].name,productsNumber[0].price,productsNumber[0].class),
+//         productsNumber[0].index += 1
+//     if(ele.parentElement.classList.contains("veg") && productsNumber[1].index == 0)
+//         addToCart(productsNumber[1].img, productsNumber[1].name,productsNumber[1].price,productsNumber[1].class),
+//         productsNumber[1].index += 1
+//     if(ele.parentElement.classList.contains("pep") && productsNumber[2].index == 0)
+//     addToCart(productsNumber[2].img, productsNumber[2].name,productsNumber[2].price,productsNumber[2].class),
+//     productsNumber[2].index += 1
+// })
+// })
+
+
+
+// Start The Heart Fill For Rate  
 
 rate.forEach((ele)=>{
     ele.addEventListener("click",()=>{
@@ -234,116 +260,86 @@ rate1.forEach((ele) => {
        })
 })
 
+// End The Heart Fill For Rate  
 
 // console.log(document.styleSheets[0].cssRules[1].style.opacity)
 
-let index = 0
-child1.onclick = function (){
-   if(index == 0){
-    col.forEach((ele)=>{
-        ele.style.transform = "translateX(120px)"
-    })
-    document.styleSheets[0].cssRules[1].style.opacity = 1;
-    index += 1
-   }else if(index == 1){
-    col.forEach((ele)=>{
-        ele.style.transform = "translateX(240px)"
-    })
-    index += 1
+//  Start The Shadow For The Remaining Scroll For Menu
 
-   }else if (index == 2){
-    col.forEach((ele)=>{
-        ele.style.transform = "translateX(360px)"
-    })
-    index += 1
-   }else if (index == 3){
-    col.forEach((ele)=>{
-        ele.style.transform = "translateX(480px)"
-    })
-    document.styleSheets[0].cssRules[1].style.opacity = 0
+let droped = false
 
-    child1.classList.add("disabled")
-
-   }else if (index == -1){
-    col.forEach((ele)=>{
-        ele.style.transform = "translateX(120px)"
-    })
-    index = 0
-
-   }else if (index == -2){
-    col.forEach((ele)=>{
-        ele.style.transform = "translateX(-120px)"
-    })
-    index = -1
-
-   }else if (index == -3){
-    col.forEach((ele)=>{
-        ele.style.transform = "translateX(-340px)"
-    })
-    index = -2
-    document.styleSheets[0].cssRules[2].style.opacity = 1;
-
-    child.classList.remove("disabled")
-
+dropDown.onclick = function (){
+   if(droped == false){
+    nav.classList.add("anima")
+    droped = true
+   }else {
+    nav.classList.remove("anima")
+    droped = false
+    
    }
+}
+//  End The Shadow For The Remaining Scroll For Menu
 
+function transform(ele , width){
+    ele.forEach((el)=>{
+        el.style.transform = `translateX(${width})`
+    })
 }
 
+// Start Menu Scrolling Left And Right Function
+let index = 0
 
-child.onclick = function (){
-
-    if(index == 1){
-        col.forEach((ele)=>{
-            ele.style.transform = "translateX(0px)"
-        })
-        index = 0
-    }else if (index == 2){
-        col.forEach((ele)=>{
-            ele.style.transform = "translateX(120px)"
-        })
-        index = 1
-    }else if (index == 3){
-
-        col.forEach((ele)=>{
-            ele.style.transform = "translateX(240px)"
-        })
-        index = 2
-        document.styleSheets[0].cssRules[1].style.opacity = 1
-
-        child1.classList.remove("disabled")
-
-    }else if (index == 0){
-        col.forEach((ele)=>{
-            ele.style.transform = "translateX(-120px)"
-        })
-        index = -1
-
-    }else if(index == -1){
-        col.forEach((ele)=>{
-            ele.style.transform = "translateX(-340px)"
-        })
-        index = -2
-
-    }else if(index == -2){
-        col.forEach((ele)=>{
-            ele.style.transform = "translateX(-480px)"
-        })
-        child.classList.add("disabled")
-        document.styleSheets[0].cssRules[2].style.opacity = 0;
-
-        index = -3
-
-    }
-  
-
-}
-
-if(index == -3){
+child.addEventListener("click",()=>{
+    if(index == 0)
+    transform(col,"160px"),
+    index++
+    else if(index == 1)
+    transform(col,"320px"),
+    index++
+    else if (index == 2)
+    transform(col,"480px"),
+    index++,
+    document.styleSheets[0].cssRules[1].style.opacity = 0 ,
     child.classList.add("disabled")
+    else if(index == -1)
+    transform(col,"0"),
+    index++
+    else if(index == -2)
+    transform(col,"-160px"),
+    index++
+    else if(index == -3)
+    transform(col,"-320px"),
+    index++,
+    child1.classList.remove("disabled"),
+    document.styleSheets[0].cssRules[2].style.opacity = 1
+})
 
-}
-
-
+child1.addEventListener("click",()=>{
+    if(index == 0)
+    transform(col,"-160px"),
+    index--
+    else if(index == -1)
+    transform(col,"-320px"),
+    index--
+    else if (index == -2)
+    transform(col,"-480px"),
+    index--,
+    document.styleSheets[0].cssRules[2].style.opacity = 0 ,
+    child1.classList.add("disabled")
+    else if (index == 1)
+    transform(col,"0"),
+    index--
+    else if(index == 2)
+    transform(col,"160px"),
+    index--
+    else if(index == 3)
+    transform(col,"320px"),
+    index--,
+    child.classList.remove("disabled"),
+    document.styleSheets[0].cssRules[1].style.opacity = 1
+})
+// End Menu Scrolling Left And Right Function
+// Col Active Class Add
 col.forEach((ele)=>{
     ele.onclick = function(){
         if(ele.classList.contains("active")){
@@ -356,41 +352,31 @@ col.forEach((ele)=>{
         }
     }
 })
+// Col End
 
 
 
-
-a.forEach((ele)=>{
+link.forEach((ele)=>{
     if(ele.classList.contains("active")){
-        ele.parentElement.style.background = "orange"
-
+        ele.parentElement.style.background = "#ffa304"
     }
     ele.onclick = function(){
         if(ele.classList.contains("active")){
-            ele.parentElement.style.background = "orange"
-
+            ele.parentElement.style.background = "#ffa304"
             if(ele.parentElement.classList == "last"){
                 ele.parentElement.style.background = "#fff"
-
-            }
-           
+            }         
         }else {
-            a.forEach((ele)=>{
+            link.forEach((ele)=>{
                 ele.classList.remove("active")
                 ele.parentElement.style.background = "#fff"
-
             })
             ele.classList.add("active")
-            ele.parentElement.style.background = "orange"
-            
+            ele.parentElement.style.background = "#ffa304"          
             if(ele.parentElement.classList.contains("last")){
                 ele.parentElement.style.background = "#fff"
-
             }
-
-
         }
-
     }
 })
 

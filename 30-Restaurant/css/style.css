@@ -1,12 +1,13 @@
 :root {
-  --root-color: #b3afb0;
-  --dark-color: #311d3f;
+  --root-color: #ffa304;
+  --white-color: #fff;
   --purple-color: #efc6ce;
-  --black-color: #021f4b;
+  --gray-color: #afaaaa;
+  --black-color: #000;
   scroll-behavior: smooth;
 }
 
-
+/* css Rules Please Don't Change The Code Lines For The .menu::before And After */
 .menu::before {
   content: "";
   position: absolute;
@@ -14,7 +15,7 @@
   width: 25px;
   height: 100%;
   z-index: 10;
-  box-shadow: 25px 0 25px 40px #afaaaa;
+  box-shadow: 25px 0 25px 40px var(--gray-color);
   transition: 0.3s ease-in-out;
   display: block;
   opacity: 1;
@@ -26,18 +27,12 @@
   width: 25px;
   height: 100%;
   z-index: 10;
-  box-shadow: 95px 0 25px 40px #afaaaa;
+  box-shadow: 95px 0 25px 40px var(--gray-color);
   transition: 0.3s ease-in-out;
   display: block;
   opacity: 1;
 }
-img {
-  pointer-events: none;
-}
-.img {
-  width:40px ;
-  height: 24px;
-}
+/* ,, */
 * {
   padding: 0;
   margin: 0;
@@ -48,8 +43,18 @@ body {
   position: relative;
 }
 
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 img {
+  pointer-events: none;
   user-select: none;
+}
+.img {
+  width:40px ;
+  height: 24px;
 }
 
 .container {
@@ -62,38 +67,55 @@ img {
   min-width: 7% ;
   position: fixed;
   z-index: 100;
-  background-color: #fff;
+  background-color: var(--white-color);
+  transition: 1s ease-in-out;
 }
 .second-col {
   background-color: #fafafa;
   width: 68%;
   height: 100%;
   margin-left: 110px;
+  transition: 1s ease-in-out;
 }
 .third-col {
   width: 25%;
   height: 100%;
   overflow: hidden;
+  transition: 1s ease-in-out;
 }
 
+.first-col .toggle {
+  transition: 1s ease-in-out;
+  position: absolute;
+  top: 50%;
+  border-radius: 50%;
+  background: var(--white-color);
+  left: 87%;
+  cursor: pointer;
+  width: 25px;
+  height: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  display: none;
+}
+.first-col .toggle img{
+  width: 15px;
+  height: 15px;
+}
+.none {
+  display: none;
+}
 
 .first-col ul {
-  padding-left: 15px ;
-  padding-right: 15px;
-  padding-top: 30px;
-  margin-right: 30px;
+  padding: 30px;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  position: relative;
+  z-index: 1;
 }
 
 .first-col ul li {
   margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -124,9 +146,6 @@ img {
   align-items: flex-end;
 }
 span a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -146,9 +165,6 @@ span a {
 
 
 .content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: row;
   width: 100%;
   padding-left: 15px;
@@ -172,22 +188,15 @@ span a {
   height: 100%;
 }
 .content .parent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 50%;
   height: 100%;
   padding: 30px;
-
 }
 .content .parent  .search {
   width: 100%;
   height: 45px !important;
   border-radius: 25px;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: var(--white-color);
   flex-direction: row;
   cursor: pointer;
 }
@@ -218,19 +227,14 @@ span a {
   background-image: linear-gradient(65.44725102726522deg, rgba(237, 63, 0,1) 12.111978953083357%,rgba(242, 235, 242,1) 58.57031169037024%);
   border-radius: 25px;
   overflow: hidden;
+  transition: 1s ease-in-out;
 }
 .delivery {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 .delivery .caption {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: left;
   flex-direction: column;
 }
@@ -242,9 +246,6 @@ span a {
   margin-bottom: 0;
 }
 .delivery .caption .paragraph {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-width: 228px;
   font-size: 14px;
   color: rgb(159, 149, 149);
@@ -256,7 +257,7 @@ span a {
 .delivery .caption .paragraph p {
   margin-right: 3px;
   margin-left: 3px;
-  color: orange;
+  color: var(--root-color);
 }
 .wrapper {
   width: 100%;
@@ -264,9 +265,9 @@ span a {
   justify-content: flex-start;
 }
 .wrapper button {
-  color: #fff ;
+  color: var(--white-color) ;
   font-size: 14px !important;
-  background-color: orange;
+  background-color: var(--root-color);
   padding: 10px;
   padding-right: 20px !important;
   padding-left: 20px !important;
@@ -276,9 +277,6 @@ span a {
 }
 
 .delivery-1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100%;
   z-index: 10;
   overflow: hidden;
@@ -302,15 +300,11 @@ span a {
 .delivery-2 .middle svg {
   width: 200px;
   transform:rotate(90deg) translate(-15px,-80px);
-position: absolute;
-mix-blend-mode: exclusion;
-
+  position: absolute;
+  mix-blend-mode: exclusion;
 }
 .search .child {
   width: 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .parent.parent-1 {
   padding-top: 0;
@@ -324,17 +318,14 @@ mix-blend-mode: exclusion;
 .parent.parent-1 .search .text {
   justify-content: flex-end;
   margin-right: 8px;
-  color: orange;
+  color: var(--root-color);
 }
- .child.child-1 {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 20px;
-   height: 20px;
-   background-color: orange;
-   border-radius: 5px;
-   cursor: pointer;
+.child.child-1 {
+  width: 20px;
+  height: 20px;
+  background-color: var(--root-color);
+  border-radius: 5px;
+  cursor: pointer;
 }
 .child.child-1.disabled , .child.child-2.disabled {
   opacity: 0.5;
@@ -343,12 +334,9 @@ mix-blend-mode: exclusion;
 .child.child-2 {
   transform: scale(-1);
   margin-right: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 20px;
   height: 20px;
-  background-color: orange;
+  background-color: var(--root-color);
   border-radius: 5px;
 }
 
@@ -363,9 +351,6 @@ mix-blend-mode: exclusion;
 
 .menu {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: row;
   margin: 45px;
   margin-top: 0 !important;
@@ -377,7 +362,7 @@ mix-blend-mode: exclusion;
 .menu #col {
   min-width: 150px;
   border-radius: 15px;
-  background: #fff;
+  background: var(--white-color);
   margin-right: 10px;
   overflow: hidden;
   display: flex;
@@ -388,22 +373,22 @@ mix-blend-mode: exclusion;
   transition: 0.5s ease-in-out 0s;
 }
 .menu #col.active , .menu #col:hover {
-  background-color: orange;
+  background-color: var(--root-color);
 }
 
 .menu #col.active .recipe , .menu #col:hover .recipe{
-  background-color: #fff ;
+  background-color: var(--white-color) ;
 }
 .menu #col.active .menu-text,.menu #col:hover .menu-text {
-  color: #fff;
+  color: var(--white-color);
 }
 
 .menu #col.active .child.child-1 , .menu #col:hover .child.child-1{
-  background-color: #fff;
+  background-color: var(--white-color);
 }
 
 .menu #col.active .child.child-1 svg path, .menu #col:hover .child.child-1 svg path{
-  fill: orange;
+  fill: var(--root-color);
 }
 .menu #col:last-of-type {
   margin-right: 0 !important;
@@ -447,9 +432,7 @@ svg path {
 
 /* start pizza */
 .pizza {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   flex-direction: row;
   padding: 45px;
   padding-top: 15px;
@@ -465,15 +448,13 @@ svg path {
 .pizza #order .section {
   position: relative;
   max-height: 70%;
-  background-color: #fff;
+  background-color: var(--white-color);
   border-radius: 20px;
 }
 
 .pizza #order .image {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   overflow: hidden;
 }
 
@@ -579,11 +560,11 @@ svg path {
   font-size: 11px;
   font-weight: bold;
   border-radius: 50%;
-  background-color: orange;
+  background-color: var(--root-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: var(--white-color);
   user-select: none;
 }
 .third-col .profile .bell svg {
@@ -678,24 +659,15 @@ svg path {
 
 .third-col .profile .user nav .setting-nav ul li a{
   text-decoration: none;
-  color: #000;
+  color: var(--black-color);
   font-size: 13px;
   font-weight: 500;
 }
-.flex {
+.anima {
   display: flex !important;
   animation: opa 0.5s ease-in-out 1 alternate;
 }
 
-@keyframes opa {
-
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .third-col .content .text h3{
   font-size: 16px;
   
@@ -729,7 +701,7 @@ svg path {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: orange;
+  background-color: var(--root-color);
   border-radius: 25px;
   transform: rotate(5deg);
   z-index: -1;
@@ -791,7 +763,7 @@ svg path {
 
 
 .third-col .card .bottom .cell .nano span:nth-child(1) {
-  border-right: 1px solid #000;
+  border-right: 1px solid var(--black-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -799,7 +771,7 @@ svg path {
 }
 
 .third-col .card .bottom .cell .nano span:nth-child(1) .line {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--black-color);
   width: 100%;
   height: calc(100% / 4);
 }
@@ -808,7 +780,7 @@ svg path {
   border-bottom: none;
 }
 .third-col .card .bottom .cell .nano span:nth-child(3) .line:nth-child(4){
-  border-left: 1px solid #000;
+  border-left: 1px solid var(--black-color);
 }
 .third-col .card .bottom .cell .nano span:nth-child(3) {
   display: flex;
@@ -817,16 +789,16 @@ svg path {
   flex-direction: column;
 }
 .third-col .card .bottom .cell .nano span:nth-child(3) .line {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--black-color);
   width: 100%;
   height: calc(100% / 3);
 }
 .third-col .card .bottom .cell .nano span:nth-child(3) .line:nth-child(3){
-  border-bottom: 1px solid #000;
-  border-left: 1px solid #000;
+  border-bottom: 1px solid var(--black-color);
+  border-left: 1px solid var(--black-color);
 }
 .third-col .card .bottom .cell .nano span:nth-child(3) .line:nth-child(2) {
-  border-left: 1px solid #000;
+  border-left: 1px solid var(--black-color);
 }
 .third-col .card .bottom .cell .serial {
   margin-top: 10px;
@@ -851,10 +823,10 @@ svg path {
   height: 100%;
 }
 .btn {
-  color: #fff;
+  color: var(--white-color);
   font-size: 16px;
   font-weight: 500;
-  background-color: orange;
+  background-color: var(--root-color);
   border: none;
   border-radius: 25px;
   cursor: pointer;
@@ -884,7 +856,7 @@ svg path {
   width: 100%;
   height: calc(100% / 3);
   border-radius: 25px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   animation: opa 1s ease-in-out 1 alternate;
 }
 
@@ -912,7 +884,7 @@ svg path {
   color: rgb(212, 154, 45);
 }
 .orders .supply  .details p span {
-  color: #000;
+  color: var(--black-color);
 }
 .orders .supply .price {
   width: 25%;
@@ -922,7 +894,7 @@ svg path {
   font-size: 13px;
 }
 .orders .supply .price h3 span {
-  color: #000;
+  color: var(--black-color);
   font-size: 16px;
   font-weight: bold;
   margin-left: 2px;
@@ -949,4 +921,109 @@ svg path {
 .orders .supply .exit img {
   width: 12px;
   height: 12px;
+}
+
+
+@media (max-width:1198px){
+  .second-col {
+    margin-left: 71px;
+    padding-left: 45px;
+  }
+  .first-col ul span {
+    align-items: center;
+  }
+}
+@media (max-width:998px) {
+  .second-col {
+    padding-left: 50px;
+    margin-left: 50px;
+  }
+  
+}
+@media (max-width:767px) {
+  .first-col {
+    transform: translateX(0px);
+  }
+  .first-col .toggle {
+    display: flex;
+  }
+  .delivery-2 .middle svg {
+    transform: rotate(90deg) translate(-15px,-80px);
+  }
+  .second-col {
+    padding-left: 100px;
+    margin-left: 0;
+  }
+  .content .text h3 {
+    font-size: 18px;
+  }
+  .content .parent .search {
+    height: 30px !important;
+  }
+  .content .parent .search input {
+    font-size: 12px;
+  }
+  .search .child img {
+    height: 15px;
+  }
+  .delivery .caption h3 {
+    font-size: 14px;
+    text-align: center;
+  }
+  .delivery .caption .paragraph {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+  }
+  .wrapper  {
+    justify-content: center;
+  }
+  .wrapper button {
+    font-size: 10px !important;
+  }
+  .inner .row {
+    grid-template-columns: 150px auto 150px;
+  }
+  .delivery-2 {
+    grid-template-rows: 45px auto 30px;
+  }
+  .delivery-1 img {
+    max-width: 100%;
+  }
+  .menu #col {
+    min-width: calc(100% / 4);
+  }
+  .pizza #order .image img {
+    max-width: 125px;
+    max-height: 125px;
+}
+.pizza #order .section .core .price {
+  font-size: 12px;
+}
+.pizza #order .section .core .price span {
+  font-size: 14px;
+}
+.pizza #order .section .core .icon > div {
+  width: 20px;
+  height: 20px;
+}
+
+.pizza #order .image #icon-rate {
+  width: 25px;
+  height: 25px;
+}
+.pizza #order .image #icon-rate svg {
+  width: 15px;
+  height: 15px;
+}
+}
+.pizza #order .section .text h3 {
+  font-size: 13px; 
+}
+@media (max-width:568px) {
+  
+}
+
+@media (max-width:367px) {
+  
 }
