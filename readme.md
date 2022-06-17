@@ -64,8 +64,7 @@
 
 <a href="https://github.com/laraFra/Random-Projects#-2">
 
-![css-Art](https://img.shields.io/badge/Css-Art-%23F46C?style=for-the-badge)
-
+![css-arts](https://img.shields.io/badge/Css-Art-%23F444b9?style=for-the-badge)
 
 </a>
 
@@ -154,9 +153,9 @@
 </a>
 
 
-<a href="https://github.com/laraFra/Random-Projects/tree/main/08-Slider/" >
+<a href="https://github.com/LaraFra/Random-Projects/tree/main/08-Slider" >
 
-<img src="https://github.com/laraFra/Random-Projects/blob/main/08-Slider/imgs/Slider.gif" width="400px">
+<img src="https://github.com/laraFra/Random-Projects/blob/main/08-Slider/imgs/Slider.gif" width="400">
 
 
 </a>
