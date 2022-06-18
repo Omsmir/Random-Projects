@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant</title>
+    <link rel="icon" href="imgs/icons8-pizza-50.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/keyframes.css">
     <link rel="stylesheet" href="css/all.min.css">
@@ -207,6 +208,7 @@
             </div>
             <!-- Pizza -->
             <div class="pizza flex">
+             <span class="organise flex">
               <div id="order">
                 <div class="image flex">
                   <img src="imgs/topping.png" alt="topping">
@@ -221,6 +223,18 @@
                   <div class="core">
                     <div class="rating">
                     <span class="price">$ <span>7,49</span></span>
+                     <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text"></label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text"></label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text"></label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text"></label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text"></label>
+                      </div>
                     </div>
                    <div class="icon top">
                     <div class="child child-1 flex">
@@ -244,6 +258,18 @@
                   <div class="core">
                     <div class="rating">
                     <span class="price">$ <span>4,41</span></span>
+                    <div class="rate">
+                      <input type="radio" id="star5" name="rate" value="5" />
+                      <label for="star5" title="text"></label>
+                      <input type="radio" id="star4" name="rate" value="4" />
+                      <label for="star4" title="text"></label>
+                      <input type="radio" id="star3" name="rate" value="3" />
+                      <label for="star3" title="text"></label>
+                      <input type="radio" id="star2" name="rate" value="2" />
+                      <label for="star2" title="text"></label>
+                      <input type="radio" id="star1" name="rate" value="1" />
+                      <label for="star1" title="text"></label>
+                    </div>
                     </div>
                    <div class="icon veg">
                     <div class="child child-1 flex">
@@ -253,26 +279,150 @@
                   </div>
                 </div>
               </div>
-              <div id="order">
-                <div class="image flex">
-                  <img src="imgs/pepperoni.png" alt="pepperoni">
-                  <div id="icon-rate">
-                    <svg id="first-svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi" width="24"  height="24" ><g fill="#000"><path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z" fill="#000"></path></g></svg>
-                    <svg id="second-svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi" width="24"  height="24" ><g fill="#F91880"><path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12z" fill="#F91880"></path></g></svg>
+             </span>
+              <!--  -->
+              <div class="organise flex">
+                <div id="order">
+                  <div class="image flex">
+                    <img src="imgs/pepperoni.png" alt="pepperoni">
+                    <div id="icon-rate">
+                      <svg id="first-svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi" width="24"  height="24" ><g fill="#000"><path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z" fill="#000"></path></g></svg>
+                      <svg id="second-svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi" width="24"  height="24" ><g fill="#F91880"><path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12z" fill="#F91880"></path></g></svg>
+                    </div>
+                  </div>
+                  <div class="section">
+                    <div class="text">
+                      <h3 class="text-capitalize">pepperoni pizza</h3>
+                    <div class="core">
+                      <div class="rating">
+                      <span class="price">$ <span>8,90</span></span>
+                      <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text"></label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text"></label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text"></label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text"></label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text"></label>
+                      </div>
+                      </div>
+                     <div class="icon pep">
+                      <div class="child child-1 flex">
+                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-1cvl2hr r-4qtqp9 r-yyyyoo r-1q142lx r-1xvli5t r-19u6a5r r-dnmrzs r-bnwqim r-1plcrui r-lrvibr" width="24"  height="24" ><g fill="#fff"><path d="M19.75 11H13V4.25c0-.553-.447-1-1-1s-1 .447-1 1V11H4.25c-.553 0-1 .447-1 1s.447 1 1 1H11v6.75c0 .553.447 1 1 1s1-.447 1-1V13h6.75c.553 0 1-.447 1-1s-.447-1-1-1z" fill="#fff"></path></g></svg>                    </div>
+                     </div>
+                    </div>
+                    </div>
                   </div>
                 </div>
-                <div class="section">
-                  <div class="text">
-                    <h3 class="text-capitalize">pepperoni pizza</h3>
-                  <div class="core">
-                    <div class="rating">
-                    <span class="price">$ <span>8,90</span></span>
+                <div id="order">
+                  <div class="image flex">
+                    <img src="imgs/salami.png" alt="salami">
+                    <div id="icon-rate">
+                      <svg id="first-svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi" width="24"  height="24" ><g fill="#000"><path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z" fill="#000"></path></g></svg>
+                      <svg id="second-svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi" width="24"  height="24" ><g fill="#F91880"><path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12z" fill="#F91880"></path></g></svg>
                     </div>
-                   <div class="icon pep">
-                    <div class="child child-1 flex">
-                      <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-1cvl2hr r-4qtqp9 r-yyyyoo r-1q142lx r-1xvli5t r-19u6a5r r-dnmrzs r-bnwqim r-1plcrui r-lrvibr" width="24"  height="24" ><g fill="#fff"><path d="M19.75 11H13V4.25c0-.553-.447-1-1-1s-1 .447-1 1V11H4.25c-.553 0-1 .447-1 1s.447 1 1 1H11v6.75c0 .553.447 1 1 1s1-.447 1-1V13h6.75c.553 0 1-.447 1-1s-.447-1-1-1z" fill="#fff"></path></g></svg>                    </div>
-                   </div>
                   </div>
+                  <div class="section">
+                    <div class="text">
+                      <h3 class="text-capitalize">salami pizza</h3>
+                    <div class="core">
+                      <div class="rating">
+                      <span class="price">$ <span>2,33</span></span>
+                      <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text"></label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text"></label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text"></label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text"></label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text"></label>
+                      </div>
+                      </div>
+                     <div class="icon sala">
+                      <div class="child child-1 flex">
+                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-1cvl2hr r-4qtqp9 r-yyyyoo r-1q142lx r-1xvli5t r-19u6a5r r-dnmrzs r-bnwqim r-1plcrui r-lrvibr" width="24"  height="24" ><g fill="#fff"><path d="M19.75 11H13V4.25c0-.553-.447-1-1-1s-1 .447-1 1V11H4.25c-.553 0-1 .447-1 1s.447 1 1 1H11v6.75c0 .553.447 1 1 1s1-.447 1-1V13h6.75c.553 0 1-.447 1-1s-.447-1-1-1z" fill="#fff"></path></g></svg>                    </div>
+                     </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="organise flex">
+                <div id="order">
+                  <div class="image flex">
+                    <img src="imgs/potato.png" alt="potato">
+                    <div id="icon-rate">
+                      <svg id="first-svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi" width="24"  height="24" ><g fill="#000"><path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z" fill="#000"></path></g></svg>
+                      <svg id="second-svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi" width="24"  height="24" ><g fill="#F91880"><path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12z" fill="#F91880"></path></g></svg>
+                    </div>
+                  </div>
+                  <div class="section">
+                    <div class="text">
+                      <h3 class="text-capitalize">potato pizza</h3>
+                    <div class="core">
+                      <div class="rating">
+                      <span class="price">$ <span>11</span></span>
+                      <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text"></label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text"></label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text"></label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text"></label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text"></label>
+                      </div>
+                      </div>
+                     <div class="icon pot">
+                      <div class="child child-1 flex">
+                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-1cvl2hr r-4qtqp9 r-yyyyoo r-1q142lx r-1xvli5t r-19u6a5r r-dnmrzs r-bnwqim r-1plcrui r-lrvibr" width="24"  height="24" ><g fill="#fff"><path d="M19.75 11H13V4.25c0-.553-.447-1-1-1s-1 .447-1 1V11H4.25c-.553 0-1 .447-1 1s.447 1 1 1H11v6.75c0 .553.447 1 1 1s1-.447 1-1V13h6.75c.553 0 1-.447 1-1s-.447-1-1-1z" fill="#fff"></path></g></svg>                    </div>
+                     </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="order">
+                  <div class="image flex">
+                    <img src="imgs/shrimp.png" alt="shrimp">
+                    <div id="icon-rate">
+                      <svg id="first-svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi" width="24"  height="24" ><g fill="#000"><path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z" fill="#000"></path></g></svg>
+                      <svg id="second-svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1hdv0qi" width="24"  height="24" ><g fill="#F91880"><path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12z" fill="#F91880"></path></g></svg>
+                    </div>
+                  </div>
+                  <div class="section">
+                    <div class="text">
+                      <h3 class="text-capitalize">shrimp pizza</h3>
+                    <div class="core">
+                      <div class="rating">
+                      <span class="price">$ <span>18.56</span></span>
+                      <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text"></label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text"></label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text"></label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text"></label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text"></label>
+                      </div>
+                      </div>
+                     <div class="icon shr">
+                      <div class="child child-1 flex">
+                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="r-1cvl2hr r-4qtqp9 r-yyyyoo r-1q142lx r-1xvli5t r-19u6a5r r-dnmrzs r-bnwqim r-1plcrui r-lrvibr" width="24"  height="24" ><g fill="#fff"><path d="M19.75 11H13V4.25c0-.553-.447-1-1-1s-1 .447-1 1V11H4.25c-.553 0-1 .447-1 1s.447 1 1 1H11v6.75c0 .553.447 1 1 1s1-.447 1-1V13h6.75c.553 0 1-.447 1-1s-.447-1-1-1z" fill="#fff"></path></g></svg>                    </div>
+                     </div>
+                    </div>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -22,6 +22,12 @@ let first = document.querySelector(".first-col")
 let second = document.querySelector(".second-col")
 let third = document.querySelector(".third-col")
 
+// Input
+
+let input = document.querySelectorAll("label")
+
+console.log(input[0])
+
 
 
 // Media Queries Start
@@ -79,6 +85,27 @@ let productsNumber = [
         price:  8.91 ,
         index: 0 ,
         class: "pep"
+    },
+    {
+        img: "imgs/potato.png",
+        name: "potato pizza",
+        price:  11 ,
+        index: 0 ,
+        class: "pot"
+    },
+    {
+        img: "imgs/salami.png",
+        name: "salami pizza",
+        price:  2.33 ,
+        index: 0 ,
+        class: "sala"
+    }  ,
+    {
+        img: "imgs/shrimp.png",
+        name: "shrimp pizza",
+        price:  18.56 ,
+        index: 0 ,
+        class: "shr"
     } 
 ] ;
 
@@ -216,31 +243,37 @@ function rewrite(element){
 } 
 
 
-let int = 0
+// let int = 0
 
- add.forEach((ele)=>{
-    ele.addEventListener("click",()=>{
-        addToCart(productsNumber[int].img)
-    })
- })
-
-
+//  add.forEach((ele)=>{
+//     ele.addEventListener("click",()=>{
+//         addToCart(productsNumber[int].img)
+//     })
+//  })
 
 
-// add.forEach((ele)=>{
-//    ele.addEventListener("click",()=>{
-//     if(ele.parentElement.classList.contains("top") && productsNumber[0].index == 0)
-//         addToCart(productsNumber[0].img, productsNumber[0].name,productsNumber[0].price,productsNumber[0].class),
-//         productsNumber[0].index += 1
-//     if(ele.parentElement.classList.contains("veg") && productsNumber[1].index == 0)
-//         addToCart(productsNumber[1].img, productsNumber[1].name,productsNumber[1].price,productsNumber[1].class),
-//         productsNumber[1].index += 1
-//     if(ele.parentElement.classList.contains("pep") && productsNumber[2].index == 0)
-//     addToCart(productsNumber[2].img, productsNumber[2].name,productsNumber[2].price,productsNumber[2].class),
-//     productsNumber[2].index += 1
-// })
-// })
 
+
+add.forEach((ele)=>{
+   ele.addEventListener("click",()=>{
+    if(ele.parentElement.classList.contains("top") && productsNumber[0].index == 0)
+        addToCart(productsNumber[0].img, productsNumber[0].name,productsNumber[0].price,productsNumber[0].class),
+        productsNumber[0].index += 1
+    if(ele.parentElement.classList.contains("veg") && productsNumber[1].index == 0)
+        addToCart(productsNumber[1].img, productsNumber[1].name,productsNumber[1].price,productsNumber[1].class),
+        productsNumber[1].index += 1
+    if(ele.parentElement.classList.contains("pep") && productsNumber[2].index == 0)
+    addToCart(productsNumber[2].img, productsNumber[2].name,productsNumber[2].price,productsNumber[2].class),
+    productsNumber[2].index += 1
+})
+})
+
+
+input.forEach((ele) =>{
+    if(ele.checked == false){
+        
+    }
+})
 
 
 // Start The Heart Fill For Rate  

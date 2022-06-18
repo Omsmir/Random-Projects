@@ -171,26 +171,29 @@ span a {
   padding-right: 15px;
 }
 
-.content .text h3{
-  font-weight: 600;
-  font-size: 22px;
-  padding: 30px;
-  text-transform: capitalize;
-  padding-bottom: 15px;
-  padding-top: 15px;
-}
-
 .content .text {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 50%;
+  width: 70%;
   height: 100%;
+  padding: 30px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-right: 0;
 }
+
+.content .text h3{
+  font-weight: 600;
+  font-size: 22px;
+  text-transform: capitalize;
+}
+
 .content .parent {
   width: 50%;
   height: 100%;
   padding: 30px;
+  justify-content: flex-end;
 }
 .content .parent  .search {
   width: 100%;
@@ -199,6 +202,7 @@ span a {
   background-color: var(--white-color);
   flex-direction: row;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 .content .parent  .search input {
   border: none;
@@ -217,7 +221,6 @@ span a {
   padding: 45px;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
-  height: 150px;
 }
 .inner .row {
   display: grid;
@@ -438,9 +441,15 @@ svg path {
   padding-top: 15px;
   padding-bottom: 0 !important;
 }
-.pizza #order {
+.organise  {
+  flex-direction: column;
   width: calc(100% / 3);
-  margin-right: 15px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+.pizza #order {
+  width: 100%;
+  margin-bottom: 15px;
 }
 .pizza #order:nth-child(3){
   margin-right: 0;
@@ -451,6 +460,46 @@ svg path {
   background-color: var(--white-color);
   border-radius: 20px;
 }
+.rate {
+  height: 25px;
+  padding: 0 10px;
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row-reverse;
+  position: absolute;
+  left: 50%;
+}
+.rate:not(:checked)  input {
+  position:absolute;
+  visibility: hidden;
+}
+.rate:not(:checked)  label {
+  width:15px;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:15px;
+  color:#ccc;
+}
+label:before {
+  content: '★';
+}
+.rate > input:checked ~ label {
+  color: #ffc700;    
+}
+.rate:not(:checked)  label:hover,
+.rate:not(:checked)  label:hover ~ label {
+  color: #17de38;  
+}
+.rate  input:checked + label:hover,
+.rate  input:checked + label:hover ~ label,
+.rate  input:checked ~ label:hover,
+.rate  input:checked ~ label:hover ~ label,
+.rate  label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+
 
 .pizza #order .image {
   position: relative;
@@ -490,6 +539,7 @@ svg path {
 
 .pizza #order .section .text {
   padding: 10px;
+  margin-top: 10px
 }
 .pizza #order .section .text h3 {
   font-size: 16px;
@@ -997,6 +1047,9 @@ svg path {
     max-width: 125px;
     max-height: 125px;
 }
+.pizza #order .section .text h3 {
+  width: 80%;
+}
 .pizza #order .section .core .price {
   font-size: 12px;
 }
@@ -1007,6 +1060,12 @@ svg path {
   width: 20px;
   height: 20px;
 }
+.pizza #order .section .core .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
 
 .pizza #order .image #icon-rate {
   width: 25px;
@@ -1016,12 +1075,66 @@ svg path {
   width: 15px;
   height: 15px;
 }
-}
 .pizza #order .section .text h3 {
   font-size: 13px; 
 }
+.pizza {
+  flex-direction: column;
+}
+.organise {
+  width: 100%;
+}
+
+}
+
+
 @media (max-width:568px) {
-  
+  .first-col ul {
+    padding: 15px;
+    padding-top: 30px;
+  }
+  .second-col {
+    padding-left: 50px;
+    width: 100% !important;
+  }
+  .content .text h3 {
+    font-size: 14px;
+  }
+  .content .parent .search {
+    width: 30px;
+  }
+  .content .parent .search.search-1 {
+    width: 50px;
+  }
+  .content .parent .search:hover {
+    background-color: #f8f4f4;
+  }
+  .content .parent  input {
+    display: none;
+  }
+  .content .parent .search input {
+    height: 10px !important;
+  }
+  .delivery .caption h3 {
+    font-size: 14px;
+  }
+  .delivery .caption .paragraph {
+    font-size: 12px;
+  }
+  .wrapper button {
+    font-size: 10px !important;
+  }
+  .inner .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .delivery-2 {
+    display: none;
+  }
+  .menu #col {
+    min-width: calc(100% / 2);
+  }
+
 }
 
 @media (max-width:367px) {
