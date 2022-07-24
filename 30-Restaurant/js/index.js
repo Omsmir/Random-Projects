@@ -26,7 +26,18 @@ let third = document.querySelector(".third-col")
 
 let input = document.querySelectorAll("label")
 
-console.log(input[0])
+// Star Rate 
+
+let star = document.querySelectorAll(".s")
+
+
+star.forEach((ele)=>{
+    ele.addEventListener("click",()=>{
+        if(ele.previousElementSibling.classList.contains("s3")){
+            ele.nextElementSibling.style.color = "gold"
+        }
+    })
+})
 
 
 

@@ -460,47 +460,70 @@ svg path {
   background-color: var(--white-color);
   border-radius: 20px;
 }
-.rate {
-  height: 25px;
+/* Rate Start */
+.rate, .rate1 {
   padding: 0 10px;
-  display: none;
+  display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-direction: row-reverse;
-  position: absolute;
-  left: 50%;
+  position: relative;
+  left: 0;
 }
-.rate:not(:checked)  input {
+
+
+.rate input ,.rate1 input{
   position:absolute;
   visibility: hidden;
 }
-.rate:not(:checked)  label {
+.rate label ,.rate1 label{
   width:15px;
-  overflow:hidden;
-  white-space:nowrap;
   cursor:pointer;
   font-size:15px;
   color:#ccc;
 }
-label:before {
+.rate label:before , .rate1 label::before{
   content: '★';
 }
-.rate > input:checked ~ label {
+.rate  input:checked ~ label {
   color: #ffc700;    
 }
-.rate:not(:checked)  label:hover,
-.rate:not(:checked)  label:hover ~ label {
-  color: #17de38;  
+
+
+.rate:not(:checked) label:hover,
+ .rate:not(:checked) label:hover ~ label {
+  color: #ffc700;
 }
-.rate  input:checked + label:hover,
-.rate  input:checked + label:hover ~ label,
-.rate  input:checked ~ label:hover,
-.rate  input:checked ~ label:hover ~ label,
-.rate  label:hover ~ input:checked ~ label {
-  color: #c59b08;
+.star-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items:center;
+  flex-direction: row-reverse;
+  position: relative;
+}
+.star-wrapper span {
+  font-size: 15px;
+  color: #ccc;
+  text-decoration: none;
+  transition: all 0.2s;
+  margin-right: 4px;
+  cursor: pointer;
+}
+.star-wrapper span:first-of-type {
+  margin-right: 0;
+}
+.star-wrapper span:hover {
+  color: gold;
+  transform: scale(1.3);
+}
+.s:hover ~ span {
+  color: gold;
 }
 
 
+
+
+/* rate End */
 .pizza #order .image {
   position: relative;
 
