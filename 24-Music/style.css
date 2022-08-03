@@ -6,7 +6,6 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(29, 45, 188), rgb(43, 160, 49)) repeat scroll 0% 0%;
 }
 
 .wrapper {
@@ -14,6 +13,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #eee;
 
 }
 .playpause-track,.prev-track,.next-track,.repeat-track {
@@ -26,7 +26,7 @@ body{
     align-items: center;
     flex-direction: column;
     width: 500px;
-    height: 720px;
+    height: 700px;
     border-radius: 25px;
     margin: 10px auto;
     box-shadow: 0 0px 25px rgb(69, 77, 77), 0 0px 25px rgb(0, 0, 0);
@@ -111,7 +111,6 @@ body{
 
 .slider .seek {
     width: 250px;
-
 }
 /** FF*/
 input[type="range"]::-moz-range-progress {
@@ -120,7 +119,7 @@ input[type="range"]::-moz-range-progress {
   }
 
 
-  .container {
+.container {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -128,8 +127,8 @@ input[type="range"]::-moz-range-progress {
   }
 
   .container  .volumer {
-      width: 120px;
-      background-color: transparent;
+    width: 120px;
+    background-color: transparent;
   }
 .container .fa.fa-volume-down {
     margin-right: 8px;
