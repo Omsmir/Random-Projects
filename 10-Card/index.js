@@ -10,6 +10,8 @@ let left = document.querySelector(".container .col-left")
 let text = document.querySelectorAll(".col-right aside .text")
 
 
+var head = document.querySelectorAll(".head")
+
 
 
 signUp.forEach((ele) => {
@@ -23,6 +25,9 @@ ele.addEventListener("click",() => {
         el.classList.toggle("index")
     })
 
+    head.forEach((ele)=> {
+        ele.classList.toggle("index")
+    })
 
 
 })
