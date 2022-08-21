@@ -12,11 +12,23 @@ body {
     align-items: center;
 }
 
+.container {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+
 .slider-container {
     width: 80%;
     height: 350px;
-    position: relative;
     overflow: hidden;
+    position: relative;
+    perspective: 1000px;
+    display: flex;
+    align-items: center;
 }
 
 .inner {

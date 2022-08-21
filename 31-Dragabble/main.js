@@ -1,6 +1,7 @@
 let Slider = document.querySelector('.slider-container');
 let innerSlider = document.querySelector('.inner');
 
+
 let pressed = false;
 let startX;
 let x;
