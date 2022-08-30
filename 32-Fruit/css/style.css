@@ -295,7 +295,7 @@ nav.link a:hover .hash {
 }
 
 
-@keyframes opac {
+@keyframes opacity {
   from{
     opacity: 0;
   }
