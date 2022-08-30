@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/brands.min.css" integrity="sha512-nS1/hdh2b0U8SeA8tlo7QblY6rY6C+MgkZIeRzJQQvMsFfMQFUKp+cgMN2Uuy+OtbQ4RoLMIlO2iF7bIEY3Oyg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css" integrity="sha512-R+xPS2VPCAFvLRy+I4PgbwkWjw1z5B5gNDYgJN5LfzV4gGNeRQyVrY7Uk59rX+c8tzz63j8DeZPLqmXvBxj8pA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="#">Fruita</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav ms-auto ">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" >Contacts</a>
+              </li>
+              <form class="d-flex pcart">
+    <button class="cart main">My Cart<i class="fa-solid fa-cart-shopping"></i></button>
+              </form> 
+            </ul>
+          </div>
+        </div>
+      </nav>
+<section class="home">
+    <div class="container-fluid">
+        <div class="row d-none">
+            <div class="col-lg-7 pt-5 ps-5">
+                <div class="text">
+                    <h1 class=" ">Too much fruit is too good.</h1>
+                    <p class="text-black-50 text-capitalize">we put a premium on our fruits and they're always farm-fresh and delicious</p>
+                    <button class="order ps-3 pe-3 main">order now <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="image">
+                    <img src="imgs/kiwi-removebg.png" class=" kiwi" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="core ps-5 pt-5 d-flex  justify-content-center align-items-center">
+      <div class="inner">
+        <aside class="ps-5">
+            <span class="icon mb-3">
+                <i class="fa-solid fa-arrow-left"></i>
+            </span>
+            <nav class="link">
+            <span class="products">
+                <a href="#products ">products<span class="hash">/</span><a href="#kiwi">Kiwi</a></a>
+
+            </span>
+            </nav>
+        </aside>
+        <span class="content d-flex justify-content-lg-start text-left">
+            <div class="text">
+                <h1 class="text-capitalize fs-1 pe-0">kiwi fruit - fresh</h1>
+                <span class="sign fs-2 fw-bold mb-5">$ <h3 class="fs-2 ms-1">5,49</h3></span>
+            <p class="text-black-50 text-capitalize fs-6 fw-{500}">While kiwifruit is most often eaten as a snack, it does have many uses. Cross-merchandise it with iced tea, pitchers, berries, fruit salad ingredients and baking goods.</p>
+            <aside class="addToCart d-flex">
+                <button class="main more"><span class="minus me-3">-</span> 1 <span class="plus ms-3">+</span></button>
+                <button class="main text-uppercase checkout">Add to cart</button>
+
+            </aside>
+        </div>
+        </span>
+      </div>
+      <div class="wrapper d-flex justify-content-center align-items-center" id="wrapper">
+        <header >
+            <img src="imgs/kiwi3.jpg" class="img-fluid"  alt="">
+        </header>
+        <span class="row mt-5" id="images">
+            <span class="col-lg-3 col-md-3 col-sm-3 pic"><img src="imgs/kiwi2.jpg" class="kiwi2 img-fluid" alt=""></span>
+            <span class="col-lg-3 col-md-3 col-sm-3 pic"><img src="imgs/kiwi1.jpg" class="kiwi1 img-fluid" alt=""></span>
+            <span class="col-lg-3 col-md-3 col-sm-3 pic "><img src="imgs/kiwi3.jpg" class="kiwi3 img-fluid active" alt=""></span>
+            <span class="col-lg-3 col-md-3 col-sm-3 pic"><img src="imgs/kiwi4.jpg" class="kiwi4 img-fluid" alt=""></span>
+        </span>
+      </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+</html>
