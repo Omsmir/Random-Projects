@@ -1,5 +1,8 @@
 // Get Slider Items | Array.form [ES6 Feature]
-var sliderImages = Array.from(document.querySelectorAll('.slider-container .imgs img'));
+var sliderImages = Array.from(document.querySelectorAll('.container .imgs img'));
+
+
+console.log(sliderImages)
 
 // Get Number Of Slides
 var slidesCount = sliderImages.length;
@@ -15,7 +18,9 @@ var nextButton = document.getElementById('next');
 var prevButton = document.getElementById('prev');
 
 // Handle Click on Previous and Next Buttons
-nextButton.onclick = nextSlide;
+nextButton.addEventListener("click" ,() => {
+    nextSlide()
+})
 prevButton.onclick = prevSlide;
 
 // Create The Main UL Element
@@ -69,14 +74,14 @@ theChecker();
 function nextSlide(){
     if(nextButton.classList.contains('disabled')){
         //do Nothing
-        return false;
-
+console.log("ok")
     } else {
         currentSlide++;
 
         //checker
         theChecker();
     }
+ 
 };
 // Previous Slide Function
 
@@ -92,6 +97,18 @@ function prevSlide(){
     }
 };
 
+auto()
+
+
+
+function auto(){
+  setInterval(
+    nextSlide
+  ,5000)
+}
+
+
+
 // Create The Checker Function
 function theChecker() {
 
@@ -105,7 +122,7 @@ function theChecker() {
     sliderImages[currentSlide - 1].classList.add('active');
   
     // Set Active Class on Current Pagination Item
-    paginationCreatedUl.children[currentSlide  -1].classList.add('active'); // Focus
+    paginationCreatedUl.children[currentSlide  - 1].classList.add('active'); // Focus
   
     // Check if Current Slide is The First
     if (currentSlide == 1) {
