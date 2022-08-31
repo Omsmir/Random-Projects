@@ -20,17 +20,6 @@ li.forEach((ele) => {
         li.forEach((el) => {
             el.classList.remove("active")
         })
-        section.forEach((ele) => {
-            if(ele.classList.contains("none")){
-                ele.classList.toggle("none")
-                ele.classList.toggle("visible")
-            }else{
-                ele.classList.toggle("none")
-                section.forEach((el  ) => {
-                    el.classList.remove("visible")
-                })
-            }
-        })
         ele.classList.add("active")
     }
    })
