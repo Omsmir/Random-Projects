@@ -4,38 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruit</title>
+    <!-- Primary Meta Tags -->
+<title>Fruit Store </title>
+<meta name="title" content="Fruit Store ">
+<meta name="description" content="Online Fruit - Store Under-Building">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://omsmir.github.io/Fruit">
+<meta property="og:title" content="Fruit Store">
+<meta property="og:description" content="Online Fruit - Store Under-Building">
+<meta property="og:image" content="./imgs/About.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://omsmir.github.io/Fruit">
+<meta property="twitter:title" content="Fruit Store ">
+<meta property="twitter:description" content="Online Fruit - Store Under-Building">
+<meta property="twitter:image" content="./imgs/About.jpg">
+<!-- Css Files -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
+<!-- Font Links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;800&display=swap" rel="stylesheet"> 
+   <!-- Aos Js-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/brands.min.css" integrity="sha512-nS1/hdh2b0U8SeA8tlo7QblY6rY6C+MgkZIeRzJQQvMsFfMQFUKp+cgMN2Uuy+OtbQ4RoLMIlO2iF7bIEY3Oyg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css" integrity="sha512-R+xPS2VPCAFvLRy+I4PgbwkWjw1z5B5gNDYgJN5LfzV4gGNeRQyVrY7Uk59rX+c8tzz63j8DeZPLqmXvBxj8pA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- Chart js -->
+<link rel="stylesheet" href="css/morris.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand " href="#">Fruita</a>
-
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav ms-auto ">
                 <li class="nav-item">
-                    <a class="nav-link  active" href="#Home">Home</a>
+                <a class="nav-link  active" href="#Home">Home</a>
                 </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Products">Products</a>
-              </li>
-              <li class="nav-item">
+                <li class="nav-item">
                 <a class="nav-link" href="#About">About</a>
-              </li>
-              <li class="nav-item">
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#Products">Products</a>
+                </li>
+                <li class="nav-item">
                 <a class="nav-link" href="#Contacts" >Contacts</a>
-              </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Sales" >Sales</a>
+                    </li>
               <form class="d-flex pcart">
     <button class="cart main">My Cart<i class="fa-solid fa-cart-shopping"></i></button>
               </form> 
@@ -43,14 +69,14 @@
           </div>
         </div>
       </nav>
-<section class="home" id="Home">
+<section class="home pt-5" id="Home">
     <div class="container-fluid">
         <div class="row ">
             <div class="col-lg-7 pt-5 ps-5">
                 <div class="text">
-                    <h1 class=" ">Too much fruit is too good.</h1>
-                    <p class="text-black-50 text-capitalize">we put a premium on our fruits and they're always farm-fresh and delicious</p>
-                    <button class="order ps-3 pe-3 main">order now <i class="fa-solid fa-arrow-right"></i></button>
+                    <h1 class="mb-4">Too much fruit is too good.</h1>
+                    <p class="text-black-50 text-capitalize mb-4">we put a premium on our fruits and they're always farm-fresh and delicious</p>
+                    <button class="order ps-3 pe-3 main" type="button">order now <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </div>
             <div class="col-lg-4">
@@ -62,27 +88,47 @@
         </div>
     </div>
 </section>
-<section class="Products pb-5" id="Products">
+<section class="About pt-5 pb-5 position-relative" id="About">
+    <div class="container-sm">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+               <picture class="position-relative picture">
+                <div class="overlay position-absolute"></div>
+                <img src="imgs/About.jpg" class="img-thumbnail position-relative" alt="">
+               </picture>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="paragraph d-flex justify-content-end flex-column align-items-center h-100">
+                    <p class="text-white fs-5 fw-bold text-capitilize">Pharetra magna ac placerat vestibulum lectus mauris ultrices. Ut pharetra sit amet aliquam id diam maecenas ultricies mi. Sollicitudin ac orci phasellus egestas tellus rutrum. Venenatis cras sed felis eget. Amet risus nullam eget felis eget nunc. Lacus vestibulum sed arcu non odio euismod. Consectetur adipiscing elit duis tristique.</p>
+                <details class="text-white text-left w-100">
+                    <summary class="mb-3">Read More</summary>
+                    <p class="text-capitalize">Pharetra magna ac placerat vestibulum lectus mauris ultrices.</p>
+                </details>
+                </div>
+                <nav class="links">
+                    <ul class="d-flex">
+                        <li class="text-white list-unstyled"><a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-facebook text-white"></i></a></li>
+                        <li class="text-white list-unstyled"><a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-linkedin text-white"></i></a></li>
+                        <li class="text-white list-unstyled"><a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-twitter text-white"></i></a></li>
+
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="Products pb-5 pt-5" id="Products">
     <div class="container-fluid">
         <div class="row">
-            <div class="core ps-5  d-flex  justify-content-center align-items-center">
+            <div class="core ps-5 d-flex justify-content-center align-items-center">
       <div class="inner">
-        <aside class="ps-5">
-            <span class="icon me-3">
-                <i class="fa-solid fa-arrow-left"></i>
-            </span>
-            <nav class="link">
-            <span class="products">
-                <a href="#products ">products<span class="hash">/</span><a href="#kiwi">Kiwi</a></a>
-
-            </span>
-            </nav>
-        </aside>
-        <span class="content d-flex justify-content-lg-start text-left">
+        <span class="content d-flex justify-content-lg-start text-left" data-aos="zoom-in" data-aos-duration="1000" >
             <div class="text">
-                <h1 class="text-capitalize fs-1 pe-0">kiwi fruit - fresh</h1>
+                <h1 class="text-capitalize fs-1 pe-0" >kiwi fruit - fresh</h1>
                 <span class="sign fs-2 fw-bold mb-5">$ <h3 class="fs-2 ms-1">5,49</h3></span>
-            <p class="text-black-50 text-capitalize fs-6 fw-{500}">While kiwifruit is most often eaten as a snack, it does have many uses. Cross-merchandise it with iced tea, pitchers, berries, fruit salad ingredients and baking goods.</p>
+            <p class="text-black-50 text-capitalize fs-6">While kiwifruit is most often eaten as a snack, it does have many uses. Cross-merchandise it with iced tea, pitchers, berries, fruit salad ingredients and baking goods.</p>
             <aside class="addToCart d-flex">
                 <div class="more"><span class="minus me-3">-</span> <div class="num">1</div> <span class="plus ms-3">+</span></div>
                 <button class="main text-uppercase checkout">Add to cart</button>
@@ -90,8 +136,8 @@
         </div>
         </span>
       </div>
-      <div class="wrapper d-flex justify-content-center align-items-center" id="wrapper">
-        <header >
+      <div class="wrapper d-flex justify-content-center align-items-center" id="wrapper" data-aos="zoom-in" data-aos-duration="1000" >
+        <header>
             <img src="imgs/kiwi3.jpg" class="img-fluid"  alt="">
         </header>
         <span class="row mt-5" id="images">
@@ -105,8 +151,41 @@
             
     </div>
 </section>
-    <script src="js/index.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+
+<section class="Our-sales pt-5 pb-5 " id="Sales">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-1 ps-0">
+                <div class="years position-relative">
+                    <ul class="d-flex flex-column position-relative">
+                        <li class="list-unstyled"><a href="javascript:void(0)" class="text-decoration-none" data-attr="185 1825 2000 1400 815 745" id="2018">2018</a></li>
+                        <li class="list-unstyled"><a href="javascript:void(0)" class="text-decoration-none" data-attr="2540 199 1500 1990 700 340" id="2019">2019</a></li>
+                        <li class="list-unstyled"><a href="javascript:void(0)" class="text-decoration-none" data-attr="185 780 2405 200 1500 604" id="2020">2020</a></li>
+                        <li class="list-unstyled"><a href="javascript:void(0)" class="active text-decoration-none" data-attr="185 1825 500 1400 815 745" id="2021">2021</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+               <div class="content">
+                <span class="circle rounded-circle">
+                    <article class="article d-flex flex-column justify-content-center align-items-center text-white">
+                        <h2 class="text-capitilize">Our Sales Last Year</h2>
+                        <p class="fs-6 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum odit ut perferendis sed quo quia asperiores obcaecati! Aliquid consequuntur ipsam necessitatibus, reiciendis dolorum ad nam iure corrupti ducimus repellat quam?</p>
+                    </article>
+                </span>
+                
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-4">
+                <canvas id="myChart" width="500" height="400"></canvas>          
+              </div>
+        </div>
+    </div>
+</section>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/index.js"></script>
     <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

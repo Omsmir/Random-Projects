@@ -6,12 +6,17 @@
   --section-color: #eff7fa;
   scroll-behavior: smooth;
 }
-.none {
-  display: none;
+
+h1::selection,p::selection,h3::selection {
+  background:aliceblue;
+  color: #c6a41f;
+  
 }
-.visible {
-  animation: opacity 1s ease-in-out alternate 1;
+
+.back {
+  background-color: aliceblue !important;
 }
+
 @font-face {
   font-family: "Mova";
   src: url(/32-Fruit/fonts/Mova.ttf);
@@ -43,6 +48,9 @@ body {
 }
 .navbar-collapse {
   transition: 0.3s ease-in-out !important;
+}
+.navbar {
+  transition: 0.3s ease-in-out;
 }
 
 
@@ -146,7 +154,77 @@ img.kiwi {
   pointer-events: none;
   user-select: none;
 }
+/* Start About */
 
+section[id='About']{
+  background-color: #000;
+
+}
+section[id='About']::before {
+  content: "About";
+  position: absolute;
+  font-size: 200px;
+  color: rgba(256,256,256);
+  top: 0;
+  left: 30%;
+  z-index: 2;
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+  transition: 0.3s ease-in-out;
+}
+
+picture {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+}
+
+picture .overlay {
+  width: 50%;
+  height: 80%;
+  background: linear-gradient(to left bottom,  var(--green-color) ,var(--yellow-color));
+  left: 0;
+  top: 25%;
+}
+
+
+details summary {
+  width: 100%; 
+}
+details[open] summary ~ *{
+  animation: sweep .5s linear;
+}
+
+
+@keyframes sweep {
+  0%    {opacity: 0; margin-left: -10px}
+  100%  {opacity: 1; margin-left: 0px}
+}
+details p {
+  transition: 0.3s ease-in-out;
+} 
+
+nav.links ul li {
+  width: 35px;
+  height: 35px;
+}
+nav.links ul li a {
+  width: 100%;
+  height: 100%;
+}
+nav.links ul li a svg {
+  font-size: 25px;
+  transition: 0.2s ease-in-out;
+}
+nav.links ul li a:hover svg.fa-facebook{
+  color: #0f4cf2 !important;
+}
+nav.links ul li a:hover svg.fa-linkedin{
+  color: #0A66C2 !important;
+}
+nav.links ul li a:hover svg.fa-twitter{
+  color: #0593F9 !important;
+}
 /* Start Products */
 
 .core {
@@ -156,48 +234,7 @@ img.kiwi {
 .inner {
   width: 40%;
 }
-.inner aside {
-  display: flex;
-  align-items: center;
-}
-.icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  width: 25px;
-  height: 25px;
-  background-color: var(--green-color);
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-}
-.icon:hover {
-  background-color: #fff;
-}
-.icon:hover svg {
-  color: #0593F9 ;
 
-}
-
-.icon svg {
-  color: #fff;
-  width: 10px;
-  transition: 0.3s ease-in-out;
-}
-
-nav.link a{
-  color: #fff !important;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 600;
-  transition: 0.3s ease-in-out;
-}
-nav.link a:hover {
-  color: #0593F9 !important;
-}
-nav.link a:hover .hash {
-  color: #fff !important;
-}
 .wrapper {
   width: 60%;
   flex-direction: column;
@@ -224,11 +261,6 @@ nav.link a:hover .hash {
 .wrapper #images {
   width: 100%;
   height: 150px;
-  /* display: grid;
-  gap:20px 20px;
-  grid-template-columns: repeat(auto-fill,minmax(150px,auto));
-  justify-content: center;
-  align-items: center; */
 }
 
 #images .pic {
@@ -243,9 +275,6 @@ nav.link a:hover .hash {
   border: 3px solid var(--green-color);
   transform: scale(1.1);
 }
-/* #images .pic:not(:last-of-type){
-  margin-right: 65px;
-} */
 
 .content .text .sign {
   display: flex;
@@ -295,6 +324,68 @@ nav.link a:hover .hash {
 }
 
 
+/* Sales Start */
+
+section[id="Sales"] {
+  background-color: var(--section-color);
+}
+
+section[id="Sales"] .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section[id="Sales"] .circle {
+  display: flex;
+  justify-content:center;
+  width: 400px;
+  height: 400px;
+  background-color: #0593F9;
+}
+
+section[id="Sales"] .years {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section[id="Sales"] .years ul {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  left: 0;
+  padding-left: 0 !important;
+}
+section[id="Sales"] .years ul li {
+  margin-bottom: 25px;
+  border: 1px solid var(--green-color);
+  border-left: 0;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  transform: translateX(-15px);
+  display: grid;
+  place-content: center;
+  width: 70px;
+}
+.years ul li a {
+  width: 70px;
+  height: 100%;
+  text-align: center;
+  padding: 5px;
+}
+.years ul li a.active {
+  background-color: #0593F9 !important;
+  color: #fff !important;
+}
+section[id="Sales"] .years ul li:hover {
+  background-color: var(--green-color);
+  transform: translateX(0);
+}
+section[id="Sales"] .years ul li:hover a {
+  color: #fff !important;
+}
 @media (max-width: 974px) {
   form {
     margin-right: 0rem !important;
@@ -322,9 +413,52 @@ nav.link a:hover .hash {
   .wrapper {
     width: 100%;
   }
+  .navbar {
+    background-color: aliceblue;
+  }
 }
 
+@media (max-width: 767px) {
+  section[id='About']::before {
+    font-size: 125px;
+    left: 25%;
+  }
+  .wrapper #images {
+    height: auto;
+  }
+}
 
+@media (max-width:567px){
+  .navbar-brand {
+    margin-left: 2rem;
+  }
+  #images {
+    display: grid;
+    gap: 20px 20px;
+    grid-template-columns: repeat(auto-fill,minmax(150px,auto));
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+@media(max-width:476px) {
+  section[id="About"]::before{
+    font-size: 100px;
+    left: 25%;
+    top: 25%;
+  }
+}
+
+@media(max-width:367px) {
+  .text h1 {
+    font-size: 75px;
+  }
+  section[id="About"]::before{
+    font-size: 75px;
+    left: 20%;
+  }
+}
 @keyframes opacity {
   from{
     opacity: 0;
