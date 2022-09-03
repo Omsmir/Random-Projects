@@ -22,6 +22,8 @@
 <meta property="twitter:title" content="Fruit Store ">
 <meta property="twitter:description" content="Online Fruit - Store Under-Building">
 <meta property="twitter:image" content="./imgs/About.jpg">
+<!-- Icon -->
+<link rel="icon" href="imgs/apple.png" type="image/x-icon">
 <!-- Css Files -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -35,10 +37,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/brands.min.css" integrity="sha512-nS1/hdh2b0U8SeA8tlo7QblY6rY6C+MgkZIeRzJQQvMsFfMQFUKp+cgMN2Uuy+OtbQ4RoLMIlO2iF7bIEY3Oyg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/fontawesome.min.css" integrity="sha512-R+xPS2VPCAFvLRy+I4PgbwkWjw1z5B5gNDYgJN5LfzV4gGNeRQyVrY7Uk59rX+c8tzz63j8DeZPLqmXvBxj8pA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<!-- Chart js -->
-<link rel="stylesheet" href="css/morris.css">
 </head>
 <body>
+    <div class="over"></div>  
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand " href="#">Fruita</a>
@@ -57,24 +58,57 @@
                 <a class="nav-link" href="#Products">Products</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#Contacts" >Contacts</a>
+                <a class="nav-link" href="#Sales" >Sales</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#Sales" >Sales</a>
-                    </li>
+                <a class="nav-link" href="#Contacts" >Contacts</a>
+                </li>
+                
               <form class="d-flex pcart">
-    <button class="cart main">My Cart<i class="fa-solid fa-cart-shopping"></i></button>
+    <span class="cart main">My Cart<i class="fa-solid fa-cart-shopping"></i></span>
               </form> 
             </ul>
           </div>
         </div>
       </nav>
-<section class="home pt-5" id="Home">
+<section class="home pt-5 pb-5 position-relative" id="Home">
+    <div class="shopping-cart position-fixed rounded-2 p-4">
+        <div class="exit position-absolute d-flex justify-content-center align-items-center rounded-circle me-1 mt-1">
+            <i class="fa-solid fa-circle-xmark"></i>
+        </div>
+             <div class="outer-layer d-flex justify-content-start align-items-center flex-column">
+                <div class="head d-flex justify-content-center align-items-center">
+                    <span class="list fw-bold" id="Product">Product</span>
+                    <span class="list fw-bold" id="Price">Price</span>
+                    <span class="list fw-bold" id="Quantity">Quantity</span>
+                    <span class="list fw-bold" id="Remove">Remove</span>
+                </div>
+                <div class="innerLayer mt-2 d-flex justify-content-center align-items-center">
+                    <!-- <div class="head-1">
+                    <span class="list fw-bold justify-content-start" id="Product">
+                        <div class="content d-flex flex-row justify-content-center align-items-center">
+                            <img src="imgs/kiwi2.jpg" class="rounded-2" id="product-img">
+                            <p class="text-black-50 text-capitalize mb-0 ms-3" id="desc">kiwi - fresh fruit</p>
+                        </div>
+                    </span>
+                    <span class="list fw-bold" id="Price">$</span>
+                    <span class="list fw-bold" id="Quantity">1</span>
+                    <span class="list fw-bold" id="Remove">
+                        <div class="delete rounded-circle d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </div>
+                    </span>
+                </div> -->
+
+                </div>          
+             </div>
+             <button value="Proceed To Checkout" id="Checkout" class="rounded-2 fw-bold border-0 text-white p-1" type="button">Proceed To Checkout</button>
+    </div>
     <div class="container-fluid">
         <div class="row ">
             <div class="col-lg-7 pt-5 ps-5">
                 <div class="text">
-                    <h1 class="mb-4">Too much fruit is too good.</h1>
+                    <h1 class="mb-4">Too much fruit is too <span class="auto">good</span>.</h1>
                     <p class="text-black-50 text-capitalize mb-4">we put a premium on our fruits and they're always farm-fresh and delicious</p>
                     <button class="order ps-3 pe-3 main" type="button">order now <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
@@ -122,15 +156,15 @@
 <section class="Products pb-5 pt-5" id="Products">
     <div class="container-fluid">
         <div class="row">
-            <div class="core ps-5 d-flex justify-content-center align-items-center">
+            <div class="core d-flex justify-content-center align-items-center">
       <div class="inner">
         <span class="content d-flex justify-content-lg-start text-left" data-aos="zoom-in" data-aos-duration="1000" >
             <div class="text">
-                <h1 class="text-capitalize fs-1 pe-0" >kiwi fruit - fresh</h1>
-                <span class="sign fs-2 fw-bold mb-5">$ <h3 class="fs-2 ms-1">5,49</h3></span>
+                <h1 class="text-capitalize fs-1 pe-0" id="productName" data-product-id="2">kiwi fruit - fresh</h1>
+                <span class="sign fs-2 fw-bold mb-5">$ <h3 class="fs-2 ms-1" id="productPrice">5.49</h3></span>
             <p class="text-black-50 text-capitalize fs-6">While kiwifruit is most often eaten as a snack, it does have many uses. Cross-merchandise it with iced tea, pitchers, berries, fruit salad ingredients and baking goods.</p>
             <aside class="addToCart d-flex">
-                <div class="more"><span class="minus me-3">-</span> <div class="num">1</div> <span class="plus ms-3">+</span></div>
+                <div class="more"><span class="minus me-3">-</span> <div class="num" id="productCount">1</div> <span class="plus ms-3">+</span></div>
                 <button class="main text-uppercase checkout">Add to cart</button>
             </aside>
         </div>
@@ -138,50 +172,78 @@
       </div>
       <div class="wrapper d-flex justify-content-center align-items-center" id="wrapper" data-aos="zoom-in" data-aos-duration="1000" >
         <header>
-            <img src="imgs/kiwi3.jpg" class="img-fluid"  alt="">
+            <img src="imgs/kiwi3.jpg" class="img-fluid"  alt="" id="productImage">
         </header>
         <span class="row mt-5" id="images">
+            <span class="col-lg-3 col-md-3 col-sm-3 pic"><img src="imgs/kiwi1.jpg" class="kiwi1 img-fluid" alt="" ></span>
             <span class="col-lg-3 col-md-3 col-sm-3 pic"><img src="imgs/kiwi2.jpg" class="kiwi2 img-fluid" alt=""></span>
-            <span class="col-lg-3 col-md-3 col-sm-3 pic"><img src="imgs/kiwi1.jpg" class="kiwi1 img-fluid" alt=""></span>
-            <span class="col-lg-3 col-md-3 col-sm-3 pic "><img src="imgs/kiwi3.jpg" class="kiwi3 img-fluid active" alt=""></span>
+            <span class="col-lg-3 col-md-3 col-sm-3 pic "><img src="imgs/kiwi3.jpg" class="kiwi3 img-fluid now" alt=""></span>
             <span class="col-lg-3 col-md-3 col-sm-3 pic"><img src="imgs/kiwi4.jpg" class="kiwi4 img-fluid" alt=""></span>
         </span>
       </div>
             </div>
             
     </div>
+</div>
+<div class="container-sm pt-5">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="slider d-flex justify-content-center align-items-center flex-row">
+                <div class="card" style="width: 200px;">
+                    <img src="imgs/kiwi2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">$7,49</p>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 200px;">
+                    <img src="imgs/kiwi1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">$7,49</p>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 200px;">
+                    <img src="imgs/kiwi3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">$7,49</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
 </section>
 
-<section class="Our-sales pt-5 pb-5 " id="Sales">
+<section class="Our-sales pt-5 pb-5" id="Sales">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-1 ps-0">
-                <div class="years position-relative">
-                    <ul class="d-flex flex-column position-relative">
-                        <li class="list-unstyled"><a href="javascript:void(0)" class="text-decoration-none" data-attr="185 1825 2000 1400 815 745" id="2018">2018</a></li>
-                        <li class="list-unstyled"><a href="javascript:void(0)" class="text-decoration-none" data-attr="2540 199 1500 1990 700 340" id="2019">2019</a></li>
-                        <li class="list-unstyled"><a href="javascript:void(0)" class="text-decoration-none" data-attr="185 780 2405 200 1500 604" id="2020">2020</a></li>
-                        <li class="list-unstyled"><a href="javascript:void(0)" class="active text-decoration-none" data-attr="185 1825 500 1400 815 745" id="2021">2021</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-5 col-md-6">
                <div class="content">
                 <span class="circle rounded-circle">
                     <article class="article d-flex flex-column justify-content-center align-items-center text-white">
-                        <h2 class="text-capitilize">Our Sales Last Year</h2>
+                        <h2 class="text-capitilize mb-4">Our Sales 2021</h2>
                         <p class="fs-6 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum odit ut perferendis sed quo quia asperiores obcaecati! Aliquid consequuntur ipsam necessitatibus, reiciendis dolorum ad nam iure corrupti ducimus repellat quam?</p>
                     </article>
                 </span>
                 
                </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-4">
+            <div class="col-lg-5 col-md-6 ">
                 <canvas id="myChart" width="500" height="400"></canvas>          
               </div>
+              <div class="col-lg-2 ps-0 pe-0 ">
+                <div class="years position-relative">
+                    <ul class="d-flex position-relative">
+                        <li class="list-unstyled" data-attr="185 1825 2000 1400 815 745" id="2018">2018</li>
+                        <li class="list-unstyled" data-attr="2540 199 1500 1990 700 340" id="2019">2019</li>
+                        <li class="list-unstyled" data-attr="185 780 2405 200 1500 604" id="2020">2020</li>
+                        <li class="list-unstyled active" data-attr="185 1825 500 1400 815 745" id="2021">2021</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </section>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="js/index.js"></script>

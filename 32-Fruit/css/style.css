@@ -7,6 +7,13 @@
   scroll-behavior: smooth;
 }
 
+svg {
+  transition: 0.3s ease-in-out;
+}
+section {
+  overflow: hidden;
+}
+
 h1::selection,p::selection,h3::selection {
   background:aliceblue;
   color: #c6a41f;
@@ -17,22 +24,148 @@ h1::selection,p::selection,h3::selection {
   background-color: aliceblue !important;
 }
 
-@font-face {
-  font-family: "Mova";
-  src: url(/32-Fruit/fonts/Mova.ttf);
-}
 
 @font-face {
   font-family: "XHARPDemoGradient";
   src: url("/32-Fruit/fonts/XHARPDemoGradient.ttf");
 }
 
+
 body { 
   position: relative;
   font-family: 'Raleway', sans-serif !important;  
   background: linear-gradient(to right,  var(--dark-color) 50%,var(--yellow-color));
-
 }
+
+.over {
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  background: rgba(0,0,0,0.5);
+}
+.over.active {
+  display: block;
+  animation: opacity 1s ease-in-out alternate 1;
+}
+.shopping-cart {
+  display: none;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 900px;
+  min-height: 400px;
+  right: 50%;
+  transform: translate(50%,25%);
+  background-color: #fff;
+  z-index: 10;
+  user-select: none;
+  
+}
+
+.exit {
+  right: 0;
+  top: 0;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.exit:hover {
+  background-color: #eee;
+}
+.exit:hover svg {
+  color: var(--green-color);
+}
+.fade-out{
+  animation: fade-out 1s ease-in-out alternate 1;
+}
+
+
+.shopping-cart.active {
+  display: flex;
+  animation: opacity 1s ease-in-out alternate 1;
+}
+.shopping-cart .outer-layer {
+  width: 90%;
+  height: 80%;  
+}
+
+.shopping-cart .head {
+  width: 100%;
+  min-height: 50px;
+  background-color: #eee;
+}
+.shopping-cart .innerLayer  {
+  width: 100%;
+  max-height: 350px;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+.overflow-y{
+}
+
+.shopping-cart .head-1 span {
+  width: calc(100% / 4);
+  height: 100%;
+  text-align: center;
+  display: grid;
+  place-content: center;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.shopping-cart .head-1 { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  margin-bottom: 15px;
+}
+
+.shopping-cart .head-1 span[id="Product"] .content {
+  width: 100%;
+}
+.shopping-cart .head-1 span[id="Product"] .content  img {
+  width: 100px;
+}
+.shopping-cart .head-1 span[id="Product"] .content  p {
+  width: 100% !important;
+}
+.shopping-cart .head-1 span[id="Remove"] .delete {
+  width: 30px;
+  height: 30px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.shopping-cart .head-1 span[id="Remove"] .delete:hover {
+  background-color: #eee;
+}
+.shopping-cart .head-1 span[id="Remove"] .delete:hover svg {
+  color: var(--green-color);
+}
+.shopping-cart #Checkout {
+  background-color: var(--green-color);
+ transition: 0.3s ease-in-out;
+}
+.shopping-cart #Checkout:hover {
+  background-color: #0A66C2;
+}
+.head span:not(:first-of-type) {
+  width: calc(100% / 4);
+  height: 100%;
+  text-align: center;
+  display: grid;
+  place-content: center;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.head span[id="Product"],.head-1 span[id="Product"]{
+  width: 100% !important;
+  margin-left: 15px;
+}
+
 .main {
   border: none;
   padding: 7px;
@@ -94,6 +227,7 @@ ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--section-color);
 }
 
 
@@ -123,7 +257,10 @@ ul li a:hover {
   text-align: left;
   padding-right: 45px;
 }
-
+.text h1 span {
+  background-color:  var(--green-color) ;
+  color: var(--section-color);
+}
 .text p {
   width: 450px;
   font-size: 20px;
@@ -282,6 +419,10 @@ nav.links ul li a:hover svg.fa-twitter{
   align-items: center;
   text-align: center;
 }
+.content .text .sign abbr {
+  cursor: no-drop;
+  
+}
 
 .text aside {
   width: 250px;
@@ -342,6 +483,7 @@ section[id="Sales"] .circle {
   width: 400px;
   height: 400px;
   background-color: #0593F9;
+  transition: 0.3s ease-in-out;
 }
 
 section[id="Sales"] .years {
@@ -354,39 +496,45 @@ section[id="Sales"] .years ul {
   width: 100%;
   height: 100%;
   justify-content: center;
-  align-items: flex-start;
+  align-items: flex-end;
+  flex-direction: column;
   left: 0;
   padding-left: 0 !important;
 }
 section[id="Sales"] .years ul li {
   margin-bottom: 25px;
-  border: 1px solid var(--green-color);
-  border-left: 0;
-  transition: 0.3s ease-in-out;
+  margin-right: 0 !important;
+  transition: 0.3s ease-in-out !important;
   cursor: pointer;
-  transform: translateX(-15px);
   display: grid;
   place-content: center;
-  width: 70px;
-}
-.years ul li a {
-  width: 70px;
-  height: 100%;
   text-align: center;
+  border: 1px solid var(--green-color);
+  border-right: 0;
   padding: 5px;
+  width: 50px;
 }
-.years ul li a.active {
+.years ul li.active {
   background-color: #0593F9 !important;
   color: #fff !important;
+  width: 70px !important;
 }
+
 section[id="Sales"] .years ul li:hover {
   background-color: var(--green-color);
-  transform: translateX(0);
-}
-section[id="Sales"] .years ul li:hover a {
   color: #fff !important;
+  width: 70px;
 }
-@media (max-width: 974px) {
+
+@media (max-width:1198px) {
+  canvas {
+    height: 100% !important;
+  }
+}
+@media (max-width: 998px) {
+  section[id="About"]::before {
+    font-size: 150pxf;
+  }
   form {
     margin-right: 0rem !important;
   }
@@ -416,6 +564,27 @@ section[id="Sales"] .years ul li:hover a {
   .navbar {
     background-color: aliceblue;
   }
+  section[id="Sales"] .years  {
+    margin-top: 30px;
+  }
+  section[id="Sales"] .years ul {
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+  section[id="Sales"] .years ul li {
+    margin-bottom: 0;
+    width: calc(100% /4);
+    border-right: 1px solid var(--green-color);
+    transform: translateY(15px);
+  }
+  section[id="Sales"] .years ul li:hover {
+    width: 25%;
+    transform: translateY(0);
+  }
+  section[id="Sales"] .years ul li.active {
+    width: 25% !important;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 767px) {
@@ -425,6 +594,9 @@ section[id="Sales"] .years ul li:hover a {
   }
   .wrapper #images {
     height: auto;
+  }
+  canvas {
+    margin-top: 30px;
   }
 }
 
@@ -448,6 +620,16 @@ section[id="Sales"] .years ul li:hover a {
     left: 25%;
     top: 25%;
   }
+  .circle {
+    width: 300px !important;
+    height:300px !important;
+  }
+  .circle article h2 {
+    font-size: 18px !important;
+  }
+  .circle article p {
+    font-size: 14px !important;
+  }
 }
 
 @media(max-width:367px) {
@@ -460,11 +642,20 @@ section[id="Sales"] .years ul li:hover a {
   }
 }
 @keyframes opacity {
-  from{
+  0%{
     opacity: 0;
   }
-  to {
+  100% {
     opacity: 1;
   }
 
+}
+
+@keyframes fade-out {
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
+  }
 }
