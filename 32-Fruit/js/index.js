@@ -69,13 +69,15 @@ const updateproductInHtml = () => {
     }
 }
 
+console.log(productInCart.length)
 
 function updateProductsInCart(product){
     for(let i = 0; i < productInCart.length; i++){
         if(productInCart[i].id == product.id){
             productInCart[i].count += product.count
-            productInCart[i].price = productInCart[i].basePrice * productInCart[i].count
-            return
+            productInCart[i].price = product.basePrice * productInCart[i].count
+            productInCart[i].image = product.image
+            return 
         }
 
     }
@@ -360,3 +362,4 @@ let opened = false
 
   CloseCart()
 openCart()
+
