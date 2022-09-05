@@ -1,0 +1,114 @@
+@media (max-width:1198px) {
+  canvas {
+    height: 100% !important;
+  }
+}
+@media (max-width: 998px) {
+  section[id="About"]::before {
+    font-size: 150pxf;
+  }
+  form {
+    margin-right: 0rem !important;
+  }
+  ul li {
+    width: 100%;
+    text-align: center;
+  }
+  img.kiwi {
+    width: 100% !important;
+  }
+  .core {
+    flex-direction: column !important;
+  }
+  .inner {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .text p {
+    width: 100%;
+  }
+  header  {
+    width: 100% !important;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .navbar {
+    background-color: aliceblue;
+  }
+  section[id="Sales"] .years  {
+    margin-top: 30px;
+  }
+  section[id="Sales"] .years ul {
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+  section[id="Sales"] .years ul li {
+    margin-bottom: 0;
+    width: calc(100% /4);
+    border-right: 1px solid var(--green-color);
+    transform: translateY(15px);
+  }
+  section[id="Sales"] .years ul li:hover {
+    width: 25%;
+    transform: translateY(0);
+  }
+  section[id="Sales"] .years ul li.active {
+    width: 25% !important;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 767px) {
+    section[id='About']::before {
+      font-size: 125px;
+      left: 25%;
+    }
+    .wrapper #images {
+      height: auto;
+    }
+    canvas {
+      margin-top: 30px;
+    }
+  }
+  
+  @media (max-width:567px){
+    .navbar-brand {
+      margin-left: 2rem;
+    }
+    #images {
+      display: grid;
+      gap: 20px 20px;
+      grid-template-columns: repeat(auto-fill,minmax(150px,auto));
+      justify-content: center;
+      align-items: center;
+    }
+  
+  }
+  
+  @media(max-width:476px) {
+    section[id="About"]::before{
+      font-size: 100px;
+      left: 25%;
+      top: 25%;
+    }
+    .circle {
+      width: 300px !important;
+      height:300px !important;
+    }
+    .circle article h2 {
+      font-size: 18px !important;
+    }
+    .circle article p {
+      font-size: 14px !important;
+    }
+  }
+  
+  @media(max-width:367px) {
+    .text h1 {
+      font-size: 75px;
+    }
+    section[id="About"]::before{
+      font-size: 75px;
+      left: 20%;
+    }
+  }

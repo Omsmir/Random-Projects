@@ -26,6 +26,7 @@
 <link rel="icon" href="imgs/apple.png" type="image/x-icon">
 <!-- Css Files -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaQ.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
 <!-- Font Links -->
@@ -61,11 +62,12 @@
                 <a class="nav-link" href="#Sales" >Sales</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#Contacts" >Contacts</a>
+                <a class="nav-link" href="#Contact-us" >Contacts</a>
                 </li>
                 
-              <form class="d-flex pcart">
-    <span class="cart main">My Cart<i class="fa-solid fa-cart-shopping"></i></span>
+              <form class="d-flex pcart position-relative">
+    <span class="cart main">My Cart<i class="fa-solid fa-cart-shopping"></i><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary notification">
+        $</span>
               </form> 
             </ul>
           </div>
@@ -92,7 +94,13 @@
                         </div>
                     </span>
                     <span class="list fw-bold" id="Price">$</span>
-                    <span class="list fw-bold" id="Quantity">1</span>
+                    <span class="list fw-bold d-flex justify-content-center align-items-center" id="Quantity">
+                        <span class="minus bg-danger me-2">
+                            <i class="fa-solid fa-minus"></i></span> 1 
+                            <span class="plus bg-success ms-2">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>   
+                    </span>
                     <span class="list fw-bold" id="Remove">
                         <div class="delete rounded-circle d-flex justify-content-center align-items-center">
                             <i class="fa-solid fa-trash-can"></i>
@@ -152,7 +160,6 @@
         </div>
     </div>
 </section>
-
 <section class="Products pt-5 pb-5" id="Products">
     <div class="container-fluid">
         <div class="row">
@@ -161,11 +168,11 @@
         <span class="content d-flex justify-content-lg-start text-left" data-aos="zoom-in" data-aos-duration="1000" >
             <div class="text">
                 <h1 class="text-capitalize fs-1 pe-0" id="productName" data-product-id="1">kiwi fruit - fresh</h1>
-                <span class="sign fs-2 fw-bold mb-5">$ <h3 class="fs-2 ms-1" id="productPrice">5.49</h3></span>
-            <p class="text-black-50 text-capitalize fs-6">While kiwifruit is most often eaten as a snack, it does have many uses. Cross-merchandise it with iced tea, pitchers, berries, fruit salad ingredients and baking goods.</p>
+                <span class="sign fs-2 fw-bold mb-5">$ <h3 class="fs-2 ms-1" id="productPrice">5.50</h3></span>
+            <p class="text-black-50 text-capitalize fs-6" id="productText">Buy kiwi, kiwifruit is most often eaten as a snack, it does have many uses. Cross-merchandise it with iced tea, pitchers, berries, fruit salad ingredients and baking goods.</p>
             <aside class="addToCart d-flex">
                 <div class="more"><span class="minus me-3">-</span> <div class="num" id="productCount">1</div> <span class="plus ms-3">+</span></div>
-                <button class="main text-uppercase checkout">Add to cart</button>
+                <button class="main text-uppercase checkout" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Added">Add to cart </button> 
             </aside>
         </div>
         </span>
@@ -175,10 +182,10 @@
             <img src="imgs/kiwi2.jpg" class="img-fluid"  alt="" id="productImage">
         </header>
         <span class="row mt-5" id="images">
-            <span class="col-lg-3 col-md-3 col-sm-3 pic"><img src="imgs/kiwi2.jpg" data-name="kiwi fruit - fresh" data-text="While kiwifruit is most often eaten as a snack, it does have many uses. Cross-merchandise it with iced tea, pitchers, berries, fruit salad ingredients and baking goods." data-price="5.50" class="kiwi2 img-fluid active" alt="" ></span>
-            <span class="col-lg-3 col-md-3 col-sm-3 pic"><img src="imgs/banana2.jpg" data-name="banana fruit -fresh" data-price="7.50" class="banana2 img-fluid"></span>
-            <span class="col-lg-3 col-md-3 col-sm-3 pic "><img src="imgs/kiwi1.jpg"  class="kiwi1 img-fluid" alt=""></span>
-            <span class="col-lg-3 col-md-3 col-sm-3 pic"><img src="imgs/apple1.jpg"  class="apple1 img-fluid" alt=""></span>
+            <span class="col-lg-3 col-md-3 col-sm-3 pic"><img src="imgs/kiwi2.jpg" data-product-id="1" data-name="Kiwi fruit - fresh" data-text="Buy kiwi, kiwifruit is most often eaten as a snack, it does have many uses. Cross-merchandise it with iced tea, pitchers, berries, fruit salad ingredients and baking goods." data-price="5.50" class="kiwi2 img-fluid active" alt="" ></span>
+            <span class="col-lg-3 col-md-3 col-sm-3 pic"><img src="imgs/banana2.jpg" data-product-id="2" data-name="Banana fruit - fresh" data-text="Buy fresh organic bananas online and add them to your bowl of cereal for a healthy breakfast. Carrying a few bananas in your bag is easy " data-price="7.50" class="banana2 img-fluid"></span>
+            <span class="col-lg-3 col-md-3 col-sm-3 pic "><img src="imgs/mango.jpg" data-product-id="3" data-name="Mango fruit - fresh" data-text="Buy Fresh Mangoes Online. Like any fruit or vegetable, fresh mangoes can be difficult to find in the United States if it is not a particular season" data-price="15.90" class="mango img-fluid" alt=""></span>
+            <span class="col-lg-3 col-md-3 col-sm-3 pic"><img src="imgs/apple1.jpg" data-product-id="4" data-name="Apple fruit - fresh" data-text="Buy apple fruit online, Fresh Fruits Online Shopping, Wholesale Price & Mandi Rate, Seasonal fruits and vegetables from farmer organic fruit vegtable" data-price="11" class="apple1 img-fluid" alt=""></span>
         </span>
       </div>
             </div>
@@ -218,6 +225,61 @@
         </div>
     </div>
 </section>
+<section class="contact-us pt-5 pb-5" id="Contact-us">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-4 d-flex flex-row">
+                <div class="col-lg-8">
+                    <div id="content" class="overflow-hidden">
+                       <div class="text">
+                        <h2 class="text-uppercase text-white mb-4">Get In touch</h2>
+                        <h4 class="text-capitalize text-white mb-4 fs-6 ">We can ensure reliability, low cost fares and most important, with safety and comfort in mind.</h4>
+                        <p class="text-capitalize text-white fs-5 fw-light mb-4 ">
+                            Etiam sit amet convallis erat – class aptent taciti sociosqu ad litora torquent per conubia! Maecenas gravida lacus. Lorem etiam sit amet convallis erat.
+                        </p>
+                       </div>
+                       <div class="social-links">
+                        <ul class="d-flex justify-content-start align-items-center">
+                            <li class="text-white list-unstyled"><a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-facebook text-white"></i></a></li>
+                            <li class="text-white list-unstyled"><a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-linkedin text-white"></i></a></li>
+                            <li class="text-white list-unstyled"><a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-twitter text-white"></i></a></li>
+                            <li class="text-white list-unstyled"><a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-behance text-white"></i></a></li>
+                            <li class="text-white list-unstyled"><a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-github text-white"></i></a></li>
+                       </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex">
+                    <div id="content-1">
+                        <div class="text d-flex">
+                            <h2 class="text-uppercase text-white fs-4 mb-3">call us</h2>
+                            <p class="text-white fs-6 mb-1">1 (234) 567-891</p>
+                            <p class="text-white fs-6">1 (234) 987-654</p>
+                            <h2 class="text-uppercase text-white fs-4 mb-3 mt-2">location</h2>
+                            <p class="text-capitilize text-white fs-6 mb-1">121 Rock Sreet, 21 Avenue,</p>
+                            <p class="text-capitilize text-white fs-6 ">New York, NY 92103-9000</p>
+                            <h2 class="text-uppercase text-white fs-4 mt-2 mb-3">Our top services</h2>
+                            <p class="text-capitilize text-white fs-6 mb-1"><i class="fa-solid fa-check me-2"></i>local transfers</p>
+                            <p class="text-capitilize text-white fs-6 mb-1"><i class="fa-solid fa-check me-2"></i>Airport Transfers</p>
+                            <p class="text-capitilize text-white fs-6 mb-1"><i class="fa-solid fa-check me-2"></i>Excursions and Tours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-4">
+                <div  id="sendmail" class="d-flex flex-column justify-content-center align-items-center pt-5">
+                    <input type="text" min="1" id="name" max="12" placeholder="Enter Your Name" class="mb-3">
+                    <input type="email" min="1" max="50" id="email" placeholder="Enter a Vaild Email" class="mb-3">
+                    <textarea name="text" id="message" cols="5" rows="5" style="resize: none;" class="mb-3" minlength="1" maxlength="150" placeholder="Enter Your Message"></textarea>
+                    <input type="submit" value="submit" id="submit">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

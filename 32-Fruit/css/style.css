@@ -102,10 +102,10 @@ body {
   width: 100%;
   height: 250px;
   flex-direction: column;
+  overflow-y: auto;
+  transition: 0.5s ease-in-out;
 }
-.overflow-y{
-  overflow-y: scroll;
-}
+
 
 .shopping-cart .head-1 span {
   width: calc(100% / 4);
@@ -144,6 +144,30 @@ body {
 }
 .shopping-cart .head-1 span[id="Remove"] .delete:hover svg {
   color: var(--green-color);
+}
+.shopping-cart .head-1 span[id='Quantity'] .minus,
+.shopping-cart .head-1 span[id='Quantity'] .plus {
+  width: 20px;
+  height: 15px;
+  cursor: pointer;
+  border-radius: 15px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s ease-in-out;
+}
+.shopping-cart .head-1 span[id='Quantity'] .minus:hover {
+  background-color: #af1727 !important;
+  
+}
+.shopping-cart .head-1 span[id='Quantity'] .plus:hover {
+  background-color: #0f6d41 !important;
+  
+}
+.shopping-cart .head-1 span[id='Quantity'] .minus svg,
+.shopping-cart .head-1 span[id='Quantity'] .plus svg {
+  font-size: 9px;
 }
 .shopping-cart #Checkout {
   background-color: var(--green-color);
@@ -353,13 +377,13 @@ nav.links ul li a svg {
   font-size: 25px;
   transition: 0.2s ease-in-out;
 }
-nav.links ul li a:hover svg.fa-facebook{
+ul li a:hover svg.fa-facebook{
   color: #0f4cf2 !important;
 }
-nav.links ul li a:hover svg.fa-linkedin{
+ ul li a:hover svg.fa-linkedin{
   color: #0A66C2 !important;
 }
-nav.links ul li a:hover svg.fa-twitter{
+ ul li a:hover svg.fa-twitter{
   color: #0593F9 !important;
 }
 /* Start Products */
@@ -461,7 +485,10 @@ nav.links ul li a:hover svg.fa-twitter{
   background-color: var(--green-color);
   color: #fff;
   font-weight: 700;
-  
+  transition: .15s cubic-bezier(.47,0,.74,.71) 0s;
+}
+.text aside .checkout:hover {
+  background-color: #0A66C2 !important;
 }
 
 /* Start Other Products */
@@ -541,121 +568,67 @@ section[id="Sales"] .years ul li:hover {
   width: 70px;
 }
 
-@media (max-width:1198px) {
-  canvas {
-    height: 100% !important;
-  }
-}
-@media (max-width: 998px) {
-  section[id="About"]::before {
-    font-size: 150pxf;
-  }
-  form {
-    margin-right: 0rem !important;
-  }
-  ul li {
-    width: 100%;
-    text-align: center;
-  }
-  img.kiwi {
-    width: 100% !important;
-  }
-  .core {
-    flex-direction: column !important;
-  }
-  .inner {
-    width: 100%;
-    margin-bottom: 3rem;
-  }
-  .text p {
-    width: 100%;
-  }
-  header  {
-    width: 100% !important;
-  }
-  .wrapper {
-    width: 100%;
-  }
-  .navbar {
-    background-color: aliceblue;
-  }
-  section[id="Sales"] .years  {
-    margin-top: 30px;
-  }
-  section[id="Sales"] .years ul {
-    flex-direction: row;
-    margin-bottom: 0;
-  }
-  section[id="Sales"] .years ul li {
-    margin-bottom: 0;
-    width: calc(100% /4);
-    border-right: 1px solid var(--green-color);
-    transform: translateY(15px);
-  }
-  section[id="Sales"] .years ul li:hover {
-    width: 25%;
-    transform: translateY(0);
-  }
-  section[id="Sales"] .years ul li.active {
-    width: 25% !important;
-    transform: translateY(0);
-  }
+/* start contact-us */
+section[id="Contact-us"]{
+  background-color: #19818F;
 }
 
-@media (max-width: 767px) {
-  section[id='About']::before {
-    font-size: 125px;
-    left: 25%;
-  }
-  .wrapper #images {
-    height: auto;
-  }
-  canvas {
-    margin-top: 30px;
-  }
+section[id="Contact-us"] #content .text h4 {
+  line-height: 2 !important;
+  font-weight: 600;
 }
 
-@media (max-width:567px){
-  .navbar-brand {
-    margin-left: 2rem;
-  }
-  #images {
-    display: grid;
-    gap: 20px 20px;
-    grid-template-columns: repeat(auto-fill,minmax(150px,auto));
-    justify-content: center;
-    align-items: center;
-  }
-
+section[id="Contact-us"] #content .text p {
+  line-height: 2;
+  font-weight: 500;
+  max-width: 350px;
+  overflow: auto;
 }
 
-@media(max-width:476px) {
-  section[id="About"]::before{
-    font-size: 100px;
-    left: 25%;
-    top: 25%;
-  }
-  .circle {
-    width: 300px !important;
-    height:300px !important;
-  }
-  .circle article h2 {
-    font-size: 18px !important;
-  }
-  .circle article p {
-    font-size: 14px !important;
-  }
+section[id="Contact-us"] #content .social-links ul li a svg {
+  font-size: 20px;
+}
+section[id="Contact-us"] #content-1 {
+  width: 100%;
+  overflow: hidden;
+}
+section[id="Contact-us"] #content-1 .text > * {
+  width: 100%;
+}
+.social-links ul li a .fa-github:hover {
+  color: #000 !important;
+}
+ul li a:hover svg.fa-behance{
+  color: #143e5d !important;
 }
 
-@media(max-width:367px) {
-  .text h1 {
-    font-size: 75px;
-  }
-  section[id="About"]::before{
-    font-size: 75px;
-    left: 20%;
-  }
+section[id="Contact-us"] #sendmail> *{
+  width: 80%;
 }
+section[id="Contact-us"] #sendmail > *:focus {
+  outline: none;
+}
+section[id="Contact-us"] #sendmail input:not(:last-of-type),
+section[id="Contact-us"] #sendmail textarea {
+  padding: 10px;
+  padding-left: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+section[id="Contact-us"] #sendmail input[type="submit"]{
+  width: 20%;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  transition: 0.3s ease-in-out;
+}
+section[id="Contact-us"] #sendmail input[type="submit"]:hover {
+  background-color: var(--green-color);
+}
+/* start keyframes */
 @keyframes opacity {
   0%{
     opacity: 0;
