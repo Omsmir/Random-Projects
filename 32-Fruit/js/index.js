@@ -442,7 +442,6 @@ function sendMail(){
 
         emailjs.send("service_gxdke58","template_7p655vp",params,"dASWGnjlwksvJNrJE").then(function(res){
             if(res){      
-                alert("Message Delivered" + res.status)   
                 name.value = ""
                 email.value = ""
                 conEmail.value = ""
