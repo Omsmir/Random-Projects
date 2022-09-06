@@ -61,7 +61,7 @@ body {
   background-color: #fff;
   z-index: 10;
   user-select: none;
-  
+  transition: 0.3s ease-in-out;
 }
 
 .exit {
@@ -601,14 +601,15 @@ section[id="Contact-us"] #content-1 .text > * {
 ul li a:hover svg.fa-behance{
   color: #143e5d !important;
 }
+#sendmail {
+  width: 100%;
+}
 
 section[id="Contact-us"] #sendmail> *{
   width: 80%;
 }
-section[id="Contact-us"] #sendmail > *:focus {
-  outline: none;
-}
-section[id="Contact-us"] #sendmail input:not(:last-of-type),
+
+
 section[id="Contact-us"] #sendmail textarea {
   padding: 10px;
   padding-left: 15px;
@@ -627,6 +628,39 @@ section[id="Contact-us"] #sendmail input[type="submit"]{
 }
 section[id="Contact-us"] #sendmail input[type="submit"]:hover {
   background-color: var(--green-color);
+}
+.form {
+  background-color: #fff;
+  padding: 10px;
+}
+.form input {
+  width: 95%;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 5px;
+}
+
+.form input:focus {
+  outline: none;
+}
+.form .icon{
+  width: 5%;
+}
+.form .icon svg {
+  display: none;
+}
+.form .icon svg.active {
+  display: block;
+  animation: opacity 1s ease-in-out alternate 1;
+}
+
+.form .icon .fa-xmark{
+  color:  #af1727;
+}
+.form .icon .fa-check {
+  color: #0f6d35;
 }
 /* start keyframes */
 @keyframes opacity {

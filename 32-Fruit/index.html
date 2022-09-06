@@ -228,8 +228,7 @@
 <section class="contact-us pt-5 pb-5" id="Contact-us">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-6 col-md-4 d-flex flex-row">
-                <div class="col-lg-8">
+                <div class="col-lg-3 col-md-6 d-flex">
                     <div id="content" class="overflow-hidden">
                        <div class="text">
                         <h2 class="text-uppercase text-white mb-4">Get In touch</h2>
@@ -240,15 +239,15 @@
                        </div>
                        <div class="social-links">
                         <ul class="d-flex justify-content-start align-items-center">
-                            <li class="text-white list-unstyled"><a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-facebook text-white"></i></a></li>
-                            <li class="text-white list-unstyled"><a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-linkedin text-white"></i></a></li>
-                            <li class="text-white list-unstyled"><a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-twitter text-white"></i></a></li>
-                            <li class="text-white list-unstyled"><a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-behance text-white"></i></a></li>
-                            <li class="text-white list-unstyled"><a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-github text-white"></i></a></li>
+                            <li class="text-white list-unstyled"><a href="https://www.facebook.com/OMAR.SAMIR.KA" target="_blank"><i class="fa-brands fa-facebook text-white"></i></a></li>
+                            <li class="text-white list-unstyled"><a href="https://www.linkedin.com/in/omar-samir-44377823a/" target="_blank"><i class="fa-brands fa-linkedin text-white"></i></a></li>
+                            <li class="text-white list-unstyled"><a href="https://twitter.com/Omsamiir" target="_blank"><i class="fa-brands fa-twitter text-white"></i></a></li>
+                            <li class="text-white list-unstyled"><a href="https://www.behance.net/omsamir" target="_blank"><i class="fa-brands fa-behance text-white"></i></a></li>
+                            <li class="text-white list-unstyled"><a href="https://github.com/Omsmir" target="_blank"><i class="fa-brands fa-github text-white"></i></a></li>
                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 d-flex">
+                <div class="col-lg-3 col-md-6 d-flex">
                     <div id="content-1">
                         <div class="text d-flex">
                             <h2 class="text-uppercase text-white fs-4 mb-3">call us</h2>
@@ -264,14 +263,32 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-6 col-md-4">
-                <div  id="sendmail" class="d-flex flex-column justify-content-center align-items-center pt-5">
-                    <input type="text" min="1" id="name" max="12" placeholder="Enter Your Name" class="mb-3">
-                    <input type="email" min="1" max="50" id="email" placeholder="Enter a Vaild Email" class="mb-3">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <span id="sendmail" class="d-flex flex-column justify-content-center align-items-center pt-5">
+                    <span class="d-flex justify-content-center align-items-center form mb-3">
+                        <input type="text" min="1" id="name" max="12" placeholder="Enter Your Name" required>
+                        <span class="icon position-relative d-flex justify-content-center align-items-center ">
+                            <i class="fa-solid fa-check position-absolute "></i>
+                            <i class="fa-solid fa-xmark position-absolute "></i>
+                        </span>
+                    </span>
+                    <span class="d-flex justify-content-center align-items-center form mb-3">
+                        <input type="email" min="1" max="50" id="email" placeholder="Enter a Vaild Email" required>
+                        <span class="icon position-relative d-flex justify-content-center align-items-center ">
+                            <i class="fa-solid fa-check position-absolute "></i>
+                            <i class="fa-solid fa-xmark position-absolute "></i>
+                        </span>
+                    </span>
+                    <span class="d-flex justify-content-center align-items-center form mb-3">
+                        <input type="email" min="1" max="50" id="conemail" placeholder="Please Confirm Your Email" required>
+                        <span class="icon position-relative d-flex justify-content-center align-items-center ">
+                            <i class="fa-solid fa-check position-absolute "></i>
+                            <i class="fa-solid fa-xmark position-absolute "></i>
+                        </span>
+                    </span>
                     <textarea name="text" id="message" cols="5" rows="5" style="resize: none;" class="mb-3" minlength="1" maxlength="150" placeholder="Enter Your Message"></textarea>
                     <input type="submit" value="submit" id="submit">
-                </div>
+                </span>
             </div>
             
         </div>

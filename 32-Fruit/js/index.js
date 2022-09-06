@@ -421,33 +421,40 @@ openCart()
 
 let submit = document.querySelector("#submit")
 
+submit.onsubmit = sendMail()
+  
 
-
-function sendEmail(){
+function sendMail(){
     const name = document.querySelector("#name")
     const email = document.querySelector("#email")
     const message = document.querySelector("#message")
+    const conEmail = document.querySelector("#conemail")
+
 
     var params = {
         from_name: name.value,
+        to_name: conEmail.value,
         email_id: email.value,
         message: message.value
     }
+
+ 
+
+        emailjs.send("service_gxdke58","template_7p655vp",params,"dASWGnjlwksvJNrJE").then(function(res){
+            if(res){      
+                alert("Message Delivered" + res.status)   
+                name.value = ""
+                email.value = ""
+                conEmail.value = ""
+                message.value = ""                 
+            }
     
-    emailjs.send("service_gxdke58","template_7p655vp",params,"dASWGnjlwksvJNrJE").then(function(res,rej){
-        if(res ){
-          
-            alert("Message Delivered")
-            name.value = ""
-            email.value = ""
-            message.value = ""
-            
-          
-        }
-        if(rej){
-            console.log(Error)
-           }
-    })
+        })
+    
 }
 
-submit.onsubmit = sendEmail()
+
+
+
+
+

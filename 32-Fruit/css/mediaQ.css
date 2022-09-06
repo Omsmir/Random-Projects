@@ -4,6 +4,21 @@
   }
 }
 @media (max-width: 998px) {
+  .shopping-cart{
+    width: 700px;
+  }
+  .shopping-cart .head span{
+    font-size: 13px;
+  }
+  .shopping-cart .head-1 span[id="Product"] .content img {
+    width: 75px;
+  }
+  .shopping-cart .head-1 span {
+    font-size: 13px;
+  }
+  .shopping-cart #Checkout {
+    font-size: 13px;
+  }
   section[id="About"]::before {
     font-size: 150pxf;
   }
@@ -47,18 +62,33 @@
     margin-bottom: 0;
     width: calc(100% /4);
     border-right: 1px solid var(--green-color);
-    transform: translateY(15px);
+    transform: translateY(27px);
   }
   section[id="Sales"] .years ul li:hover {
     width: 25%;
-    transform: translateY(0);
+    transform: translateY(20px);
   }
   section[id="Sales"] .years ul li.active {
     width: 25% !important;
-    transform: translateY(0);
+    transform: translateY(20px);
   }
 }
 @media (max-width: 767px) {
+  .shopping-cart{
+    width: 500px;
+  }
+  .shopping-cart .head span{
+    font-size: 10px;
+  }
+  .shopping-cart .head-1 span[id="Product"] .content img {
+    width: 75px;
+  }
+  .shopping-cart .head-1 span {
+    font-size: 10px;
+  }
+  .shopping-cart #Checkout {
+    font-size: 13px;
+  }
     section[id='About']::before {
       font-size: 125px;
       left: 25%;
@@ -68,6 +98,9 @@
     }
     canvas {
       margin-top: 30px;
+    }
+    #content-1 .text {
+      text-align: center;
     }
   }
   
@@ -86,6 +119,36 @@
   }
   
   @media(max-width:476px) {
+    .shopping-cart{
+      width: 350px;
+    }
+    .shopping-cart .head span{
+      font-size: 10px;
+      margin-right: 5px;
+    }
+    .shopping-cart .head-1 span[id="Product"] .content {
+      flex-direction: column !important;
+      justify-content: flex-start !important;
+      align-items: flex-start !important;
+    }
+    .shopping-cart .head-1 span[id="Product"] .content p {
+      text-align: left;
+      margin-left: 0 !important;
+      margin-top: 5px;
+    }
+    .shopping-cart .head-1{
+      width: 100%;
+    }
+    .shopping-cart .head-1 span {
+      font-size: 10px;
+      margin-right: 5px;
+    }
+    .shopping-cart #Checkout {
+      margin-top: 15px;
+    }
+    .shopping-cart .outer-layer {
+      width: 100%;
+    }
     section[id="About"]::before{
       font-size: 100px;
       left: 25%;
@@ -104,6 +167,13 @@
   }
   
   @media(max-width:367px) {
+    .shopping-cart{
+      width: 300px;
+    }
+
+    .shopping-cart .head-1 span[id="Product"] .content img {
+      width: 65px;
+    }
     .text h1 {
       font-size: 75px;
     }
