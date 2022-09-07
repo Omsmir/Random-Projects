@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+           <div class="day">
+            <label for="Day">Day</label>
+            <input type="text" minlength="1" maxlength="2" placeholder="dd" id="day" required>
+           </div>
+           <div class="month">
+            <label for="Month">Month</label>
+            <input type="text" minlength="1" maxlength="2" placeholder="mm" id="month" required>
+           </div>
+           <div class="year">
+            <label for="year">Year</label>
+            <input type="text" minlength="4" maxlength="4" placeholder="yyyy" id="year" required>
+           </div>
+        </form>
+         <div class="submit">
+            <input type="button" value="submit" id="submit" onclick="calcYear()">
+         </div>
+         <div class="age">
+            <h4 id="age"></h4>
+         </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
