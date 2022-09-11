@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body { 
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background: url(".//imgs/work.jpg") center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 700px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: #6ab1f4;
+    text-align: left;
+}
+.container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.container p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+h2 {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+#generate {
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    background: #5759b1;
+    text-align: center;
+    transition:.15s cubic-bezier(.17,.67,.29,2.71) 0s;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 10px #000;
+    color: #fff;
+}
+#generate:hover {
+    transform: scale(0.98) ;
+}
+
+.at {
+    color: #fff;
+    font-weight: bold;
+    animation: fade 1s ease-in-out alternate 1;
+}
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
