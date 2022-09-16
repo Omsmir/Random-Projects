@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-8 position-relative pic d-flex justify-content-between align-items-center flex-column">
+                <!-- <div class="img position-absolute">
+                    <img src="imgs/back.jpg" class="img-fluid" alt="">
+                </div> -->
+                <div class="title position-relative z-10">
+                    <h2>the weather</h2>
+                </div>
+                <div class="content p-5 z-10 ">
+                    <span class="temperature">
+                        16°
+                    </span>
+                    <div class="details">
+                        <span class="values">
+                            <h2 class="country">
+                                london
+                            </h2>
+                            <p class="other">
+                                06:09 - monday, 9 sep'19
+                            </p>
+                        </span>
+                    </div>
+                    <div class="image">
+                        <img src="imgs/clouds.png" class="img-fluid" alt="">
+                        <p >cloudy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="wrapper">
+                    <form>
+                        <div class="search">
+                            <input type="text" name="text" placeholder="Search Location" id="search">
+                            <button class="explore" type="submit">
+                                <i class="fa-solid fa-magnifying-glass text-white"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="recent">
+                        <p>Cairo</p>
+                        <p>london</p>
+                        <p>New york</p>
+                    </div>
+                    <div class="weather-details">
+                        <h2>Weather Details</h2>
+                        <div class="uv">
+                            <div class="state">Uv Index</div>
+                            <div class="value">85%</div>
+                        </div>
+                        <div class="humidity">
+                            <div class="state">humidity</div>
+                            <div class="value">62%</div>
+                        </div>
+                        <div class="wind">
+                            <div class="state">Wind</div>
+                            <div class="value">8km/h</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</body>
+</html>
