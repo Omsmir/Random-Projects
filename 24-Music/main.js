@@ -23,77 +23,92 @@ let new1 = Array.from(stroke)
 
 let curr_track = document.createElement('audio');
 
-let track_index = 0;
-let isPlaying = false;
-let isRandom = false;
-let updateTimer;
+let isPlaying = false
+let track_index = 0
+let updatetimer
 
+ro.classList.remove("ro")
 
-ro.classList.remove('ro')
-
-let music_list = [
+let musicList = [
     {
-        img : 'imgs/stay.png',
-        name : 'Stay',
-        artist : 'The Kid LAROI, Justin Bieber',
-        music : 'songs/stay.mp3'
-    },
-     {
-        img : 'imgs/fallingdown.jpg',
-        name : 'Falling Down',
-        artist : 'Wid Cards',
-        music : 'songs/fallingdown.mp3'
+        img: "imgs/faded.png",
+        song: "songs/Faded.mp3",
+        artist: "Alan Walker",
+        name: "faded"
     },
     {
-        img : 'imgs/faded.png',
-        name : 'Faded',
-        artist : 'Alan Walker',
-        music : 'songs/Faded.mp3'
+        img: "imgs/fallingdown.jpg",
+        song: "songs/fallingdown.mp3",
+        artist: "Wid Cards",
+        name: "falling down"
     },
     {
         img : 'imgs/ratherbe.jpg',
         name : 'Rather Be',
         artist : 'Clean Bandit',
-        music : 'songs/Rather Be.mp3'
+        song : 'songs/Rather Be.mp3'
+    },{
+        img : 'imgs/stay.png',
+        name : 'Stay',
+        artist : 'The Kid LAROI, Justin Bieber',
+        song : 'songs/stay.mp3'
     }
-  
 ]
-
 loadTrack()
 
 function loadTrack(){
-    clearInterval(updateTimer)
+    clearInterval(updatetimer)
+    
+    curr_track.src = musicList[track_index].song
 
-    curr_track.src = music_list[track_index].music
     curr_track.load()
 
-    photo.style.background = "url('" + music_list[track_index].img + "')"
-    playing.textContent = "playing - " + (track_index + 1) + " of " + music_list.length
-    artist.textContent = music_list[track_index].artist
-    name2.textContent = music_list[track_index].name
+    playing.innerHTML = `playing ${track_index+1} of ${musicList.length}`
 
-    updateTimer = setInterval(setUpdate,1000)
+    photo.style.background = `url('${musicList[track_index].img}')`
+
+    name2.textContent = `${musicList[track_index].name}`
+
+    artist.innerHTML = `${musicList[track_index].artist}`
+
+    updatetimer = setInterval(setUpdate,1000)
 
     curr_track.addEventListener("ended",nextTrack)
-    random_bg_color()
+ 
+random_bg_color()
 }
 
-playPause.addEventListener("click" ,(ele) => {
-    ele.onclick = playpauseTrack()
 
-})
+function nextTrack(){
+    if(track_index < musicList.length - 1){
+        track_index++
 
+    }else {
+        track_index = 0
+    }
 
-
-function playpauseTrack(){
-    isPlaying ? pauseTrack() : playTrack();
+    loadTrack()
+    playTrack()
 }
 
+function prevTrack(){
+    if(track_index > 0){
+        track_index--
+
+    }else {
+        track_index = musicList.length - 1
+    }
+
+    loadTrack()
+    playTrack()
+}
 
 function playTrack(){
     curr_track.play()
     isPlaying = true
-    playPause.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
+
+    playPause.innerHTML = `<i class="fa fa-pause-circle fa-5x"></i>`
+
     for(let i = 0 ; i < stroke.length ; i ++){
         new1[i].classList.add("stroke")
     }
@@ -101,84 +116,52 @@ function playTrack(){
 
 }
 
-function pauseTrack(){
+function pause(){
     curr_track.pause()
+    isPlaying = false 
+    playPause.innerHTML = `<i class="fa fa-play-circle fa-5x"></i>`
 
-    isPlaying = false
-
-    playPause.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
     for(let i = 0 ; i < stroke.length ; i ++){
         new1[i].classList.remove("stroke")
     }
     ro.classList.remove("ro")
-
 }
 
-
-function nextTrack (){
-    if(track_index < music_list.length - 1){
-        track_index += 1
-
-    }else {
-        track_index = 0
-
-    }
-    loadTrack()
-    playTrack()
+function playPauseTrack(){
+    isPlaying ? pause() : playTrack()
 }
-
-function prevTrack(){
-    if(track_index > 0){
-        track_index = track_index - 1
-
-    }else {
-        track_index = music_list.length - 1
-
-    }
-    loadTrack()
-    playTrack()
-}
-
-
-function seekTo (){
-    let loadin = curr_track.duration * (seek.value / 100 )
-    curr_track.currentTime = loadin
-}
-
-
-
-function setUpdate(){
-    let seekPosition = 0;
-    if((curr_track.duration)){
-        seekPosition = curr_track.currentTime * (100 / curr_track.duration);
-        seek.value = seekPosition;
-
-        let currentMinutes = Math.floor(curr_track.currentTime / 60)
-        let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60)
-        let durationMinutes = Math.floor(curr_track.duration / 60)
-        let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60)
-
-
-        if(currentMinutes < 10){currentMinutes = "0" + currentMinutes}
-        if(currentSeconds < 10){currentSeconds = "0" + currentSeconds}
-        if(durationMinutes < 10){durationMinutes = "0" + durationMinutes}
-        if(durationSeconds < 10) {durationSeconds = "0" + durationSeconds}
-       
-        curr_time.textContent = currentMinutes + ":" + currentSeconds
-        
-        total_duration.textContent = durationMinutes + ":" + durationSeconds
-
-    }
-}
-
 
 function repeatTrack (){
-    loadTrack(track_index)
+    loadTrack()
     playTrack()
     // reset()
    
 }
 
+function seekTo(){
+    let loading = curr_track.duration * (seek.value / 100)
+
+    curr_track.currentTime = loading
+}
+
+function setUpdate(){
+    let seekPosition = curr_track.currentTime * (100 / curr_track.duration)
+    seek.value = seekPosition
+    if(curr_track.duration){
+        let currentMinutes = Math.floor(curr_track.currentTime / 60)
+        let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60)
+        let durationMinutes = Math.floor(curr_track.duration / 60)
+        let durationSeconds = Math.floor(curr_track.duration -  durationMinutes  * 60)
+
+        if(currentMinutes < 10 ){currentMinutes = "0" + currentMinutes}
+        if(currentSeconds < 10 ){currentSeconds = "0" + currentSeconds}
+        if(durationMinutes < 10 ){durationMinutes = "0" + durationMinutes}
+        if(durationSeconds < 10 ){durationSeconds = "0" + durationSeconds}
+
+        curr_time.innerHTML = currentMinutes + ":" + currentSeconds
+        total_duration.innerHTML = durationMinutes + ":" + durationSeconds
+    }
+}
 
 // function reset (){
     

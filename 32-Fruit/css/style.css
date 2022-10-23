@@ -50,7 +50,6 @@ body {
   animation: opacity 1s ease-in-out alternate 1;
 }
 .shopping-cart {
-  display: none;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
@@ -61,7 +60,7 @@ body {
   background-color: #fff;
   z-index: 10;
   user-select: none;
-  transition: 0.3s ease-in-out;
+  /* transition: 0.3s ease-in-out; */
 }
 
 .exit {

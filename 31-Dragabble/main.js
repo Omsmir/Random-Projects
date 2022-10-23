@@ -2,46 +2,49 @@ let Slider = document.querySelector('.slider-container');
 let innerSlider = document.querySelector('.inner');
 
 
-let pressed = false;
-let startX;
-let x;
+let startx
+let x
 
-Slider.addEventListener("mousedown",(e)=>{
+let pressed = false
+
+
+Slider.addEventListener("mousedown",(e) => {
     pressed = true
 
-    startX = e.offsetX - innerSlider.offsetLeft
+    startx = e.offsetX - innerSlider.offsetLeft
 
     Slider.style.cursor = "grabbing"
-})
 
+    console.log(innerSlider.offsetLeft)
+})
 
 Slider.addEventListener("mouseenter",()=>{
     Slider.style.cursor = "grab"
-
 })
 
-Slider.addEventListener("mouseup",() => {
+
+Slider.addEventListener("mouseup",() =>{
     Slider.style.cursor = "grab"
     pressed = false
+
 })
 
 
-Slider.addEventListener("mousemove",(e) => {
+Slider.addEventListener("mousemove",(e) =>{
     if(!pressed) return
 
     x = e.offsetX 
 
-    innerSlider.style.left = `${x -startX}px`
-
-
+    innerSlider.style.left = `${x - startx}px`
+    
     check()
 })
 
 
 
-const check = () => {
+function check(){
     let inner = innerSlider.getBoundingClientRect()
-    var outer = Slider.getBoundingClientRect()
+    let outer = Slider.getBoundingClientRect()
 
     if(parseInt(innerSlider.style.left) > 0){
         innerSlider.style.left = "0px"
@@ -49,6 +52,7 @@ const check = () => {
     }
 
     if(inner.right < outer.right){
-        innerSlider.style.left =  `-${inner.width - outer.width}px`
+        innerSlider.style.left = `-${inner.width - outer.width}px`
+
     }
 }

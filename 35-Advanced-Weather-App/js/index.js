@@ -1,22 +1,19 @@
 const key = " H33lTnuoGyuSR6ACMWUBWUDgKvKOopzO "
 
 
-const getWeather = async (id)  => {
-    const baseUrl = "http://dataservice.accuweather.com/currentconditions/v1/"
+const getWeather = async (id) => {
+  let baseUrl = "http://dataservice.accuweather.com/currentconditions/v1/"
 
+  let query = `${id}?apikey=${key}&details=true`
 
-    const query = `${id}?apikey=${key}&details=true`
+  const res  = await fetch(baseUrl + query)
 
-    const res  = await fetch(baseUrl + query)
+  let data = await res.json()
 
-    const data = await res.json()
+  console.log(data)
 
-    console.log(data)
-
-
-    return data[0]
+  return data[0]
 }
-
 const getCity = async (city) => {
     const baseUrl = "http://dataservice.accuweather.com/locations/v1/cities/search"
 
@@ -66,19 +63,24 @@ const updateUI = (data) => {
 
      cloud.innerHTML = `${weather.UVIndexText}`
      humidity.innerHTML = `${weather.RelativeHumidity}%`
-     wind.innerHTML = `${weather.Wind.Speed.Metric.Value}Km/h`
+     wind.innerHTML = `${weather.Wind.Speed.Metric.Value}km/h`
 
 }
   const updateCity = async (city) => {
     const cityDetails = await getCity(city);
     const cityWeather = await getWeather(cityDetails.Key);
+
+
+   
   
     return {
       cityDetails: cityDetails,
-      cityWeather: cityWeather,
+      cityWeather: cityWeather
     };
   };
   
+
+ 
   cityForm.addEventListener("submit", (e) => {
     //preventing default
     e.preventDefault();

@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="css/mediaQ.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 <!-- Font Links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,7 +44,7 @@
 </script>
 </head>
 <body>
-    <div class="over"></div>  
+    <div class="over opened"></div>  
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand " href="#">Fruita</a>
@@ -69,7 +70,7 @@
                 </li>
                 
               <form class="d-flex pcart position-relative">
-    <span class="cart main">My Cart<i class="fa-solid fa-cart-shopping"></i><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary notification">
+    <span class="cart opened main">My Cart<i class="fa-solid fa-cart-shopping"></i><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary notification">
         $</span>
               </form> 
             </ul>
@@ -77,43 +78,45 @@
         </div>
       </nav>
 <section class="home pt-5 pb-5 position-relative" id="Home">
-    <div class="shopping-cart position-fixed rounded-2 p-4">
-        <div class="exit position-absolute d-flex justify-content-center align-items-center rounded-circle me-1 mt-1">
-            <i class="fa-solid fa-circle-xmark"></i>
-        </div>
-             <div class="outer-layer d-flex justify-content-start align-items-center flex-column">
-                <div class="head d-flex justify-content-center align-items-center">
-                    <span class="list fw-bold" id="Product">Product</span>
-                    <span class="list fw-bold" id="Price">Price</span>
-                    <span class="list fw-bold" id="Quantity">Quantity</span>
-                    <span class="list fw-bold" id="Remove">Remove</span>
-                </div>
-                <div class="innerLayer mt-2 d-flex justify-content-start align-items-center">
-                    <!-- <div class="head-1">
-                    <span class="list fw-bold justify-content-start" id="Product">
-                        <div class="content d-flex flex-row justify-content-center align-items-center">
-                            <img src="imgs/kiwi2.jpg" class="rounded-2" id="product-img">
-                            <p class="text-black-50 text-capitalize mb-0 ms-3" id="desc">kiwi - fresh fruit</p>
-                        </div>
-                    </span>
-                    <span class="list fw-bold" id="Price">$</span>
-                    <span class="list fw-bold d-flex justify-content-center align-items-center" id="Quantity">
-                        <span class="minus bg-danger me-2">
-                            <i class="fa-solid fa-minus"></i></span> 1 
-                            <span class="plus bg-success ms-2">
-                                <i class="fa-solid fa-plus"></i>
-                            </span>   
-                    </span>
-                    <span class="list fw-bold" id="Remove">
-                        <div class="delete rounded-circle d-flex justify-content-center align-items-center">
-                            <i class="fa-solid fa-trash-can"></i>
-                        </div>
-                    </span>
-                </div> -->
+    <div class="shopping-cart position-fixed rounded-2 p-4 ui-helper-hidden">
+<div class="wrapper-1 d-flex flex-column justify-content-center align-items-center">
+    <div class="exit opened position-absolute d-flex justify-content-center align-items-center rounded-circle me-1 mt-1">
+        <i class="fa-solid fa-circle-xmark"></i>
+    </div>
+         <div class="outer-layer d-flex justify-content-start align-items-center flex-column">
+            <div class="head d-flex justify-content-center align-items-center">
+                <span class="list fw-bold" id="Product">Product</span>
+                <span class="list fw-bold" id="Price">Price</span>
+                <span class="list fw-bold" id="Quantity">Quantity</span>
+                <span class="list fw-bold" id="Remove">Remove</span>
+            </div>
+            <div class="innerLayer mt-2 d-flex justify-content-start align-items-center">
+                <!-- <div class="head-1">
+                <span class="list fw-bold justify-content-start" id="Product">
+                    <div class="content d-flex flex-row justify-content-center align-items-center">
+                        <img src="imgs/kiwi2.jpg" class="rounded-2" id="product-img">
+                        <p class="text-black-50 text-capitalize mb-0 ms-3" id="desc">kiwi - fresh fruit</p>
+                    </div>
+                </span>
+                <span class="list fw-bold" id="Price">$</span>
+                <span class="list fw-bold d-flex justify-content-center align-items-center" id="Quantity">
+                    <span class="minus bg-danger me-2">
+                        <i class="fa-solid fa-minus"></i></span> 1 
+                        <span class="plus bg-success ms-2">
+                            <i class="fa-solid fa-plus"></i>
+                        </span>   
+                </span>
+                <span class="list fw-bold" id="Remove">
+                    <div class="delete rounded-circle d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                </span>
+            </div> -->
 
-                </div>          
-             </div>
-             <button value="Proceed To Checkout" id="Checkout" class="rounded-2 fw-bold border-0 text-white p-1" type="button">Proceed To Checkout</button>
+            </div>          
+         </div>
+         <button value="Proceed To Checkout" id="Checkout" class="rounded-2 fw-bold border-0 text-white p-1" type="button">Proceed To Checkout</button>
+</div>
     </div>
     <div class="container-fluid">
         <div class="row ">
@@ -300,6 +303,8 @@
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 <script src="js/index.js"></script>
     <script src="js/all.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>

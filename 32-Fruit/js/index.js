@@ -39,7 +39,6 @@ productInCart = JSON.parse(localStorage.getItem("items"))
 if(!productInCart){
     productInCart = []
 }
-
 function sumPriceInCart(product){
     let sum = 0
 
@@ -97,7 +96,6 @@ function updateProductsInCart(product){
     }
     productInCart.push(product)
 }
-
 addToCartButton.addEventListener("click" ,() => {
     const productID = document.querySelector("#productName").attributes["data-product-id"].value
     const productName = document.querySelector("#productName").innerHTML
@@ -146,8 +144,8 @@ inner.addEventListener("click" ,(e) =>{
                 productInCart.splice(i,1)
             }
         }
-        updateproductInHtml()
     }
+    updateproductInHtml()
 })
 updateproductInHtml()
 
@@ -225,26 +223,23 @@ plus.addEventListener("click",() => {
 
   AOS.init();
 
-console.log(section[2].offsetTop)
+// console.log(section[2].offsetTop)
 
  onscroll = function(){
 
     let position = document.documentElement.scrollTop
-
+    console.log(section[1].offsetTop)
         if(position >= section[1].offsetHeight ) {
                 nav.classList.add("back");
         }else {
             nav.classList.remove("back")
         }
 
-  
-
-
-
     section.forEach((ele) => {
-        if(position >= ele.offsetTop - ele.offsetHeight * .25 && 
+        if(position >= ele.offsetTop - ele.offsetHeight * .25  && 
             position < ele.offsetTop + ele.offsetHeight -ele.offsetHeight * .25) {
                 let currentId = ele.attributes.id.value
+
 
                 removeAllActive(li)
                 addActive(currentId)
@@ -384,76 +379,92 @@ var typed = new Typed('span.auto', {
   });
 
 
-let opened = false
-  function openCart(){
-   cart.onclick = function (){
-    if(shoppingCart.classList.contains("active") && over.classList.contains("active")){
-        shoppingCart.classList.remove("active")
-        over.classList.remove("active")
-        opened = false
-    }else {
-        shoppingCart.classList.toggle("active")
-        over.classList.toggle("active")
-        opened = true
-    }
+
+//   function openCart(){
+//    cart.onclick = function (){
+//     if(shoppingCart.classList.contains("active") && over.classList.contains("active")){
+//         shoppingCart.classList.remove("active")
+//         over.classList.remove("active")
+//         opened = false
+//     }else {
+//         shoppingCart.classList.toggle("active")
+//         over.classList.toggle("active")
+//         opened = true
+//     }
    
-   }
+//    }
 
-  }
+//   }
 
-  function CloseCart(){
-    exit.onclick = function () {
-        if(opened){
-            shoppingCart.classList.remove("active")
-            over.classList.remove("active")
-        }
-    }
-    over.onclick = function (){
-        if(opened){
-            shoppingCart.classList.remove("active")
-            over.classList.remove("active")
-        }
-    }
-  }
+//   function CloseCart(){
+//     exit.onclick = function () {
+//     }
+//     over.onclick = function (){
+//         if(opened){
 
-  CloseCart()
-openCart()
+//             over.classList.remove("active")
+//         }
+//     }
+//   }
 
-let submit = document.querySelector("#submit")
+//   CloseCart()
+// openCart()
 
-submit.onsubmit = sendMail()
+// let submit = document.querySelector("#submit")
+
+// submit.onsubmit = sendMail()
   
 
-function sendMail(){
-    const name = document.querySelector("#name")
-    const email = document.querySelector("#email")
-    const message = document.querySelector("#message")
-    const conEmail = document.querySelector("#conemail")
+// function sendMail(){
+//     const name = document.querySelector("#name")
+//     const email = document.querySelector("#email")
+//     const message = document.querySelector("#message")
+//     const conEmail = document.querySelector("#conemail")
 
 
-    var params = {
-        from_name: name.value,
-        to_name: conEmail.value,
-        email_id: email.value,
-        message: message.value
-    }
+//     var params = {
+//         from_name: name.value,
+//         to_name: conEmail.value,
+//         email_id: email.value,
+//         message: message.value
+//     }
 
  
 
-        emailjs.send("service_gxdke58","template_7p655vp",params,"dASWGnjlwksvJNrJE").then(function(res){
-            if(res){      
-                name.value = ""
-                email.value = ""
-                conEmail.value = ""
-                message.value = ""                 
-            }
+//         emailjs.send("service_gxdke58","template_7p655vp",params,"dASWGnjlwksvJNrJE").then(function(res){
+//             if(res){      
+//                 name.value = ""
+//                 email.value = ""
+//                 conEmail.value = ""
+//                 message.value = ""                 
+//             }
     
-        })
+//         })
     
-}
+// }
 
 
 
 
+
+
+$( function() {
+    // run the currently selected effect
+    function runEffect() {
+      // get effect type from
+ 
+
+      // Run the effect
+      
+      $( ".shopping-cart" ).toggle( "fade", 800 );
+      $(".over").toggle("fade",800)
+    };   
+    // Set effect from select menu value
+    $( ".opened" ).on( "click", function() {
+      runEffect();
+
+    });
+
+  } );
 
 
