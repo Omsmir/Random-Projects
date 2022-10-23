@@ -14,23 +14,16 @@ var head = document.querySelectorAll(".head")
 
 
 
-
 signUp.forEach((ele) => {
     
-ele.addEventListener("click",(e) => {
+ele.addEventListener("click",() => {
 
-    console.log(e.target.classList.contains("in"))
-    if(ele.classList.contains("in")){
-        head.forEach((el) => {
-            if(el.classList.contains("he1")){
-                
-            }
-        })
-    }
     right.classList.toggle("left")
     left.classList.toggle("right")
 
-
+    text.forEach((el) => {
+        el.classList.toggle("index")
+    })
 
     head.forEach((ele)=> {
         ele.classList.toggle("index")
@@ -40,26 +33,6 @@ ele.addEventListener("click",(e) => {
 })
 
 })
-
-$( function() {
-    // run the currently selected effect
-    function runEffect() {
-      // get effect type from
- 
-
-      // Run the effect
-      
-      $(".col-right aside .text" ).toggle( "fadein", 800 );
-
-    };   
-    // Set effect from select menu value
-    $( ".col-right .sign" ).on( "click", function() {
-      runEffect();
-
-    });
-
-  } );
-
 
 
 

@@ -239,6 +239,15 @@
 </a>
 
 
+<h4 align="center">Modern - Form</h4>
+
+<a href="https://github.com/Omsmir/Random-Projects/tree/main/10-Card">
+
+<img src="https://github.com/Omsmir/Random-Projects/tree/main/10-Card/form1.gif">
+
+
+</a>
+
 <h4 align="center">Form - Validation</h4>
 
 <a href="https://github.com/Omsmir/Random-Projects/tree/main/36-FormValidation">
