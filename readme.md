@@ -243,7 +243,7 @@
 
 <a href="https://github.com/Omsmir/Random-Projects/tree/main/10-Card">
 
-<img src="https://github.com/Omsmir/Random-Projects/tree/main/10-Card/form1.gif">
+<img src="https://github.com/Omsmir/Random-Projects/blob/main/10-Card/form1.gif">
 
 
 </a>
