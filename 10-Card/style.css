@@ -77,6 +77,10 @@ body {
     transition: 0.7s ease-in-out;
 }
 
+.he1 {
+    transition: 0.7s ease-in-out 0.2s !important;
+
+}
 .content .links {
     display: flex;
     justify-content: center;

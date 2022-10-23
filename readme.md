@@ -224,7 +224,7 @@
 
 <a href="https://github.com/Omsmir/Random-Projects/tree/main/30-Restaurant" >
 
-<img src="https://github.com/Omsmir/Random-Projects/tree/main/30-Restaurant/img/rest.gif">
+<img src="https://github.com/Omsmir/Random-Projects/blob/main/30-Restaurant/imgs/rest.gif">
 
 
 </a>
@@ -233,7 +233,7 @@
 
 <a href="https://github.com/Omsmir/Random-Projects/tree/main/32-Fruit" >
 
-<img src="https://github.com/Omsmir/Random-Projects/tree/main/32-Fruit/imgs/fruit.gif">
+<img src="https://github.com/Omsmir/Random-Projects/blob/main/32-Fruit/imgs/fruit.gif">
 
 
 </a>
@@ -243,7 +243,7 @@
 
 <a href="https://github.com/Omsmir/Random-Projects/tree/main/36-FormValidation">
 
-<img src="https://github.com/Omsmir/Random-Projects/tree/main/36-FormValidation/imgs/form.gif">
+<img src="https://github.com/Omsmir/Random-Projects/blob/main/36-FormValidation/imgs/form.gif">
 
 
 </a>
@@ -253,7 +253,7 @@
 
 <a href="https://github.com/Omsmir/Random-Projects/tree/main/35-Advanced-Weather-App">
 
-<img src="https://github.com/Omsmir/Random-Projects/tree/main/35-Advanced-Weather-App/imgs/weather.gif">
+<img src="https://github.com/Omsmir/Random-Projects/blob/main/35-Advanced-Weather-App/imgs/weather.gif">
 
 
 </a>
