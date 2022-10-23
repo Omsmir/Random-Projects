@@ -220,7 +220,43 @@
 </a>
 
 
+<h4 align="center">Demo Pizza Store</h4>
 
+<a href="https://github.com/Omsmir/Random-Projects/tree/main/30-Restaurant" >
+
+<img src="https://github.com/Omsmir/Random-Projects/tree/main/30-Restaurant/img/rest.gif">
+
+
+</a>
+
+<h4 align="center">Online - Fruit Store</h4>
+
+<a href="https://github.com/Omsmir/Random-Projects/tree/main/32-Fruit" >
+
+<img src="https://github.com/Omsmir/Random-Projects/tree/main/32-Fruit/imgs/fruit.gif">
+
+
+</a>
+
+
+<h4 align="center">Form - Validation</h4>
+
+<a href="https://github.com/Omsmir/Random-Projects/tree/main/36-FormValidation">
+
+<img src="https://github.com/Omsmir/Random-Projects/tree/main/36-FormValidation/imgs/form.gif">
+
+
+</a>
+
+
+<h4 align="center">Weather - Web-Application</h4>
+
+<a href="https://github.com/Omsmir/Random-Projects/tree/main/35-Advanced-Weather-App">
+
+<img src="https://github.com/Omsmir/Random-Projects/tree/main/35-Advanced-Weather-App/imgs/weather.gif">
+
+
+</a>
 <h1 align="center"> 
 
 <a href="https://github.com/Omsmir/Random-Projects#--1">
