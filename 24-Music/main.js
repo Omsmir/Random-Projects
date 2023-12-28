@@ -101,9 +101,11 @@ function prevTrack(){
 
     loadTrack()
     playTrack()
+
+ 
 }
 
-function playTrack(){
+function playTrack(){ 
     curr_track.play()
     isPlaying = true
 
