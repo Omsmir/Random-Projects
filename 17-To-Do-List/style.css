@@ -4,6 +4,12 @@
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url("./imgs/todolist.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
 }
 
 .container {
@@ -23,34 +29,34 @@ body {
     background-color: #eee;
     width: 100%;
     height: 65px;
-    border-radius: 15px;
+    border-radius: 5px;
     margin-bottom: 40px;
-    padding: 5px;
 }
 .container .form #text {
     width: 75%;
-    height: 80%;
+    height: 45px;
     margin-right: 15px;
-    background-color: #fff;
+    background-color: #dcd7d7;
     outline: none;
     padding-left: 10px;
-    border-radius: 15px;
+    border-radius: 5px;
     border: none;
+    caret-color: #9e1818;
 }
 .container .form #submit {
     width: 15%;
-    height: 80%;
+    height: 45px;
     color: white;
     background-color: #c11717;
     border: none;
-    border-radius: 15px;
+    border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-    transition: .15s cubic-bezier(.17,.67,.29,2.71) 0s;
+    transition: 0.3s ease-in-out;
 }
 .container .form #submit:hover {
-    transform: scale(1.010);
-    background-color: #ff0606;
+    transform: scale(1.020);
+    background-color: #9e1818;
 
 }
 
@@ -66,11 +72,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #eee;
-    width: 50%;
     margin-right: 15px;
-    border-top-left-radius: 15px;
-    border-top: 5px solid #c11717;
+    border-radius: 5px;
+    width: 100%;
 }
 
 .tasks .done {
@@ -78,23 +82,41 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #eee;
-    width: 50%;
-    border-top-right-radius: 15px;
-    border-top: 5px solid green;
+    border-radius: 5px;
+    width: 100%;
+
+}
+
+.todo .text p.one::selection,.tasks .done .text p.one p::selection {
+    color: #000000;
+    background-color: rgba(255, 55, 0, 0.66);
 }
 
 
-
 .todo .text,.tasks .done .text {
-    padding: 10px;
+    padding: 7px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
+    background-color: #cac6c6;
+    margin-bottom: 7px;
     width: 90%;
     height: 45px;
-    padding-bottom: 0;
+    border-radius: 5px;
+}
+.todo .text.active,.tasks .done .text.active {
+    animation: fade-in 0.3s ease-in-out alternate 1;
+
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 .tasks .done .text:last-of-type {
     margin-bottom: 10px;
@@ -102,29 +124,73 @@ body {
 .todo .text:last-of-type {
     margin-bottom: 10px;
 }
-.todo .text  p,.tasks .done p {
+.todo .text  p.one,.tasks .done p.one {
+    position: relative;
     display: flex;
     align-items: center;
     background-color: white;
-    height: 45px;
+    height: 35px;
     width: 80%;
     padding-left: 10px;
-    border-radius: 6px;
+    border-radius: 5px;
     border: 1px solid rgb(224, 208, 208);
 }
 
+.tasks .done p.one #inputDone {
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: 1px solid rgb(224, 208, 208);
+}
+.edit{
+    transition: 0.1s ease-in-out !important;
+    background-color: #92390c !important;
+    border: none;
+
+}
+[aria-disabled="true"] {
+    background-color:#2a1002 !important;
+    opacity: 0.5;
+    cursor: no-drop !important;
+}
+[aria-disabled="true"]:hover {
+    transform: scale(1) !important;
+}
+.tasks .done p.one #inputDone:focus {
+    outline:0;
+    border: 0;
+}
+.tasks .done p.one p{
+    position: absolute;
+     color: #000000;
+     font-size: 18px;
+     width: fit-content;
+}
+.tasks .done p.one p::after {
+    content: "";
+    position: absolute;
+    border-top: 3px solid #9e1818;
+    width: 100%;
+    color: #9e1818;
+    top: 10px;
+    left: 0px;
+}
 .done .button {
     width: 20%;
-    height: 35px;
+    height: 36px;
     margin-left: 15px;
-    background-color: green;
+    background-color: rgb(128, 0, 53);
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
     padding-left: 5px;
     padding-right:5px ;
@@ -132,7 +198,7 @@ body {
 }
 .todo .text .button {
     width: 20%;
-    height: 35px;
+    height: 36px;
     margin-left: 15px;
     background-color: #c11717;
     text-align: center;
@@ -141,21 +207,64 @@ body {
     align-items: center;
     color: white;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
     padding-left: 5px;
     padding-right:5px ;
     transition: .15s cubic-bezier(.17,.67,.29,2.71) 0s;
 }
  .done .text .button:hover {
-    transform: scale(1.020);
-    background-color: rgb(12, 110, 12);
+    transform: scale(1.015);
+    background-color: rgb(128, 0, 53);
 
 
 }
 .todo .text .button:hover {
-    transform: scale(1.020);
+    transform: scale(1.015);
     background-color: #a01414;
 
 
+}
+
+
+@media (max-width: 767px){
+    .container {
+        width: 350px;
+    }
+    .form {
+        height: 55px !important;
+    }
+   .form #text {
+        height: 35px !important;
+    }
+    .form #submit {
+        height: 35px !important;
+        font-size: 10px !important;
+    }
+    .tasks { 
+        flex-direction: column;
+    }
+    .tasks .todo {
+         margin-bottom: 50px;
+         margin-right: 0;
+    }
+    .done {
+        position: relative;
+    }
+    .todo .text, .tasks .done .text {
+        height: 30px !important;
+        margin-bottom: 5px;
+        padding-bottom: 10px;
+        justify-content: center ;
+    }
+    .todo .text .button , .done .text .button {
+        height: 30px !important;
+    }
+    .done::before {
+        content: "Done Tasks";
+        position: absolute;
+        font-size: 18px;
+        font-weight: bold;
+        top: -35px;
+    }
 }
